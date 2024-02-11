@@ -1,0 +1,76 @@
+<Defs>
+  <PawnKindDef ParentName="MercenaryEliteTierBase">
+    <label>Dvergr Mecha</label>
+    <defName>BS_DvergrMecha</defName>
+    <initialResistanceRange>10~23</initialResistanceRange>
+    <combatPower>130</combatPower>
+    <race>BS_FacialAnimDisabledHuman</race>
+    <weaponMoney>800~2400</weaponMoney>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>25</maxGenerationAge>
+    <factionLeader>false</factionLeader>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>GunHeavy</li>
+			<li>SpacerGun</li>
+		</weaponTags>
+    <xenotypeSet Inherit="False">
+      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+			<xenotypeChances>
+				<BS_Hearthguard>999</BS_Hearthguard>
+			</xenotypeChances>
+		</xenotypeSet>
+    <modExtensions>
+			<li Class="BigAndSmall.PilotExtension">
+        <xenotypeChances>
+          <BS_Dwarf>0.75</BS_Dwarf>
+          <BS_Svartalf>0.25</BS_Svartalf>
+          <BS_Gnome>0.75</BS_Gnome>
+          <BS_Redcap>0.25</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>Mercenary_Gunner</li>
+          <li>Mercenary_Elite</li>
+        </pilotPawnkind>
+			</li>
+		</modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryEliteTierBase">
+    <label>Piloted Mini-Mech</label>
+    <defName>BS_NisseMecha</defName>
+    <initialResistanceRange>5~15</initialResistanceRange>
+    <combatPower>130</combatPower>
+    
+    <weaponMoney>800~2400</weaponMoney>
+    <weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>GunHeavy</li>
+			<li>SpacerGun</li>
+		</weaponTags>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>25</maxGenerationAge>
+    <factionLeader>false</factionLeader>
+    <race>BS_FacialAnimDisabledHuman</race>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+			<xenotypeChances>
+				<BS_Hearthdoll>999</BS_Hearthdoll>
+			</xenotypeChances>
+		</xenotypeSet>
+    <modExtensions>
+			<li Class="BigAndSmall.PilotExtension">
+        <xenotypeChances>
+          <BS_Gnome>0.75</BS_Gnome>
+          <BS_Redcap>0.25</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>Mercenary_Gunner</li>
+          <li>Mercenary_Elite</li>
+        </pilotPawnkind>
+			</li>
+		</modExtensions>
+  </PawnKindDef>
+</Defs>

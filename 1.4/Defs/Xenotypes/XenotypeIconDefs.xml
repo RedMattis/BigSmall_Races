@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeIconDef>
+    <defName>BS_Dvergr_Icon</defName>
+    <texPath>Xenotypes/BS_Dvergr_2</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Dvergr_Old_Icon</defName> 
+    <texPath>Xenotypes/BS_Dvergr</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Svartalf_Icon</defName>
+    <texPath>Xenotypes/BS_Svartalf</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_GreatJotun_Icon</defName>
+    <texPath>Xenotypes/BS_GreatJotun</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Jotun_Icon</defName>
+    <texPath>Xenotypes/BS_Jotun</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Nisse_Icon</defName>
+    <texPath>Xenotypes/BS_Nisse</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Ogre_Icon</defName>
+    <texPath>Xenotypes/BS_Ogre</texPath>
+  </XenotypeIconDef>
+  
+  <XenotypeIconDef>
+    <defName>BS_Redcap_Icon</defName>
+    <texPath>Xenotypes/BS_Redcap</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Gorgon</defName>
+    <texPath>Xenotypes/LoS_SnakeHair</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Oni</defName>
+    <texPath>Xenotypes/BS_Oni</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_OniOneHorn</defName>
+    <texPath>Xenotypes/BS_OniOneHorn</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Kitsune</defName>
+    <texPath>Xenotypes/BS_Kitsune</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Neko1</defName>
+    <texPath>Xenotypes/BS_Neko</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Neko2</defName>
+    <texPath>Xenotypes/BS_NekoTrick</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>BS_Spider</defName>
+    <texPath>Xenotypes/BS_Spider</texPath>
+  </XenotypeIconDef>
+  
+  
+
+</Defs>

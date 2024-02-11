@@ -1,0 +1,45 @@
+<Defs>
+
+  <PawnKindDef ParentName="BS_Ogre_Warrior">
+    <defName>BS_Ogre_Chieftain</defName>
+    <label>Ogre Tribe Chieftain</label>
+    <combatPower>120</combatPower>
+    <initialWillRange>0~10</initialWillRange>
+    <initialResistanceRange>10~20</initialResistanceRange>
+    <!-- <maxPerGroup>1</maxPerGroup> -->
+    <fixedGender>Female</fixedGender>
+    <apparelRequired>
+      <li>Apparel_TribalHeaddress</li>
+      <li>Apparel_PlateArmor</li>
+    </apparelRequired>
+    <weaponMoney>900~5000</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeGiant</li>
+      <li>HerculeanWeapon</li>
+      <li>WarcasketMelee</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>12~20</range>
+      </li>
+      <li>
+        <skill>Cooking</skill>
+        <range>6~16</range>
+      </li>
+    </skills>
+    <forcedTraits>
+      <SpeedOffset>2</SpeedOffset>
+    </forcedTraits>
+    <itemQuality>Normal</itemQuality>
+    <factionLeader>true</factionLeader>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<BS_GreatOgre>999</BS_GreatOgre>
+			</xenotypeChances>
+		</xenotypeSet>
+  </PawnKindDef>
+  
+  
+</Defs>

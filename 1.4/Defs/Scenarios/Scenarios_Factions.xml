@@ -1,0 +1,41 @@
+<Defs>
+
+    <FactionDef ParentName="PlayerFactionBase">
+    <defName>BS_JotunPlayerColony</defName>
+    <label>Jotun Settlement</label>
+    <description>A settlement founded by a jotun exile.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Colonist</basicMemberKind>
+    <pawnSingular>settler</pawnSingular>
+    <pawnsPlural>settlers</pawnsPlural>
+    <techLevel>Medieval</techLevel>
+    <allowedCultures><li>BS_Corunan</li></allowedCultures>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>Icons/BS_JotunFort</factionIconPath>
+    
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>TribalStart</li>
+      <li>TribalStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>WoolBison</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+      <li>Tribal</li>
+    </recipePrerequisiteTags>
+  </FactionDef>
+
+</Defs>
