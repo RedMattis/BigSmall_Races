@@ -1,0 +1,234 @@
+<Defs>
+  <XenotypeDef>
+    <defName>BS_Hearthguard</defName>
+    <label>Hearthguard</label>
+    <description>A slow lumbering brutish thing usually created in Dvergr workshops to act as a small warmech. They are usually kept in cryptocaskets to be brought out in case of an attack. They are able to operate on organic food-stuff, and will attempt to process food items to provide for the pilot as well.\n\nMiniature mecha Evangelion?</description>
+    <descriptionShort>pilotable semi-organic robot.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+    <inheritable>true</inheritable>
+
+    <nameMaker>BS_NamerRobot</nameMaker>
+    <combatPowerFactor>3</combatPowerFactor>
+    <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
+    <genes>
+			<li>Ageless</li>
+			<li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			<li>TotalHealing</li>
+			<li>BS_NaturalArmor_Great</li>
+			<li>BS_CannotWearClothing</li>
+			<li>HalfColossusFrame</li>
+			<li>VU_Unliving</li>
+			<li>VU_NoBlood</li>
+			<li>WoundHealing_Slow</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>MoveSpeed_Slow</li>
+			<li>Mood_Depressive</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>MaxTemp_LargeIncrease</li>
+			<li>ToxResist_Total</li>
+			<li>FireResistant</li>
+			<li>BS_AnimalFriend</li>
+			<li>BS_PainNumb</li>
+			<li>Robust</li>
+			<li>VU_Libido_None</li>
+			<li>BS_NotFlirty</li>
+			<li>Sterile</li>
+			<li>Hair_BaldOnly</li>
+			<li>BS_BrokenTitanHead</li>
+			<li>BS_BrokenTitanBody</li>
+			<li>Skin_LightGray</li>
+			<li>BS_Pilotable</li>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>BS_Xenolocked</li>
+			<li>DarkVision</li>
+			<li>Unstoppable</li>
+			<li>AptitudeStrong_Shooting</li>
+			<li>AptitudeStrong_Mining</li>
+			<li>AptitudePoor_Cooking</li>
+			<li>AptitudePoor_Plants</li>
+			<li>AptitudeTerrible_Animals</li>
+			<li>AptitudeTerrible_Crafting</li>
+			<li>AptitudePoor_Artistic</li>
+			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudeTerrible_Social</li>
+      <li MayRequire="nals.facialanimation">BS_FacialAnimDisabled</li>
+    </genes>
+
+    <forbiddenWeaponClasses>
+      <li>RangedLight</li>
+    </forbiddenWeaponClasses>
+    <factionlessGenerationWeight>0.0</factionlessGenerationWeight>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>BS_Hearthdoll</defName>
+    <label>hearthdoll</label>
+    <description>A slow somewhat clumsy creation usuable made in Dvergr workshops to compensate for the small size of some of their members. They are usually kept in cryptocaskets to be brought out on demand. They are able to operate on organic food-stuff, and will attempt to process food items to provide for the pilot as well.</description>
+    <descriptionShort>pilotable semi-organic robot.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+    <inheritable>true</inheritable>
+
+    <nameMaker>BS_NamerRobot</nameMaker>
+    <combatPowerFactor>1.5</combatPowerFactor>
+    <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
+    <genes>
+			<li>Ageless</li>
+      <li>BS_NaturalArmor</li>
+			<li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			<li>TotalHealing</li>
+			<li>VU_Unliving</li>
+			<li>VU_NoBlood</li>
+			<li>WoundHealing_Slow</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>MoveSpeed_Slow</li>
+			<li>Mood_Depressive</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>MaxTemp_LargeIncrease</li>
+			<li>ToxResist_Total</li>
+			<li>FireResistant</li>
+			<li>BS_AnimalFriend</li>
+			<li>BS_PainNumb</li>
+			<li>VU_Libido_None</li>
+			<li>BS_NotFlirty</li>
+			<li>Sterile</li>
+			<li>Hair_BaldOnly</li>
+			<li>BS_BrokenTitanHead</li>
+			<li>BS_BrokenTitanBody</li>
+			<li>Skin_LightGray</li>
+			<li>BS_Pilotable</li>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>BS_Xenolocked</li>
+			<li>DarkVision</li>
+      <li>Unstoppable</li>
+			<li>AptitudePoor_Cooking</li>
+			<li>AptitudePoor_Plants</li>
+			<li>AptitudePoor_Animals</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudePoor_Artistic</li>
+			<li>AptitudePoor_Medicine</li>
+			<li>AptitudePoor_Social</li>
+      <li MayRequire="nals.facialanimation">BS_FacialAnimDisabled</li>
+    </genes>
+
+    <forbiddenWeaponClasses>
+      <li>RangedLight</li>
+    </forbiddenWeaponClasses>
+    <factionlessGenerationWeight>0.0</factionlessGenerationWeight>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>BS_PilotableFleshGolem</defName>
+    <label>flesh golem</label>
+    <description>A partially hollowed-out and somewhat clumsy golem made to impersonate the apperance and abilities human-sized being that is claimed to be created by "magical" means. Only very small xenotypes are able to pilot it.</description>
+    <descriptionShort>pilotable semi-organic robot.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+    <inheritable>true</inheritable>
+
+    <nameMaker>BS_NamerBiological</nameMaker>
+    <combatPowerFactor>2</combatPowerFactor>
+    <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
+    <genes>
+      <li>Ageless</li>
+			<li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			<li>BS_Deathlike</li>
+			<li>BS_ToughSkin</li>
+			<li>VU_Lesser_Unliving_Resilience</li>
+			<li>VU_Unliving</li>
+			<li>BS_SlowBleeding</li>
+			<li>WoundHealing_Slow</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>Mood_Depressive</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>MaxTemp_LargeIncrease</li>
+			<li>ToxResist_Partial</li>
+			<li>BS_PainNumb</li>
+			<li>Robust</li>
+			<li>VU_Libido_None</li>
+			<li>BS_NotFlirty</li>
+			<li>Sterile</li>
+			<li>VU_Pallor</li>
+			<li>FacialRidges</li>
+			<li>Skin_DeepRed</li>
+			<li>VU_LightPallorSkin</li>
+			<li>VU_DarkPallorSkin</li>
+			<li>BS_SkinBloodRed</li>
+			<li>BS_Pilotable</li>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<!-- <li>BS_Xenolocked</li> -->
+			<li>Nearsighted</li>
+			<li>Hair_Grayless</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudePoor_Artistic</li>
+			<li>AptitudePoor_Medicine</li>
+      <li MayRequire="nals.facialanimation">BS_FacialAnimDisabled</li>
+    </genes>
+    <forbiddenWeaponClasses>
+      <li>LongShots</li>
+    </forbiddenWeaponClasses>
+    <factionlessGenerationWeight>0.0</factionlessGenerationWeight>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>BS_FleshGolemServant</defName>
+    <label>flesh golem servant</label>
+    <description>A flesh golem servant created by unknown means.</description>
+    <descriptionShort>pilotable semi-organic robot.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+    <inheritable>true</inheritable>
+
+    <nameMaker>BS_NamerBiological</nameMaker>
+    <combatPowerFactor>2</combatPowerFactor>
+    <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
+    <genes>
+      <li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			<li>BS_Deathlike</li>
+			<li>BS_ToughSkin</li>
+			<li>VU_Lesser_Unliving_Resilience</li>
+			<li>VU_Unliving</li>
+			<li>BS_SlowBleeding</li>
+			<li>WoundHealing_Slow</li>
+			<li>PsychicAbility_Dull</li>
+			<li>Mood_Optimist</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>MaxTemp_LargeIncrease</li>
+			<li>ToxResist_Partial</li>
+			<li>Aggression_DeadCalm</li>
+			<li>Neversleep</li>
+			<li>BS_Pain_None</li>
+			<li>Robust</li>
+			<li>VU_Libido_None</li>
+			<li>BS_NotFlirty</li>
+			<li>Sterile</li>
+			<li>VU_Pallor</li>
+			<li>FacialRidges</li>
+			<li>Skin_DeepRed</li>
+			<li>VU_LightPallorSkin</li>
+			<li>VU_DarkPallorSkin</li>
+			<li>BS_SkinBloodRed</li>
+			<li MayRequire="nals.facialanimation">BS_FacialAnimDisabled</li>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>Learning_Slow</li>
+			<li>Nearsighted</li>
+			<li>Hair_Grayless</li>
+			<li>BS_SimpleMind</li>
+			<li>AptitudeTerrible_Cooking</li>
+			<li>AptitudeTerrible_Crafting</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudePoor_Social</li>
+			<li>AptitudeTerrible_Intellectual</li>
+    </genes>
+    <forbiddenWeaponClasses>
+      <li>LongShots</li>
+    </forbiddenWeaponClasses>
+    <factionlessGenerationWeight>0.25</factionlessGenerationWeight>
+  </XenotypeDef>
+</Defs>

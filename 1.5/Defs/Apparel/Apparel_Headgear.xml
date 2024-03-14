@@ -1,0 +1,52 @@
+<Defs>
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>BS_Nisse_Cap</defName>
+    <label>nisse cap</label>
+    <description>A cone-shaped hat traditionally worn by Nisse.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Apparel/nisse_cap_icon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <statBases>
+      <WorkToMake>1400</WorkToMake>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.09</Mass>
+      <StuffEffectMultiplierArmor>0.30</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+    	<WorkSpeedGlobal>0.08</WorkSpeedGlobal>
+      <TameAnimalChance>0.1</TameAnimalChance>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/nisse_cap</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+      <tags>
+        <li>BS_Nisse</li>
+      </tags>
+	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+	  <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+    <canBeGeneratedToSatisfyWarmth>true</canBeGeneratedToSatisfyWarmth>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <displayPriority>105</displayPriority>
+    </recipeMaker>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+</Defs>

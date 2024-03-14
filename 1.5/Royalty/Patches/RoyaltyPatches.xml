@@ -1,0 +1,10 @@
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+    <value>
+      <li>BS_JotunPlayerColony</li>
+    </value>
+  </Operation>
+
+</Patch>

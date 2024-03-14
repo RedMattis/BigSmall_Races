@@ -1,0 +1,108 @@
+<Defs>
+  <ScenarioDef>
+    <defName>BS_Exiled_Jotun_Adventurer</defName>
+    <label>Exiled Jotun Adventurer</label>
+    <description>Exiled from your homeland, you must survive in a world that is not your own.</description>
+    <scenario>
+      <summary>An exiled jotun adventurer is forced to join forces with some smallfolk</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>BS_JotunPlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+          <def>ConfigurePawnsXenotypes</def>
+          <pawnChoiceCount>8</pawnChoiceCount>
+          <!-- <overrideKinds>
+            <li>
+              <xenotype>BS_FrostJotunInBlue</xenotype>
+              <pawnKind>BS_WomanInBlue</pawnKind>
+            </li>
+          </overrideKinds> -->
+          <xenotypeCounts>
+            <li>
+              <requiredAtStart>true</requiredAtStart>
+              <xenotype>BS_FrostJotun</xenotype>
+              <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+            </li>
+            <li>
+              <requiredAtStart>true</requiredAtStart>
+              <xenotype>BS_Dwarf</xenotype>
+              <allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
+            </li>
+            <li>
+              <count>2</count>
+              <requiredAtStart>true</requiredAtStart>
+              <xenotype>BS_Gnome</xenotype>
+              <allowedDevelopmentalStages>Baby, Child, Adult</allowedDevelopmentalStages>
+            </li>
+          </xenotypeCounts>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>Exiled from your homeland, you are forced to join forces with some smallfolk to survive</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pemmican</thingDef>
+          <count>800</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>10</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>WoodLog</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Steel</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Smithing</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Pemmican</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>PlateArmor</project>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>BS_JotunSword</thingDef>
+          <stuff>Steel</stuff>
+          <quality>Normal</quality>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>BS_Nisse_Cap</thingDef>
+          <stuff>WoolBison</stuff>
+          <count>2</count>
+          <quality>Normal</quality>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Apparel_PlateArmor</thingDef>
+          <stuff>Steel</stuff>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+</Defs>

@@ -4,12 +4,20 @@
 
     <li>/</li>
     <li>1.4</li>
-    <li IfModActive="Ludeon.Rimworld.Royalty">Royalty</li>
+    <li IfModActive="Ludeon.Rimworld.Royalty">1.4/Royalty</li>
     <li IfModActive="erdelf.HumanoidAlienRaces">1.4/HAR</li>
     <li IfModNotActive="erdelf.HumanoidAlienRaces">1.4/No_HAR</li>
     <!-- <li IfModActive="erdelf.HumanoidAlienRaces">1.4/HAR</li> -->
     <!-- <li IfModNotActive ="erdelf.HumanoidAlienRaces">1.4/No_HAR</li> -->
-
   </v1.4>
+
+  <v1.5>
+    <li>/</li>
+    <li>1.5</li>
+    <li IfModActive="Ludeon.Rimworld.Royalty">1.5/Royalty</li>
+    <li IfModActive="erdelf.HumanoidAlienRaces">1.5/HAR</li>
+    <li IfModNotActive="erdelf.HumanoidAlienRaces">1.5/No_HAR</li>
+  </v1.5>
+
 
 </loadFolders>

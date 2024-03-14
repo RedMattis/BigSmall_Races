@@ -78,7 +78,6 @@
         
         <BS_Half_Jotun MayRequire="RedMattis.BigSmall">0.05</BS_Half_Jotun>
       </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
     </xenotypeSet>
   </PawnKindDef>
 
