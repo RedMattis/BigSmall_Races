@@ -56,7 +56,7 @@
     <label>Great Ogre</label>
     <description>The slow lumbering brutes are believed to either be a failed attempt at creating a giant workforce, or a poor attempt at creating Jotun.</description>
     <descriptionShort>Huge Slow Lumbering brutes.</descriptionShort>
-    <iconPath>Xenotypes/BS_Ogre</iconPath>
+    <iconPath>Xenotypes/BS_GreatOgre</iconPath>
     <inheritable>true</inheritable>
     <nameMaker>NamerPersonPigskin</nameMaker>
     <combatPowerFactor>3.5</combatPowerFactor>
@@ -109,7 +109,7 @@
     <label>Frost Jotun</label>
     <description>Towering giants created on a distant world to serve as labourers and soldiers on frozen worlds.</description>
     <descriptionShort>Towering giants created on a distant world to serve as labourers and soldiers</descriptionShort>
-    <iconPath>Xenotypes/BS_Jotun</iconPath>
+    <iconPath>Xenotypes/BS_FrostJotun</iconPath>
     <combatPowerFactor>2.5</combatPowerFactor>
     <inheritable>true</inheritable>
     <doubleXenotypeChances>
@@ -159,7 +159,7 @@
     <label>Fire Jotun</label>
     <description>Towering giants created on a distant world to serve as labourers and soldiers on incredibly hot worlds.</description>
     <descriptionShort>Towering giants created on a distant world to serve as labourers and soldiers</descriptionShort>
-    <iconPath>Xenotypes/BS_Jotun</iconPath>
+    <iconPath>Xenotypes/BS_FireJotun</iconPath>
     <combatPowerFactor>2.5</combatPowerFactor>
     <inheritable>true</inheritable>
     <genes>
@@ -206,7 +206,7 @@
     <label>Jotun</label>
     <description>Towering giants created on a distant world to serve as labourers and soldiers.</description>
     <descriptionShort>Towering giants created on a distant world to serve as labourers and soldiers</descriptionShort>
-    <iconPath>Xenotypes/BS_Jotun</iconPath>
+    <iconPath>Xenotypes/BS_JotunNoHorns</iconPath>
     <combatPowerFactor>2.5</combatPowerFactor>
     <inheritable>true</inheritable>
     <genes>
@@ -240,7 +240,7 @@
     <label>Heir of Surtr</label>
     <description>Towering giants created on a distant world to serve as labourers and soldiers on incredibly hot worlds. This one has been enhanced with archites.</description>
     <descriptionShort>Towering giants created on a distant world to serve as labourers and soldiers</descriptionShort>
-    <iconPath>Xenotypes/BS_GreatJotun</iconPath>
+    <iconPath>Xenotypes/BS_Surtr</iconPath>
     <combatPowerFactor>3.5</combatPowerFactor>
     <inheritable>true</inheritable>
     <factionlessGenerationWeight>0.50</factionlessGenerationWeight>
@@ -284,7 +284,7 @@
     <label>Heir of Aurgelmir</label>
     <description>Towering giants created on a distant world to serve as labourers and soldiers on incredibly hot worlds. This one has been enhanced with archites.</description>
     <descriptionShort>Towering giants created on a distant world to serve as labourers and soldiers</descriptionShort>
-    <iconPath>Xenotypes/BS_GreatJotun</iconPath>
+    <iconPath>Xenotypes/BS_Ymir</iconPath>
     <combatPowerFactor>3.5</combatPowerFactor>
     <inheritable>true</inheritable>
     <factionlessGenerationWeight>0.50</factionlessGenerationWeight>
@@ -336,7 +336,7 @@
     <label>Deteriorating Titan</label>
     <description>This vat-grown titan likely crashed unto the Rim before being properly upgraded. A lack of maintainance has caused its unstable physiology to go berserk on the poor creature.</description>
     <descriptionShort>Towering giants created on a distant world to serve as labourers and soldiers</descriptionShort>
-    <iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+    <iconPath>Xenotypes/BS_DeterioratingTitan</iconPath>
     <combatPowerFactor>4</combatPowerFactor>
     <inheritable>true</inheritable>
     <factionlessGenerationWeight>0.1</factionlessGenerationWeight>
@@ -390,7 +390,7 @@
     <label>corrupted titan</label>
     <description>This thing appears to be a titan. The xenogenes and luciferium appears to have gone completely berserk. More a living nanomechanical cancer than a living being at this point. Probably best to put the poor creature out of its missery. Preferably before it tears all of us aparts and consumes us.</description>
     <descriptionShort>AHHHHHHHHHHH!</descriptionShort>
-    <iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+    <iconPath>Xenotypes/BS_Mimic</iconPath>
     <combatPowerFactor>4</combatPowerFactor>
     <inheritable>true</inheritable>
     <factionlessGenerationWeight>0</factionlessGenerationWeight>
@@ -457,7 +457,7 @@
     <label>Half Jotun</label>
     <description>Most Half Jotun are believed to be the distant offspring of Jotun.</description>
     <descriptionShort>Said to be the distant offspring of Jotun.</descriptionShort>
-    <iconPath>Xenotypes/BS_Jotun</iconPath>
+    <iconPath>Xenotypes/BS_HalfJotun</iconPath>
     <combatPowerFactor>1.6</combatPowerFactor>
     <inheritable>true</inheritable>
     <genes>

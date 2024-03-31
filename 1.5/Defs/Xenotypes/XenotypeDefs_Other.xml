@@ -4,7 +4,7 @@
     <label>Hearthguard</label>
     <description>A slow lumbering brutish thing usually created in Dvergr workshops to act as a small warmech. They are usually kept in cryptocaskets to be brought out in case of an attack. They are able to operate on organic food-stuff, and will attempt to process food items to provide for the pilot as well.\n\nMiniature mecha Evangelion?</description>
     <descriptionShort>pilotable semi-organic robot.</descriptionShort>
-    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+    <iconPath>Xenotypes/BS_DeterioratingTitan</iconPath>
     <inheritable>true</inheritable>
 
     <nameMaker>BS_NamerRobot</nameMaker>
@@ -67,7 +67,7 @@
     <label>hearthdoll</label>
     <description>A slow somewhat clumsy creation usuable made in Dvergr workshops to compensate for the small size of some of their members. They are usually kept in cryptocaskets to be brought out on demand. They are able to operate on organic food-stuff, and will attempt to process food items to provide for the pilot as well.</description>
     <descriptionShort>pilotable semi-organic robot.</descriptionShort>
-    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+    <iconPath>Xenotypes/BS_DeterioratingTitan</iconPath>
     <inheritable>true</inheritable>
 
     <nameMaker>BS_NamerRobot</nameMaker>
@@ -125,7 +125,7 @@
     <label>flesh golem</label>
     <description>A partially hollowed-out and somewhat clumsy golem made to impersonate the apperance and abilities human-sized being that is claimed to be created by "magical" means. Only very small xenotypes are able to pilot it.</description>
     <descriptionShort>pilotable semi-organic robot.</descriptionShort>
-    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+    <iconPath>Xenotypes/BS_DeterioratingTitan</iconPath>
     <inheritable>true</inheritable>
 
     <nameMaker>BS_NamerBiological</nameMaker>
@@ -179,7 +179,7 @@
     <label>flesh golem servant</label>
     <description>A flesh golem servant created by unknown means.</description>
     <descriptionShort>pilotable semi-organic robot.</descriptionShort>
-    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+    <iconPath>Xenotypes/BS_DeterioratingTitan</iconPath>
     <inheritable>true</inheritable>
 
     <nameMaker>BS_NamerBiological</nameMaker>
