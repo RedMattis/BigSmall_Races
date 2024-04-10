@@ -22,7 +22,7 @@
       <EquipDelay>0.8</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-    	<WorkSpeedGlobal>0.08</WorkSpeedGlobal>
+      <WorkSpeedGlobal>0.08</WorkSpeedGlobal>
       <TameAnimalChance>0.1</TameAnimalChance>
     </equippedStatOffsets>
     <apparel>
@@ -39,9 +39,9 @@
       <tags>
         <li>BS_Nisse</li>
       </tags>
-	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
-	  <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
-    <canBeGeneratedToSatisfyWarmth>true</canBeGeneratedToSatisfyWarmth>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>true</canBeGeneratedToSatisfyWarmth>
     </apparel>
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>

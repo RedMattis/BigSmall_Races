@@ -31,21 +31,20 @@
         <BS_GreatOgre>0.05</BS_GreatOgre>
         <BS_FrostJotun>0.035</BS_FrostJotun>
         <BS_Jotun>0.012</BS_Jotun>
+        <BS_Troll>0.01</BS_Troll>
+        <BS_LavaSlimeGiant MayRequire="RedMattis.BSSlimes">0.01</BS_LavaSlimeGiant>
         <BS_FireJotun>0.004</BS_FireJotun>
         <BS_Ymir>0.010</BS_Ymir>
         <LoS_Gorgon MayRequire="RedMattis.LamiasAndOtherSnakes">0.004</LoS_Gorgon>
         <BS_Corrupterd_Titan MayRequire="sarg.alphagenes">0.003</BS_Corrupterd_Titan>
         <BS_BrokenTitan>0.002</BS_BrokenTitan>
         <BS_Surtr>0.0019</BS_Surtr>
-        <!-- <LoS_TrueLamia MayRequire="RedMattis.LamiasAndOtherSnakes">0.005</LoS_TrueLamia> -->
-        <BS_LavaSlimeGiant MayRequire="RedMattis.BSSlimes">0.01</BS_LavaSlimeGiant>
-        
       </xenotypeChances>
     </xenotypeSet>
     
     <maxPawnCostPerTotalPointsCurve Inherit="False">
       <points>
-        <li>(500, 150)</li> <!-- Can always use relatively strong pawns, because giants doesn't really have weak ones -->
+        <li>(500, 150)</li> <!-- Can always use relatively strong pawns, because ogres doesn't really have weak ones -->
         <li>(2000, 250)</li>
         <li>(2001, 10000)</li>
       </points>
@@ -162,7 +161,7 @@
         <BS_Dwarf>0.65</BS_Dwarf>
         <BS_Gnome>0.30</BS_Gnome>
         <BS_Jotun>0.05</BS_Jotun>
-        <BS_Redcap>0.05</BS_Redcap>
+        <BS_Redcap>0.00</BS_Redcap>
         <BS_Svartalf>0.03</BS_Svartalf>
         <BS_FireJotun>0.05</BS_FireJotun>
         <BS_Surtr>0.01</BS_Surtr>
@@ -194,6 +193,8 @@
           <Grenadier_Destructive>1.5</Grenadier_Destructive>
           <Mercenary_Slasher>7</Mercenary_Slasher>
           <Mercenary_Gunner>10</Mercenary_Gunner>
+          <BS_NisseGunner>5</BS_NisseGunner>
+          <BS_RedcapSlasher>1</BS_RedcapSlasher>
           <Mercenary_Elite>10</Mercenary_Elite>
           <Town_Councilman>10</Town_Councilman>
         </options>
@@ -211,6 +212,8 @@
           <Mercenary_Gunner>10</Mercenary_Gunner>
           <Mercenary_Elite>10</Mercenary_Elite>
           <Town_Councilman>10</Town_Councilman>
+          <BS_NisseGunner>5</BS_NisseGunner>
+          <BS_RedcapSlasher>1</BS_RedcapSlasher>
           <BS_DvergrMecha>0.5</BS_DvergrMecha>
           <BS_NisseMecha>0.5</BS_NisseMecha>
         </options>
@@ -221,8 +224,10 @@
           <Villager>20</Villager>
           <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
           <Town_Guard>10</Town_Guard>
+          <BS_NisseGunner>5</BS_NisseGunner>
           <Town_Councilman>10</Town_Councilman>
           <BS_DvergrMecha>0.5</BS_DvergrMecha>
+          <BS_RedcapSlasher>0.5</BS_RedcapSlasher>
         </options>
       </li>
       <li>
@@ -250,6 +255,7 @@
           <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
           <Town_Guard>10</Town_Guard>
           <Town_Councilman>10</Town_Councilman>
+          <BS_RedcapSlasher>0.1</BS_RedcapSlasher>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -257,6 +263,8 @@
         <commonality>1</commonality>
         <options>
           <Miner>1</Miner>
+          <BS_NisseGunner>0.1</BS_NisseGunner>
+          <BS_RedcapSlasher>0.1</BS_RedcapSlasher>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -271,6 +279,8 @@
         <commonality>1</commonality>
         <options>
           <Logger>1</Logger>
+          <BS_NisseGunner>0.1</BS_NisseGunner>
+          <BS_RedcapSlasher>0.1</BS_RedcapSlasher>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -278,6 +288,8 @@
         <commonality>1</commonality>
         <options>
           <Farmer>1</Farmer>
+          <BS_NisseGunner>0.1</BS_NisseGunner>
+          <BS_RedcapSlasher>0.1</BS_RedcapSlasher>
         </options>
       </li>
     </pawnGroupMakers>

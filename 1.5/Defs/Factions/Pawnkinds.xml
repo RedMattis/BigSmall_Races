@@ -41,5 +41,28 @@
 		</xenotypeSet>
   </PawnKindDef>
   
+  <PawnKindDef ParentName="MercenaryGunnerBase">
+    <defName>BS_NisseGunner</defName>
+    <initialResistanceRange>6~10</initialResistanceRange>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <requiredTag>BS_Nisse</requiredTag>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenarySlasherBase">
+    <defName>BS_RedcapSlasher</defName>
+    <initialResistanceRange>6~10</initialResistanceRange>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <requiredTag>BS_Nisse</requiredTag>
+        <color>(200, 0, 0)</color>
+        <stuff>DevilstrandCloth</stuff>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
   
 </Defs>
