@@ -108,7 +108,7 @@
     <defName>BS_Troll</defName>
     <label>Troll</label>
     <description>There are stories of old trolls that have grown to the size of mountains. While that is an abusrd claim old trolls are known for being incredibly large. Some say they also grow uglier and uglier with time.</description>
-    <iconPath>Xenotypes/BS_Troll</iconPath>
+    <iconPath>Xenotypes/BS_Troll_2</iconPath>
     <inheritable>true</inheritable>
     <nameMaker>NamerPersonPigskin</nameMaker>
     <combatPowerFactor>2.5</combatPowerFactor>
