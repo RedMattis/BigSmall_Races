@@ -12,6 +12,7 @@
     <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
     <genes>
 			<li>Ageless</li>
+			<li>BS_TrulyAgeless</li>
 			<li>DiseaseFree</li>
 			<li>PerfectImmunity</li>
 			<li>TotalHealing</li>
@@ -75,6 +76,7 @@
     <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
     <genes>
 			<li>Ageless</li>
+			<li>BS_TrulyAgeless</li>
       <li>BS_NaturalArmor</li>
 			<li>DiseaseFree</li>
 			<li>PerfectImmunity</li>
