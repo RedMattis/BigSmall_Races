@@ -144,6 +144,7 @@
     <description>A loose union mostly made up of small folk. They are highly distrustful of strangers.</description>
     <factionNameMaker>NamerFactionTribalNeanderthal</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <fixedLeaderKinds><li>PirateBoss</li></fixedLeaderKinds>
     <pawnSingular>smallfolk</pawnSingular>
     <pawnsPlural>smallfolk</pawnsPlural>
     <replacesFaction>OutlanderRough</replacesFaction>
