@@ -196,6 +196,8 @@
           <Mercenary_Gunner>10</Mercenary_Gunner>
           <BS_NisseGunner>5</BS_NisseGunner>
           <BS_RedcapSlasher>1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.5</BS_RedcapSlasherMk2>
+          
           <Mercenary_Elite>10</Mercenary_Elite>
           <Town_Councilman>10</Town_Councilman>
         </options>
@@ -215,6 +217,7 @@
           <Town_Councilman>10</Town_Councilman>
           <BS_NisseGunner>5</BS_NisseGunner>
           <BS_RedcapSlasher>1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.5</BS_RedcapSlasherMk2>
           <BS_DvergrMecha>0.5</BS_DvergrMecha>
           <BS_NisseMecha>0.5</BS_NisseMecha>
         </options>
@@ -229,6 +232,7 @@
           <Town_Councilman>10</Town_Councilman>
           <BS_DvergrMecha>0.5</BS_DvergrMecha>
           <BS_RedcapSlasher>0.5</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.5</BS_RedcapSlasherMk2>
         </options>
       </li>
       <li>
@@ -257,6 +261,7 @@
           <Town_Guard>10</Town_Guard>
           <Town_Councilman>10</Town_Councilman>
           <BS_RedcapSlasher>0.1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.05</BS_RedcapSlasherMk2>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -266,6 +271,7 @@
           <Miner>1</Miner>
           <BS_NisseGunner>0.1</BS_NisseGunner>
           <BS_RedcapSlasher>0.1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.05</BS_RedcapSlasherMk2>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -282,6 +288,7 @@
           <Logger>1</Logger>
           <BS_NisseGunner>0.1</BS_NisseGunner>
           <BS_RedcapSlasher>0.1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.05</BS_RedcapSlasherMk2>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -291,6 +298,7 @@
           <Farmer>1</Farmer>
           <BS_NisseGunner>0.1</BS_NisseGunner>
           <BS_RedcapSlasher>0.1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.05</BS_RedcapSlasherMk2>
         </options>
       </li>
     </pawnGroupMakers>

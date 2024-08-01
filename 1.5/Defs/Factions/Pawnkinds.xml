@@ -64,6 +64,23 @@
       </li>
     </specificApparelRequirements>
   </PawnKindDef>
+  <PawnKindDef ParentName="MercenarySlasherBase">
+    <defName>BS_RedcapSlasherMk2</defName>
+    <initialResistanceRange>6~10</initialResistanceRange>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <requiredTag>BS_Nisse</requiredTag>
+        <color>(200, 0, 0)</color>
+        <stuff>DevilstrandCloth</stuff>
+      </li>
+    </specificApparelRequirements>
+    <forcedTraits>
+      <Tough/>
+    </forcedTraits>
+  </PawnKindDef>
+
+  
 
   <PawnKindDef ParentName="MercenaryEliteTierBase">
     <label>Dvergr Mecha</label>
