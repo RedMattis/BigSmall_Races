@@ -125,7 +125,7 @@
   <XenotypeDef>
     <defName>BS_PilotableFleshGolem</defName>
     <label>flesh golem</label>
-    <description>A partially hollowed-out and somewhat clumsy golem made to impersonate the apperance and abilities human-sized being that is claimed to be created by "magical" means. Only very small xenotypes are able to pilot it.</description>
+    <description>A partially hollowed-out and somewhat clumsy golem made to impersonate the appearance and abilities human-sized being that is claimed to be created by "magical" means. Only very small xenotypes are able to pilot it.</description>
     <descriptionShort>pilotable semi-organic robot.</descriptionShort>
     <iconPath>Xenotypes/BS_FleshGolemServant</iconPath>
     <inheritable>true</inheritable>
