@@ -169,7 +169,8 @@
     <combatPowerFactor>2.5</combatPowerFactor>
     <inheritable>true</inheritable>
     <doubleXenotypeChances>
-      <VU_Returned MayRequire="RedMattis.Undead">0.10</VU_Returned>
+      <VU_Returned MayRequire="RedMattis.Undead">0.05</VU_Returned>
+      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.05</VU_Returned_Intact>
     </doubleXenotypeChances>
     <genes>
       <li>JotunFrame</li>
@@ -348,7 +349,8 @@
     <inheritable>true</inheritable>
     <factionlessGenerationWeight>0.50</factionlessGenerationWeight>
     <doubleXenotypeChances>
-      <VU_Returned MayRequire="RedMattis.Undead">0.20</VU_Returned>
+      <VU_Returned MayRequire="RedMattis.Undead">0.05</VU_Returned>
+      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.15</VU_Returned_Intact>
     </doubleXenotypeChances>
     <genes>
       <li>BS_JotunArchiteMetabolism</li>
@@ -579,7 +581,8 @@
     <inheritable>true</inheritable>
     <factionlessGenerationWeight>1.5</factionlessGenerationWeight>
     <doubleXenotypeChances>
-      <VU_Returned MayRequire="RedMattis.Undead">0.20</VU_Returned>
+      <VU_Returned MayRequire="RedMattis.Undead">0.10</VU_Returned>
+      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.10</VU_Returned_Intact>
     </doubleXenotypeChances>
     <genes>
       <li>Body_Fat</li>
@@ -615,7 +618,8 @@
     <inheritable>true</inheritable>
     <factionlessGenerationWeight>1</factionlessGenerationWeight>
     <doubleXenotypeChances>
-      <VU_Returned MayRequire="RedMattis.Undead">0.50</VU_Returned>
+      <VU_Returned MayRequire="RedMattis.Undead">0.10</VU_Returned>
+      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.40</VU_Returned_Intact>
     </doubleXenotypeChances>
     <genes>
 			<li>Ageless</li>
