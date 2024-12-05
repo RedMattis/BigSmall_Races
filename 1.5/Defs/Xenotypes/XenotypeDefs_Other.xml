@@ -61,6 +61,24 @@
       <li>RangedLight</li>
     </forbiddenWeaponClasses>
     <factionlessGenerationWeight>0.0</factionlessGenerationWeight>
+		<modExtensions>
+      <li Class="BetterPrerequisites.XenotypeExtension">
+        <setRace>BS_UrbMech</setRace>
+        <forceRace>true</forceRace>
+      </li>
+			<li Class="BigAndSmall.PilotExtension">
+        <xenotypeChances>
+          <BS_Dwarf>0.75</BS_Dwarf>
+          <BS_Svartalf>0.25</BS_Svartalf>
+          <BS_Gnome>0.75</BS_Gnome>
+          <BS_Redcap>0.25</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>Mercenary_Gunner</li>
+          <li>Mercenary_Elite</li>
+        </pilotPawnkind>
+			</li>
+    </modExtensions>
   </XenotypeDef>
 
   <XenotypeDef>
@@ -120,6 +138,24 @@
       <li>RangedLight</li>
     </forbiddenWeaponClasses>
     <factionlessGenerationWeight>0.0</factionlessGenerationWeight>
+		<modExtensions>
+      <li Class="BetterPrerequisites.XenotypeExtension">
+        <setRace>BS_UrbMech</setRace>
+        <forceRace>true</forceRace>
+      </li>
+			<li Class="BigAndSmall.PilotExtension">
+        <xenotypeChances>
+          <BS_Dwarf>0.75</BS_Dwarf>
+          <BS_Svartalf>0.25</BS_Svartalf>
+          <BS_Gnome>0.75</BS_Gnome>
+          <BS_Redcap>0.25</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>Mercenary_Gunner</li>
+          <li>Mercenary_Elite</li>
+        </pilotPawnkind>
+			</li>
+    </modExtensions>
   </XenotypeDef>
 
   <XenotypeDef>
@@ -174,6 +210,20 @@
       <li>LongShots</li>
     </forbiddenWeaponClasses>
     <factionlessGenerationWeight>0.0</factionlessGenerationWeight>
+		<modExtensions>
+			<li Class="BigAndSmall.PilotExtension">
+        <xenotypeChances>
+          <BS_Dwarf>0.75</BS_Dwarf>
+          <BS_Svartalf>0.25</BS_Svartalf>
+          <BS_Gnome>0.75</BS_Gnome>
+          <BS_Redcap>0.25</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>Mercenary_Gunner</li>
+          <li>Mercenary_Elite</li>
+        </pilotPawnkind>
+			</li>
+    </modExtensions>
   </XenotypeDef>
 
   <XenotypeDef>
@@ -232,5 +282,19 @@
       <li>LongShots</li>
     </forbiddenWeaponClasses>
     <factionlessGenerationWeight>0.25</factionlessGenerationWeight>
+		<modExtensions>
+			<li Class="BigAndSmall.PilotExtension">
+        <xenotypeChances>
+          <BS_Dwarf>0.75</BS_Dwarf>
+          <BS_Svartalf>0.25</BS_Svartalf>
+          <BS_Gnome>0.75</BS_Gnome>
+          <BS_Redcap>0.25</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>Mercenary_Gunner</li>
+          <li>Mercenary_Elite</li>
+        </pilotPawnkind>
+			</li>
+    </modExtensions>
   </XenotypeDef>
 </Defs>

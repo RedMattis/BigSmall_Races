@@ -85,6 +85,7 @@
   <PawnKindDef ParentName="MercenaryEliteTierBase">
     <label>Dvergr Mecha</label>
     <defName>BS_DvergrMecha</defName>
+    <race>BS_UrbMech</race>
     <initialResistanceRange>10~23</initialResistanceRange>
     <combatPower>130</combatPower>
     <weaponMoney>800~2400</weaponMoney>
@@ -121,6 +122,7 @@
   <PawnKindDef ParentName="MercenaryEliteTierBase">
     <label>Piloted Mini-Mech</label>
     <defName>BS_NisseMecha</defName>
+    <race>BS_UrbMech</race>
     <initialResistanceRange>5~15</initialResistanceRange>
     <combatPower>130</combatPower>
     
