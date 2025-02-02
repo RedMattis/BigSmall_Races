@@ -1,0 +1,205 @@
+<Defs>
+
+  <PawnKindDef Name="TrollBase" ParentName="BS_MedievalPrimitiveBase" Abstract="True">
+    <requiredWorkTags> <li>Violent</li> </requiredWorkTags>
+    <apparelTags Inherit='False'> <li>Neolithic</li> </apparelTags>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="TrollBase">
+    <defName>BS_Troll_Simple_Young</defName>
+    <label>young troll</label>
+    <!-- Remember that all trolls have x2.5 combat value, even if young and not nearly that powerful... -->
+    <combatPower>28</combatPower>
+
+    <minGenerationAge>8</minGenerationAge>
+    <maxGenerationAge>17</maxGenerationAge>
+    <invNutrition>3</invNutrition>
+    <gearHealthRange>0.3~1.1</gearHealthRange>
+    <apparelMoney>200~550</apparelMoney>
+    <weaponMoney>385~1100</weaponMoney>
+    <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+    <apparelTags>
+      <li>MedievalBasic</li>
+      <li>BS_MedievalBasic</li>
+      <!-- <li>Apparel_Viking</li>
+      <li>Apparel_VikingBerserker</li>
+      <li>BS_MedievalRaider</li> -->
+    </apparelTags>
+    <xenotypeSet Inherit="False"> <xenotypeChances> <BS_Troll>1</BS_Troll> </xenotypeChances> </xenotypeSet>
+  </PawnKindDef>
+
+    <PawnKindDef ParentName="TrollBase">
+    <defName>BS_Troll_Archer_Young</defName>
+    <label>troll archer</label>
+    <combatPower>28</combatPower>
+
+    <minGenerationAge>8</minGenerationAge>
+    <maxGenerationAge>17</maxGenerationAge>
+    <invNutrition>3</invNutrition>
+    <gearHealthRange>0.35~1.1</gearHealthRange>
+    <apparelMoney>200~550</apparelMoney>
+    <weaponMoney>250~500</weaponMoney>
+    <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+    <weaponTags Inherit="False">
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+    <apparelTags>
+      <li>MedievalBasic</li>
+      <li>BS_MedievalBasic</li>
+    </apparelTags>
+    
+    <xenotypeSet Inherit="False"> <xenotypeChances> <BS_Troll>1</BS_Troll> </xenotypeChances> </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="TrollBase">
+    <defName>BS_Troll_Simple_Adult</defName>
+    <label>troll</label>
+    <combatPower>60</combatPower>
+    <minGenerationAge>19</minGenerationAge>
+    <maxGenerationAge>74</maxGenerationAge>
+    <invNutrition>12</invNutrition>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>200~550</apparelMoney>
+    <weaponMoney>385~1100</weaponMoney>
+    <apparelTags Inherit='False'>
+      <li>Neolithic</li>
+    </apparelTags>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeGiant</li>
+    </weaponTags>
+    <xenotypeSet Inherit="False"> <xenotypeChances> <BS_TrollAdult>1</BS_TrollAdult> </xenotypeChances> </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="TrollBase">
+    <defName>BS_Troll_Ranged_Adult</defName>
+    <label>troll archer</label>
+    <combatPower>60</combatPower>
+    <minGenerationAge>35</minGenerationAge>
+    <maxGenerationAge>74</maxGenerationAge>
+    <invNutrition>12</invNutrition>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>200~550</apparelMoney>
+    <weaponMoney>385~1100</weaponMoney>
+    <apparelTags Inherit='False'>
+      <li>Neolithic</li>
+    </apparelTags>
+    <weaponTags Inherit="False">
+      <li>RangedNeolithicGiant</li>
+      <li>RangedNeolithicAdvancedGiant</li>
+    </weaponTags>
+    <xenotypeSet Inherit="False"> <xenotypeChances> <BS_TrollAdult>1</BS_TrollAdult> </xenotypeChances> </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="TrollBase">
+    <defName>BS_Troll_Ranged_Adult2</defName>
+    <label>troll archer</label>
+    <combatPower>60</combatPower>
+    <minGenerationAge>45</minGenerationAge>
+    <maxGenerationAge>74</maxGenerationAge>
+    <invNutrition>12</invNutrition>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>200~550</apparelMoney>
+    <weaponMoney>385~1100</weaponMoney>
+    <apparelTags Inherit='False'>
+      <li>Neolithic</li>
+    </apparelTags>
+    <weaponTags Inherit="False">
+      <li>RangedNeolithicGiant</li>
+      <li>RangedNeolithicAdvancedGiant</li>
+    </weaponTags>
+    <xenotypeSet Inherit="False"> <xenotypeChances> <BS_TrollAdult>1</BS_TrollAdult> </xenotypeChances> </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="TrollBase">
+    <defName>BS_Troll_Raider_Adult</defName>
+    <label>troll raider</label>
+    <combatPower>80</combatPower>
+    <minGenerationAge>35</minGenerationAge>
+    <maxGenerationAge>74</maxGenerationAge>
+    <invNutrition>12</invNutrition>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>200~550</apparelMoney>
+    <weaponMoney>385~1100</weaponMoney>
+    <apparelTags Inherit='False'>
+      <li>Neolithic</li>
+      <li>BS_MedievalRaider</li>
+    </apparelTags>
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeGiant</li>
+      <li>MedievalMeleeAdvancedGiant</li>
+      <li>NeolithicMeleeGiant</li>
+    </weaponTags>
+    <xenotypeSet Inherit="False"> <xenotypeChances> <BS_TrollAdult>1</BS_TrollAdult> </xenotypeChances> </xenotypeSet>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="TrollBase">
+    <defName>BS_Troll_Raider_Adult2</defName>
+    <label>troll raider</label>
+    <combatPower>80</combatPower>
+    <minGenerationAge>55</minGenerationAge>
+    <maxGenerationAge>74</maxGenerationAge>
+    <invNutrition>12</invNutrition>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>200~550</apparelMoney>
+    <weaponMoney>385~1100</weaponMoney>
+    <apparelTags Inherit='False'>
+      <li>Neolithic</li>
+      <li>BS_MedievalRaider</li>
+    </apparelTags>
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeGiant</li>
+      <li>MedievalMeleeAdvancedGiant</li>
+      <li>NeolithicMeleeGiant</li>
+    </weaponTags>
+    <xenotypeSet Inherit="False"> <xenotypeChances> <BS_TrollAdult>1</BS_TrollAdult> </xenotypeChances> </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="TrollBase" Name="BS_Troll_Simple_Old">
+    <defName>BS_Troll_Simple_Old</defName>
+    <label>old troll</label>
+    <combatPower>110</combatPower>
+    <minGenerationAge>76</minGenerationAge>
+    <maxGenerationAge>200</maxGenerationAge>
+    <invNutrition>20</invNutrition>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>200~1800</apparelMoney>
+    <weaponMoney>385~1100</weaponMoney>
+    <weaponTags Inherit="False"> <li>NeolithicMeleeGiant</li> </weaponTags>
+    <xenotypeSet Inherit="False"> <xenotypeChances> <BS_TrollOld>1</BS_TrollOld> </xenotypeChances> </xenotypeSet>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.PawnKindExtension">
+        <ageCurve> <points> <li>(0, 75)</li> <li>(1, 200)</li> </points> </ageCurve>
+        <psylinkLevels> <points> <li>(0.75, 0)</li> <li>(1, 3)</li> </points> </psylinkLevels>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Troll_Simple_Old">
+    <defName>BS_Troll_Simple_Ancient</defName>
+    <label>elder troll</label>
+    <combatPower>200</combatPower>
+    <minGenerationAge>75</minGenerationAge>
+    <invNutrition>30</invNutrition>
+    <gearHealthRange>0.1~1.1</gearHealthRange>
+    <apparelMoney>400~1800</apparelMoney>
+    <weaponMoney>385~1800</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>NeolithicMeleeGiant</li>
+    </weaponTags>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <xenotypeSet Inherit="False"> <xenotypeChances> <BS_TrollOld>1</BS_TrollOld> </xenotypeChances> </xenotypeSet>
+    <maxPerGroup>1</maxPerGroup>
+
+    <modExtensions>
+      <li Class="BigAndSmall.PawnKindExtension">
+        <ageCurve> <points> <li>(0, 200)</li> <li>(1, 500)</li> </points> </ageCurve>
+        <psylinkLevels> <points> <li>(0.5, 0)</li> <li>(1, 6)</li> </points> </psylinkLevels>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+</Defs>

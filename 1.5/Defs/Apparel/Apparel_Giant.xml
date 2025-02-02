@@ -1,0 +1,87 @@
+<Defs>
+  <ThingDef ParentName="ArmorSmithableBase">
+    <defName>BS_BarbarianArmor</defName>
+    <label>barbarian armor</label>
+    <description>Protective furs and plate armor covering most of the body. It is a bit less effective than plate armour, but is much easier to maintain and move around in.</description>
+    <possessionCount>1</possessionCount>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PlateArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>250</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>BS_Apparel/BarbarianArmor/Barbarian_Female_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>170</costStuffCount>
+    <statBases>
+      <WorkToMake>34000</WorkToMake>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Mass>13</Mass>
+      <StuffEffectMultiplierArmor>0.69</StuffEffectMultiplierArmor>
+      <Insulation_Cold>14</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.4</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>BS_Apparel/BarbarianArmor/Barbarian</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers Inherit="False">
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <!-- <li>MedievalMilitary</li> -->
+        <li>BS_MedievalRaider</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+</Defs>

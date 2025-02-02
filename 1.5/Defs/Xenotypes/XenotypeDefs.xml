@@ -103,64 +103,13 @@
       <li>RangedLight</li>
     </forbiddenWeaponClasses>
   </XenotypeDef>
-
-  <XenotypeDef>
-    <defName>BS_Troll</defName>
-    <label>Troll</label>
-    <description>There are stories of old trolls that have grown to the size of mountains. While that is an abusrd claim old trolls are known for being incredibly large. Some say they also grow uglier and uglier with time.</description>
-    <iconPath>Xenotypes/BS_Troll_2</iconPath>
-    <inheritable>true</inheritable>
-    <nameMaker>NamerPersonPigskin</nameMaker>
-    <combatPowerFactor>2.5</combatPowerFactor>
-    <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
-    <doubleXenotypeChances>
-      <VU_Ghoul MayRequire="RedMattis.Undead">0.05</VU_Ghoul>
-    </doubleXenotypeChances>
-    <genes>
-      <li>BS_EndlessGrowth</li>
-			<li>WoundHealing_UltraFast</li>
-			<li>Immunity_SuperStrong</li>
-			<li>DiseaseFree</li>
-			<li>Skin_Green</li>
-			<li>VU_ZombieSkin</li>
-			<li>Skin_LightGray</li>
-
-      <li>Cannibal</li>
-      <li>Body_Fat</li>
-			<li>Body_Hulk</li>
-			<li>Body_Standard</li>
-      <li>Aggression_Aggressive</li>
-      <li>MinTemp_LargeDecrease</li>
-      <li>RobustDigestion</li>
-      <li>Nearsighted</li>
-      <li>Sleepy</li>
-      <li>MoveSpeed_Slow</li>
-      <li>Learning_Slow</li>
-      <li>AptitudePoor_Artistic</li>
-      <li>AptitudePoor_Intellectual</li>
-      <li>AptitudeStrong_Cooking</li>
-			<li>AptitudeStrong_Plants</li>
-			<li>FireWeakness</li>
-      <li>FireTerror</li>
-			<li>BS_Fast_TotalHealing</li>
-			<li>Hair_Grayless</li>
-			<li>Hair_Gray</li>
-			<li>BS_MatteGreenHair</li>
-			<li>Hair_DarkBlack</li>
-			<li>BS_TrollNose</li>
-			<li MayRequire="ludeon.rimworld.anomaly">BS_CreepyHaired</li>
-			<li>Robust</li>
-
-      <li>FacialRidges</li>
-			<li>BS_Smallhead</li>
-    </genes>
-    <forbiddenWeaponClasses>
-      <li>LongShots</li>
-      <li>RangedLight</li>
-    </forbiddenWeaponClasses>
-  </XenotypeDef>
   
-  <XenotypeDef>
+  <XenotypeDef Name="NorseBase" Abstract="True">
+    <nameMaker>BS_NamerVikingMale</nameMaker>
+    <nameMakerFemale>BS_NamerVikingFemale</nameMakerFemale>
+  </XenotypeDef>
+
+  <XenotypeDef ParentName="NorseBase">
     <defName>BS_FrostJotun</defName>
     <label>Frost Jotun</label>
     <description>Towering giants created on a distant world to serve as labourers and soldiers on frozen worlds.</description>
@@ -212,7 +161,7 @@
     <forbiddenWeaponClasses><li>RangedLight</li></forbiddenWeaponClasses>
   </XenotypeDef>
   
-  <XenotypeDef>
+  <XenotypeDef ParentName="NorseBase">
     <defName>BS_FireJotun</defName>
     <label>Fire Jotun</label>
     <description>Towering giants created on a distant world to serve as labourers and soldiers on incredibly hot worlds.</description>
@@ -260,7 +209,7 @@
     <forbiddenWeaponClasses><li>RangedLight</li></forbiddenWeaponClasses>
   </XenotypeDef>
   
-  <XenotypeDef>
+  <XenotypeDef ParentName="NorseBase">
     <defName>BS_Jotun</defName>
     <label>Jotun</label>
     <description>Towering giants created on a distant world to serve as labourers and soldiers.</description>
@@ -294,7 +243,7 @@
     <forbiddenWeaponClasses><li>RangedLight</li></forbiddenWeaponClasses>
   </XenotypeDef>
   
-  <XenotypeDef>
+  <XenotypeDef ParentName="NorseBase">
     <defName>BS_Surtr</defName>
     <label>Heir of Surtr</label>
     <description>Towering giants created on a distant world to serve as labourers and soldiers on incredibly hot worlds. This one has been enhanced with archites.</description>
@@ -339,7 +288,7 @@
     <forbiddenWeaponClasses><li>RangedLight</li></forbiddenWeaponClasses>
   </XenotypeDef>
   
-  <XenotypeDef>
+  <XenotypeDef ParentName="NorseBase">
     <defName>BS_Ymir</defName>
     <label>Heir of Aurgelmir</label>
     <description>Towering giants created on a distant world to serve as labourers and soldiers on incredibly hot worlds. This one has been enhanced with archites.</description>
@@ -514,7 +463,7 @@
     </forbiddenWeaponClasses>
   </XenotypeDef>
   
-  <XenotypeDef>
+  <XenotypeDef ParentName="NorseBase">
     <defName>BS_Half_Jotun</defName>
     <label>Half Jotun</label>
     <description>Most Half Jotun are believed to be the distant offspring of Jotun.</description>
@@ -522,6 +471,7 @@
     <iconPath>Xenotypes/BS_HalfJotun</iconPath>
     <combatPowerFactor>1.6</combatPowerFactor>
     <inheritable>true</inheritable>
+    <chanceToUseNameMaker>0.7</chanceToUseNameMaker>
     <genes>
       <li>HalfJotunFrame</li>
       <li>Aggression_Aggressive</li>
@@ -535,7 +485,7 @@
     </genes>
   </XenotypeDef>
   
-  <XenotypeDef>
+  <XenotypeDef ParentName="NorseBase">
     <defName>BS_Gnome</defName>
     <label>Nisse</label>
     <combatPowerFactor>0.4</combatPowerFactor>
@@ -571,7 +521,7 @@
     </genes>
   </XenotypeDef>
   
-  <XenotypeDef>
+  <XenotypeDef ParentName="NorseBase">
     <defName>BS_Dwarf</defName>
     <label>Dvergr</label>
     <description>The popular belief is that they were created to perform engineering duties on space-ships where their small frame would be advantagous. Surprisingly sturdy for their size.</description>
@@ -608,7 +558,7 @@
     </genes>
   </XenotypeDef>
   
-    <XenotypeDef>
+    <XenotypeDef ParentName="NorseBase">
     <defName>BS_Svartalf</defName>
     <label>Svartalf</label>
     <description>Most outlanders that have heard of Svartalfs believe they are some relently malevolent offshot dvergrs. The true nature of Svartalfs is unclear though much due to how rarely they are seen.</description>

@@ -103,6 +103,7 @@
 				<BS_Hearthguard>999</BS_Hearthguard>
 			</xenotypeChances>
 		</xenotypeSet>
+    <maxPerGroup>4</maxPerGroup>
     <modExtensions>
 			<li Class="BigAndSmall.PilotExtension">
         <xenotypeChances>
@@ -136,6 +137,7 @@
     <maxGenerationAge>25</maxGenerationAge>
     <factionLeader>false</factionLeader>
     <useFactionXenotypes>false</useFactionXenotypes>
+    <maxPerGroup>6</maxPerGroup>
     <xenotypeSet Inherit="False">
 			<xenotypeChances>
 				<BS_Hearthdoll>999</BS_Hearthdoll>

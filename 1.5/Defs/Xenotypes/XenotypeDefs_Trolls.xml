@@ -1,0 +1,148 @@
+<Defs>
+  <XenotypeDef Name="BS_TrollBase" ParentName="NorseBase" Abstract="True">
+    <iconPath>Xenotypes/BS_Troll_3</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>2</factionlessGenerationWeight>
+    <genes>
+      <li>BS_PerfectMemory</li>
+      <li>Learning_Slow</li>
+			
+      <li>BS_FuzzyBrows</li>
+      <li>BS_TrollNose</li>
+      <li>BS_TrollHorns</li>
+			<li>DiseaseFree</li>
+      <li>BS_Fast_TotalHealing</li>
+      <li>RobustDigestion</li>
+      <li>Sleepy</li>
+      <li>MoveSpeed_Slow</li>
+
+      <li>AptitudePoor_Artistic</li>
+      <li>AptitudePoor_Intellectual</li>
+      <li>AptitudeStrong_Cooking</li>
+			<li>AptitudeStrong_Plants</li>
+			<li>FireWeakness</li>
+      <li>FireTerror</li>
+
+      <li>Body_Standard</li>
+      <li>Body_Thin</li>
+
+			<li>Hair_Grayless</li>
+			<li>BS_Hair_DarkGray</li>
+			<li>BS_MatteGreenHair</li>
+			<li>Hair_DarkBlack</li>
+      <li>BS_MossGreenHair</li>
+      <li>BS_TrollBeard</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef ParentName="BS_TrollBase">
+    <defName>BS_Troll</defName>
+    <label>young troll</label>
+    <description>There are stories of old trolls that have grown to the size of mountains. While that is an abusrd claim old trolls are known for being incredibly large. Some say they also grow uglier and uglier with time.</description>
+    <combatPowerFactor>2.5</combatPowerFactor>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li>BS_Metamorph_TimeAdult</li>
+      <li>BS_TrollAdult_Metamorphosis</li>
+      <li>BS_LargeFrame</li>
+
+      <li>BS_TrollEars</li>
+      <li>Ears_Human</li>
+      <li>Headbone_Human</li>
+      <li>BS_ToughSkin</li>
+
+      <li>WoundHealing_UltraFast</li>
+      <li>Immunity_SuperStrong</li>
+
+      <li>MinTemp_SmallDecrease</li>
+      <li>MaxTemp_SmallIncrease</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef ParentName="BS_TrollBase">
+    <defName>BS_TrollAdult</defName>
+    <label>troll</label>
+    <description>There are stories of old trolls that have grown to the size of mountains. While that is an abusrd claim old trolls are known for being incredibly large. Some say they also grow uglier and uglier with time.</description>
+    <combatPowerFactor>2.5</combatPowerFactor>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li>BS_Metamorph_TimeElder</li>
+      <li>BS_TrollOld_Metamorphosis</li>
+
+      <li>BS_Retromorph_TimeUnderAdult</li>
+      <li>BS_Troll_Retromorphosis</li>
+
+      <li>BS_EndlessGrowth</li>
+      <li>BS_TrollHair</li>
+      <li>Hair_LongOnly</li>
+      <li>BS_TrollEars</li>
+      
+      <li>BS_TrollHorns</li>
+
+      <li>WoundHealing_UltraFast</li>
+      <li>Immunity_SuperStrong</li>
+      <li>Nearsighted</li>
+      <li>BS_NaturalArmor</li>
+
+			<li>Skin_Green</li>
+			<li>VU_ZombieSkin</li>
+			<li>Skin_SlateGray</li>
+      <li>BS_BorealSkin</li>
+			
+			<li MayRequire="ludeon.rimworld.anomaly">BS_CreepyHaired</li>
+			<li>BS_Smallhead</li>
+
+      <li>MinTemp_LargeDecrease</li>
+      <li>MaxTemp_LargeIncrease</li>
+
+      <li>BS_GeneStabilizing_Moderate</li>
+    </genes>
+    <forbiddenWeaponClasses>
+      <li>LongShots</li>
+      <li>RangedLight</li>
+    </forbiddenWeaponClasses>
+  </XenotypeDef>
+
+  <XenotypeDef ParentName="BS_TrollBase">
+    <defName>BS_TrollOld</defName>
+    <label>old troll</label>
+    <description>There are stories of old trolls that have grown to the size of mountains. While that is an abusrd claim old trolls are known for being incredibly large. Some say they also grow uglier and uglier with time.</description>
+    <combatPowerFactor>2.5</combatPowerFactor>
+    <genes>
+      <li>BS_Retromorph_TimeUnderElder</li>
+      <li>BS_TrollAdult_Retromorphosis</li>
+
+      <li>BS_EndlessGrowth</li>
+      <li>BS_TrollHair</li>
+      <li>BS_TrollEars</li>
+      <li>BS_TrollEars_Great</li>
+
+      <li>WoundHealing_SuperFast</li>
+      <li>BS_SlowBleeding</li>
+      <li>Immunity_SuperStrong</li>
+      <li>Nearsighted</li>
+      <li>UVSensitivity_Mild</li>
+      <li>BS_NaturalArmor_Great</li>
+      <li>BS_CannotWearArmor</li>
+      <li>Beauty_Ugly</li>
+
+			<li>Skin_Green</li>
+			<li>VU_ZombieSkin</li>
+			<li>Skin_SlateGray</li>
+      <li>BS_BorealSkin</li>
+			
+			<li>BS_Smallhead</li>
+      <li>Robust</li>
+
+      <li>MinTemp_LargeDecrease</li>
+      <li>MaxTemp_LargeIncrease</li>
+
+      <li>BS_GeneStabilizing_Great</li>
+    </genes>
+    <forbiddenWeaponClasses>
+      <li>LongShots</li>
+      <li>RangedLight</li>
+    </forbiddenWeaponClasses>
+  </XenotypeDef>
+
+</Defs>

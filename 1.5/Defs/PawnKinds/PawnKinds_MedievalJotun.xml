@@ -1,0 +1,371 @@
+<Defs>
+
+  <!-- Muspelheim-->
+
+  <PawnKindDef Name="BS_Jotun_Knight" ParentName="BS_MedievalMilitaryKnightBase">
+    <defName>BS_Jotun_Knight</defName>
+    <label>muspelheim warrior</label>
+    <combatPower>130</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>800~1800</apparelMoney>
+    <weaponMoney>385~1500</weaponMoney>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <apparelRequired>
+      <li MayRequire="OskarPotocki.VFE.Medieval2">VFEM2_Apparel_Tabard</li>
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <weaponTags Inherit="False">
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneBattleAxe</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcanHalberd</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
+      <li>HerculeanWeapon</li>
+      <li>WarcasketMelee</li>
+      <li>MedievalMeleeGiant</li>
+      <li>MedievalMeleeAdvancedGiant</li>
+      <li>NeolithicMeleeGiant</li>
+    </weaponTags>
+    <apparelColor>(130,0,10)</apparelColor>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="BS_Jotun_Javelin" ParentName="BS_MedievalMilitaryKnightBase">
+    <defName>BS_Jotun_Javelin</defName>
+    <label>giant spearman</label>
+    <combatPower>130</combatPower>
+    <apparelMoney>800~1800</apparelMoney>
+    <weaponMoney>250~1100</weaponMoney>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <apparelRequired>
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+    <weaponTags Inherit="False">
+      <li>RangedNeolithicGiant</li>
+      <li>RangedMedievalGiant</li>
+    </weaponTags>
+    <apparelColor>(130,0,10)</apparelColor>
+    <apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Jotun_Knight" Name="BS_Jotun_Lord">
+    <defName>BS_Jotun_Lord</defName>
+    <label>muspelheim champion</label>
+    <combatPower>180</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <maxGenerationAge>999</maxGenerationAge>
+    <itemQuality>Good</itemQuality>
+    <factionLeader>true</factionLeader>
+    <weaponTags>
+      <li>UltratechMeleeGiant_Fire</li>
+    </weaponTags>
+    <apparelMoney>1600~4000</apparelMoney>
+    <weaponMoney>1500~10000</weaponMoney>
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>20~30</initialResistanceRange>
+    <skills>
+			<li>
+				<skill>Melee</skill>
+				<range>9~18</range>
+			</li>
+		</skills>
+    <disallowedTraits>
+			<li>Wimp</li>
+      <li>Delicate</li>
+		</disallowedTraits>
+    <apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
+  </PawnKindDef>
+
+
+  <!-- Niflheim-->
+
+  <PawnKindDef Name="BS_Jotun_Raider" ParentName="BS_MedievalPrimitiveBase">
+    <defName>BS_Jotun_Raider</defName>
+    <label>giant raider</label>
+    <combatPower>130</combatPower>
+    <invNutrition>12</invNutrition>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>800~1800</apparelMoney>
+    <weaponMoney>385~1500</weaponMoney>
+    <apparelTags Inherit='False'>
+      <li>Neolithic</li>
+      <li>Apparel_Viking</li>
+      <li>Apparel_VikingBerserker</li>
+      <li>MedievalBasic</li>
+      <li>BS_MedievalRaider</li>
+      <li>Apparel_VikingRavager</li>
+    </apparelTags>
+    <apparelColor>(70, 70, 72)</apparelColor>
+    <apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
+    <weaponTags Inherit="False">
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneBattleAxe</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcanHalberd</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
+      <li>HerculeanWeapon</li>
+      <li>WarcasketMelee</li>
+      <li>MedievalMeleeGiant</li>
+      <li>MedievalMeleeAdvancedGiant</li>
+      <li>NeolithicMeleeGiant</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BS_MedievalPrimitiveBase">
+    <defName>BS_Jotun_Hunter</defName>
+    <label>giant hunter</label>
+    <combatPower>130</combatPower>
+    <invNutrition>12</invNutrition>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>800~1800</apparelMoney>
+    <weaponMoney>385~1100</weaponMoney>
+    <apparelTags Inherit='False'>
+      <li>MedievalBasic</li>
+      <li>BS_MedievalBasic</li> 
+      <li>Apparel_Viking</li>
+      <li>Apparel_VikingBerserker</li>
+      <li>Apparel_VikingRavager</li>
+      <li>BS_MedievalRaider</li>
+    </apparelTags>
+    <weaponTags Inherit="False">
+      <li>RangedNeolithicGiant</li>
+      <li>RangedNeolithicAdvancedGiant</li>
+      <li>RangedMedievalGiant</li>
+    </weaponTags>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Jotun_Knight" Name="BS_Jotun_NiflKnight">
+    <defName>BS_Jotun_NiflKnight</defName>
+    <label>frost knight</label>
+    <combatPower>130</combatPower>
+    <apparelMoney>800~1800</apparelMoney>
+    <weaponMoney>385~1100</weaponMoney>
+    <apparelColor>(100,130,245)</apparelColor>
+    <disallowedTraits>
+			<li>Wimp</li>
+      <li>Delicate</li>
+		</disallowedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Jotun_Javelin">
+    <defName>BS_Jotun_NiflJavelin</defName>
+    <label>jotun javelin</label>
+    <apparelColor>(100,130,245)</apparelColor>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Jotun_Raider" Name="BS_Jotun_Berserker">
+    <defName>BS_Jotun_Berserker</defName>
+    <label>einherjar</label>
+    <combatPower>180</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <maxGenerationAge>999</maxGenerationAge>
+    <itemQuality>Normal</itemQuality>
+    <factionLeader>true</factionLeader>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <apparelRequired Inherit="False">
+      <li>BS_BarbarianArmor</li>
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+    <apparelTags Inherit="False"/>
+    <apparelMoney>0~0</apparelMoney>
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>20~30</initialResistanceRange>
+    <skills>
+			<li>
+				<skill>Melee</skill>
+				<range>9~18</range>
+			</li>
+		</skills>
+    <forcedTraits>
+      <li>Brawler</li>
+    </forcedTraits>
+    <disallowedTraits>
+			<li>Wimp</li>
+      <li>Delicate</li>
+		</disallowedTraits>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Jotun_Raider">
+    <defName>BS_Jotun_Berserker_Simple</defName>
+    <label>berserker</label>
+    <combatPower>100</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <maxGenerationAge>999</maxGenerationAge>
+    <itemQuality>Normal</itemQuality>
+    <factionLeader>true</factionLeader>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <apparelRequired Inherit="False">
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+    <apparelTags Inherit="False"/>
+    <apparelMoney>0~0</apparelMoney>
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>20~30</initialResistanceRange>
+    <skills>
+			<li>
+				<skill>Melee</skill>
+				<range>9~14</range>
+			</li>
+		</skills>
+    <disallowedTraits>
+			<li>Wimp</li>
+      <li>Delicate</li>
+		</disallowedTraits>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Jotun_Raider" Name="BS_Jotun_RaiderLord">
+    <defName>BS_Jotun_RaiderLord</defName>
+    <label>raider lord</label>
+    <combatPower>180</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <maxGenerationAge>999</maxGenerationAge>
+    <itemQuality>Good</itemQuality>
+    <factionLeader>true</factionLeader>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <apparelRequired>
+      <li>BS_BarbarianArmor</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>UltratechMeleeGiant_Cold</li>
+    </weaponTags>
+    <apparelTags Inherit="False">
+      <li>Apparel_VikingGuardian</li>
+
+      <li>MedievalBasic</li>
+      <li>BS_MedievalBasic</li>
+      <li>MedievalMilitary</li>
+      <li>MedievalArmorDecent</li> 
+    </apparelTags>
+    <apparelMoney>1600~4000</apparelMoney>
+    <weaponMoney>1500~10000</weaponMoney>
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>20~30</initialResistanceRange>
+    <apparelColor>(74, 74, 80)</apparelColor>
+    <skills>
+			<li>
+				<skill>Melee</skill>
+				<range>9~18</range>
+			</li>
+		</skills>
+    <disallowedTraits>
+			<li>Wimp</li>
+      <li>Delicate</li>
+		</disallowedTraits>
+    <apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+  </PawnKindDef>
+
+  <!-- Limited Variants -->
+  <PawnKindDef ParentName="BS_Jotun_Berserker">
+    <defName>BS_Jotun_Berserker_Limited</defName>
+    <maxPerGroup>3</maxPerGroup>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_Jotun>10</BS_Jotun>
+        <BS_FrostJotun>10</BS_FrostJotun>
+        <BS_Ymir>5</BS_Ymir>
+        <BS_FrostSlimeGiant MayRequire="RedMattis.BSSlimes">5</BS_FrostSlimeGiant>
+        <BS_BananaSplitSlimeGiant MayRequire="RedMattis.BSSlimes">5</BS_BananaSplitSlimeGiant>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Jotun_NiflKnight">
+    <defName>BS_Jotun_NiflKnight_Limited</defName>
+    <maxPerGroup>2</maxPerGroup>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_FrostJotun>99</BS_FrostJotun>
+        <BS_Ymir>5</BS_Ymir>
+        <BS_BananaSplitSlimeGiant MayRequire="RedMattis.BSSlimes">10</BS_BananaSplitSlimeGiant>
+        <BS_FrostSlimeGiant MayRequire="RedMattis.BSSlimes">3</BS_FrostSlimeGiant>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Jotun_RaiderLord">
+    <defName>BS_Jotun_RaiderLord_Limited</defName>
+    <maxPerGroup>2</maxPerGroup>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_FrostJotun>99</BS_FrostJotun>
+        <BS_Ymir>5</BS_Ymir>
+        <BS_BananaSplitSlimeGiant MayRequire="RedMattis.BSSlimes">10</BS_BananaSplitSlimeGiant>
+        <BS_FrostSlimeGiant MayRequire="RedMattis.BSSlimes">3</BS_FrostSlimeGiant>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Jotun_NiflKnight">
+    <defName>BS_Jotun_Modernised_Limited</defName>
+    <maxPerGroup>3</maxPerGroup>
+    <combatPower>200</combatPower>
+    <chemicalAddictionChance>0.12</chemicalAddictionChance>
+    <weaponTags Inherit="False">
+      <li>RangedHeavyGiant</li>
+    </weaponTags>
+    <weaponMoney>1500~6000</weaponMoney>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+      <li>SpacerMilitary</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <techHediffsMoney>1000~3800</techHediffsMoney>
+    <techHediffsTags> <li>Advanced</li> <li>AdvancedWeapon</li> </techHediffsTags>
+    <techHediffsChance>0.40</techHediffsChance>
+    <combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+    <apparelColor>(74, 80, 76)</apparelColor>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_Jotun>30</BS_Jotun>
+        <BS_FireJotun>50</BS_FireJotun>
+        <BS_BananaSplitSlimeGiant MayRequire="RedMattis.BSSlimes">10</BS_BananaSplitSlimeGiant>
+        <BS_BrokenTitan>5</BS_BrokenTitan>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Jotun_Knight">
+    <defName>BS_Jotun_MuspelKnight_Limited</defName>
+    <maxPerGroup>2</maxPerGroup>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_FireJotun>99</BS_FireJotun>
+        <BS_Surtr>6</BS_Surtr>
+        <BS_LavaSlimeGiant MayRequire="RedMattis.BSSlimes">5</BS_LavaSlimeGiant>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Jotun_Lord">
+    <defName>BS_Jotun_Lord_Limited</defName>
+    <maxPerGroup>2</maxPerGroup>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_FireJotun>99</BS_FireJotun>
+        <BS_Surtr>5</BS_Surtr>
+        <BS_LavaSlimeGiant MayRequire="RedMattis.BSSlimes">10</BS_LavaSlimeGiant>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+  
+</Defs>

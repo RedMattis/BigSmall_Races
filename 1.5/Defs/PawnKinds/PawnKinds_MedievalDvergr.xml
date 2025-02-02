@@ -1,0 +1,165 @@
+<Defs>
+
+  <PawnKindDef ParentName="BS_MedievalMilitaryBase" Name="BS_Crossbowman">
+    <defName>BS_Crossbowman</defName>
+    <label>crossbowman</label>
+    <combatPower>120</combatPower>
+    <gearHealthRange>0.8~1.8</gearHealthRange>
+    <apparelMoney>600~1200</apparelMoney>	
+    <apparelTags>
+      <li>MedievalMilitary</li>
+      <li>MedievalArmorDecent</li>
+      <li>DankPyon_Mercneary</li>
+      <li>DankPyon_MercenaryHelmet</li>
+      <li>DankPyon_Footman</li>
+      <li>DankPyon_FootmanHelmet</li>
+    </apparelTags>
+    <apparelRequired>
+      <li MayRequire="OskarPotocki.VFE.Medieval2">VFEM2_Apparel_Tabard</li>
+    </apparelRequired>
+    <weaponMoney>250~1400</weaponMoney>
+    <!-- <apparelColor>(1, 0.9, 0.5)</apparelColor> -->
+    <weaponTags Inherit="False">
+      <li>BS_CrossbowTag</li>
+      <li>DankPyon_Arbalest</li>
+      <li>VFEM2_Arbalest</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneRing</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneWand</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneStaff</li>
+    </weaponTags>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>14~22</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Crossbowman">
+    <defName>BS_CrossbowDvergr</defName>
+    <label>crossbowman</label>
+    <apparelRequired Inherit="False">
+      <li MayRequire="OskarPotocki.VFE.Medieval2">VFEM2_Apparel_Tabard</li>
+    </apparelRequired>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_Dwarf>99</BS_Dwarf>
+        <BS_Svartalf>5</BS_Svartalf>
+      </xenotypeChances>
+    </xenotypeSet>
+    <apparelColor>(0.9, 0.8, 0.5)</apparelColor>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="BS_Dvergr_Knight" ParentName="BS_MedievalMilitaryKnightBase">
+    <defName>BS_Dvergr_Knight</defName>
+    <label>armoured warrior</label>
+    <combatPower>130</combatPower>
+    <itemQuality>Good</itemQuality>
+    <apparelMoney>1300~1800</apparelMoney>
+    <weaponMoney>300~5100</weaponMoney>
+    <apparelRequired>
+      <li MayRequire="OskarPotocki.VFE.Medieval2">VFEM2_Apparel_Tabard</li>
+      <li MayRequire="OskarPotocki.VFE.Medieval2">VFEM2_Apparel_PlateHelmetHeavy</li>
+      <li>Apparel_PlateArmor</li>
+    </apparelRequired>
+    <weaponTags>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneBattleAxe</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcanHalberd</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
+    </weaponTags>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_Dwarf>99</BS_Dwarf>
+        <BS_Svartalf>5</BS_Svartalf>
+      </xenotypeChances>
+    </xenotypeSet>
+    <apparelColor>(0.9, 0.8, 0.5)</apparelColor>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_MedievalCivilianBase">
+    <defName>BS_Nisse_Mage</defName>
+    <label>nisse mage</label>
+    <combatPower>100</combatPower>
+    <initialResistanceRange>17~25</initialResistanceRange>
+    <initialWillRange>2~4</initialWillRange>
+    <apparelMoney>300~1400</apparelMoney>
+    <isFighter>true</isFighter>
+    <apparelTags> <li>DankPyon_Peasant</li> </apparelTags>
+    <weaponMoney>970~2000</weaponMoney>
+    <weaponTags Inherit="False">
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneRing</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneWand</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneStaff</li>
+    </weaponTags>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <requiredTag>BS_Nisse</requiredTag>
+      </li>
+    </specificApparelRequirements>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_Gnome>0.95</BS_Gnome>
+        <BS_Redcap>0.05</BS_Redcap>
+      </xenotypeChances>
+    </xenotypeSet>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnKindExtension">
+        <psylinkLevels> <points> <li>(0.9, 0)</li> <li>(1, 4)</li> </points> </psylinkLevels>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_MedievalCivilianBase">
+    <defName>BS_Dvergr_Artificer</defName>
+    <label>artificer</label>
+    <combatPower>120</combatPower>
+    <initialResistanceRange>17~25</initialResistanceRange>
+    <initialWillRange>2~4</initialWillRange>
+    <apparelMoney>300~1400</apparelMoney>
+    <isFighter>true</isFighter>
+    <itemQuality>Good</itemQuality>
+    <apparelTags>
+      <li>DankPyon_Footman</li>
+      <li>DankPyon_FootmanHelmet</li>
+    </apparelTags>
+    <weaponMoney>300~10000</weaponMoney>
+    <weaponTags>
+      <li>DankPyon_TwoHandedHammer</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneWeapon</li>
+    </weaponTags>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_Dwarf>99</BS_Dwarf>
+        <BS_Svartalf>5</BS_Svartalf>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="BS_Dvergr_Knight">
+    <defName>BS_Dvergr_Lord</defName>
+    <label>armoured champion</label>
+    <combatPower>150</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <maxGenerationAge>999</maxGenerationAge>
+    <itemQuality>Excellent</itemQuality>
+    <!-- Masterwork -->
+    <factionLeader>false</factionLeader>
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeDecent</li>
+      <li>DankPyon_TwoHandedHammer</li>
+      <li>DankPyon_TwoHandedMallet</li>
+      <li>DankPyon_TwoHandedMace</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneDagger</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneSpear</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneHammer</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneBattleAxe</li>
+    </weaponTags>
+    <apparelMoney>1600~3400</apparelMoney>
+    <weaponMoney>500~7000</weaponMoney>
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>20~30</initialResistanceRange>
+    <apparelColor>(0.95, 0.82, 0.51)</apparelColor>
+  </PawnKindDef>
+</Defs>

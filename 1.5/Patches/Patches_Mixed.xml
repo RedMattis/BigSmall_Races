@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RimFantasy - Medieval Overhaul Edition</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+
+        <!-- Add weapon tags -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneBattleAxes"]/weaponTags</xpath>
+          <value>
+            <li>BS_ArcaneBattleAxe</li>
+            <li>BS_ArcaneWeapon</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneBows"]/weaponTags</xpath>
+          <value>
+            <li>BS_ArcaneBow</li>
+            <li>BS_ArcaneWeapon</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneDaggers"]/weaponTags</xpath>
+          <value>
+            <li>BS_ArcaneDagger</li>
+            <li>BS_ArcaneWeapon</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneHalberds"]/weaponTags</xpath>
+          <value>
+            <li>BS_ArcanHalberd</li>
+            <li>BS_ArcaneWeapon</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneLongswords"]/weaponTags</xpath>
+          <value>
+            <li>BS_ArcaneLongsword</li>
+            <li>BS_ArcaneWeapon</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneRings"]/weaponTags</xpath>
+          <value>
+            <li>BS_ArcaneRing</li>
+            <li>BS_ArcaneWeapon</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneSpears"]/weaponTags</xpath>
+          <value>
+            <li>BS_ArcaneSpear</li>
+            <li>BS_ArcaneWeapon</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneStaffs"]/weaponTags</xpath>
+          <value>
+            <li>BS_ArcaneStaff</li>
+            <li>BS_ArcaneWeapon</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneWands"]/weaponTags</xpath>
+          <value>
+            <li>BS_ArcaneWand</li>
+            <li>BS_ArcaneWeapon</li>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[@Name="RF_BaseWeapon_ArcaneWarHammers"]/weaponTags</xpath>
+          <value>
+            <li>BS_ArcaneHammer</li>
+            <li>BS_ArcaneWeapon</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
