@@ -41,6 +41,7 @@
       <li>AptitudeStrong_Cooking</li>
 
       <!-- <li>Ears_Pig</li> -->
+      <li>BS_FomorialHead_Savage</li>
       <li>BS_OgreHead</li>
       <li>BS_OgreBody</li>
     </genes>
@@ -94,6 +95,7 @@
       <li>AptitudePoor_Crafting</li>
       <li>AptitudeStrong_Cooking</li>
 
+      <li>BS_FomorialHead_Savage</li>
       <li>BS_OgreHead</li>
       <li>BS_OgreBody</li>
       <li>BS_SlowAging</li>

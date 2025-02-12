@@ -45,6 +45,9 @@
       <li>RangedNeolithicGiant</li>
       <li>RangedMedievalGiant</li>
     </weaponTags>
+    <apparelDisallowTags>
+      <li>MedievalLevy</li>
+    </apparelDisallowTags>
     <apparelColor>(130,0,10)</apparelColor>
     <apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
   </PawnKindDef>
@@ -94,9 +97,14 @@
       <li>Apparel_Viking</li>
       <li>Apparel_VikingBerserker</li>
       <li>MedievalBasic</li>
-      <li>BS_MedievalRaider</li>
+      <li>Barbarian</li>
       <li>Apparel_VikingRavager</li>
+      <li>Apparel_VikingGuardian</li>
     </apparelTags>
+    <apparelDisallowTags>
+      <li>MedievalLevy</li>
+      <li>MedievalWorker</li>
+    </apparelDisallowTags>
     <apparelColor>(70, 70, 72)</apparelColor>
     <apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
     <weaponTags Inherit="False">
@@ -126,8 +134,12 @@
       <li>Apparel_Viking</li>
       <li>Apparel_VikingBerserker</li>
       <li>Apparel_VikingRavager</li>
-      <li>BS_MedievalRaider</li>
+      <li>Barbarian</li>
     </apparelTags>
+    <apparelDisallowTags>
+      <li>MedievalLevy</li>
+      <li>MedievalWorker</li>
+    </apparelDisallowTags>
     <weaponTags Inherit="False">
       <li>RangedNeolithicGiant</li>
       <li>RangedNeolithicAdvancedGiant</li>
@@ -307,7 +319,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="BS_Jotun_NiflKnight">
-    <defName>BS_Jotun_Modernised_Limited</defName>
+    <defName>BS_Jotun_Modernized_Limited</defName>
     <maxPerGroup>3</maxPerGroup>
     <combatPower>200</combatPower>
     <chemicalAddictionChance>0.12</chemicalAddictionChance>

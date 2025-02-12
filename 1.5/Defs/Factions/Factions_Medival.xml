@@ -241,15 +241,15 @@
     </pawnGroupMakers>
     <modExtensions>
       <!-- For testing. -->
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"  Class="VFECore.TaggedDefProperties">
+      <li MayRequire="OskarPotocki.VFE.Medieval2"  Class="VFECore.TaggedDefProperties">
         <taggedColors>
-          <HeraldyColorA>(0.9, 0.8, 0.5)</HeraldyColorA>
-          <HeraldyColorB>(1.0, 1.0, 1.0)</HeraldyColorB>
-          <HeraldySymbolColor>(0.28, 0.20, 0.20)</HeraldySymbolColor> 
+          <HeraldryColorA>(0.9, 0.8, 0.5)</HeraldryColorA>
+          <HeraldryColorB>(1.0, 1.0, 1.0)</HeraldryColorB>
+          <HeraldrySymbolColor>(0.28, 0.20, 0.20)</HeraldrySymbolColor> 
         </taggedColors>
         <taggedStrings>
-          <HeraldySymbol>Things/Heraldics/Symbols/HeraldySymbol_Scales</HeraldySymbol>
-          <HeraldyPattern>Things/Heraldics/Masks/Cross</HeraldyPattern>
+          <HeraldrySymbol>Things/Heraldics/Symbols/HeraldrySymbol_Scales</HeraldrySymbol>
+          <HeraldryPattern>Things/Heraldics/Masks/Cross</HeraldryPattern>
         </taggedStrings>
       </li>
       <!-- <li Class="KCSG.CustomGenOption">
@@ -400,15 +400,15 @@
       </li>
     </pawnGroupMakers>
     <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.TaggedDefProperties">
+      <li MayRequire="OskarPotocki.VFE.Medieval2" Class="VFECore.TaggedDefProperties">
         <taggedColors>
-          <HeraldyColorA>(0.45, 0.15, 0.15)</HeraldyColorA>
-          <HeraldyColorB>(0.2, 0.2, 0.2)</HeraldyColorB>
-          <HeraldySymbolColor>(0.45, 0.15, 0.15)</HeraldySymbolColor> 
+          <HeraldryColorA>(0.45, 0.15, 0.15)</HeraldryColorA>
+          <HeraldryColorB>(0.2, 0.2, 0.2)</HeraldryColorB>
+          <HeraldrySymbolColor>(0.45, 0.15, 0.15)</HeraldrySymbolColor> 
         </taggedColors>
         <taggedStrings>
-          <HeraldySymbol>Things/Heraldics/Symbols/HeraldySymbol_Fire</HeraldySymbol>
-          <HeraldyPattern>Things/Heraldics/Masks/Bordure</HeraldyPattern>
+          <HeraldrySymbol>Things/Heraldics/Symbols/HeraldrySymbol_Fire</HeraldrySymbol>
+          <HeraldryPattern>Things/Heraldics/Masks/Bordure</HeraldryPattern>
         </taggedStrings>
       </li>
     </modExtensions>
@@ -612,15 +612,15 @@
       </li>
     </pawnGroupMakers>
     <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.TaggedDefProperties">
+      <li MayRequire="OskarPotocki.VFE.Medieval2" Class="VFECore.TaggedDefProperties">
         <taggedColors>
-          <HeraldyColorA>(0.15, 0.28, 0.43)</HeraldyColorA>
-          <HeraldyColorB>(0.73, 0.80, 0.9)</HeraldyColorB>
-          <HeraldySymbolColor>(0.15, 0.28, 0.43)</HeraldySymbolColor> 
+          <HeraldryColorA>(0.15, 0.28, 0.43)</HeraldryColorA>
+          <HeraldryColorB>(0.73, 0.80, 0.9)</HeraldryColorB>
+          <HeraldrySymbolColor>(0.15, 0.28, 0.43)</HeraldrySymbolColor> 
         </taggedColors>
         <taggedStrings>
-          <HeraldySymbol>Things/Heraldics/Symbols/HeraldySymbol_Valknut</HeraldySymbol>
-          <HeraldyPattern>Things/Heraldics/Masks/Bordure</HeraldyPattern>
+          <HeraldrySymbol>Things/Heraldics/Symbols/HeraldrySymbol_Valknut</HeraldrySymbol>
+          <HeraldryPattern>Things/Heraldics/Masks/Bordure</HeraldryPattern>
         </taggedStrings>
       </li>
     </modExtensions>

@@ -1,14 +1,16 @@
 <Defs>
 
-  <PawnKindDef Name="TrollBase" ParentName="BS_MedievalPrimitiveBase" Abstract="True">
+  <PawnKindDef Name="BS_TrollBaseKind" ParentName="BS_MedievalPrimitiveBase" Abstract="True">
     <requiredWorkTags> <li>Violent</li> </requiredWorkTags>
     <apparelTags Inherit='False'> <li>Neolithic</li> </apparelTags>
-    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
     <useFactionXenotypes>false</useFactionXenotypes>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution>true</apparelIgnorePollution>
+    <ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="TrollBase">
+  <PawnKindDef ParentName="BS_TrollBaseKind">
     <defName>BS_Troll_Simple_Young</defName>
     <label>young troll</label>
     <!-- Remember that all trolls have x2.5 combat value, even if young and not nearly that powerful... -->
@@ -26,12 +28,12 @@
       <li>BS_MedievalBasic</li>
       <!-- <li>Apparel_Viking</li>
       <li>Apparel_VikingBerserker</li>
-      <li>BS_MedievalRaider</li> -->
+      <li>Barbarian</li> -->
     </apparelTags>
     <xenotypeSet Inherit="False"> <xenotypeChances> <BS_Troll>1</BS_Troll> </xenotypeChances> </xenotypeSet>
   </PawnKindDef>
 
-    <PawnKindDef ParentName="TrollBase">
+    <PawnKindDef ParentName="BS_TrollBaseKind">
     <defName>BS_Troll_Archer_Young</defName>
     <label>troll archer</label>
     <combatPower>28</combatPower>
@@ -54,7 +56,12 @@
     <xenotypeSet Inherit="False"> <xenotypeChances> <BS_Troll>1</BS_Troll> </xenotypeChances> </xenotypeSet>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="TrollBase">
+  <PawnKindDef Name="BS_TrollAdultBaseKind" ParentName="BS_TrollBaseKind" Abstract="True">
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelDisallowTags><li>BS_Jackets</li></apparelDisallowTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TrollAdultBaseKind">
     <defName>BS_Troll_Simple_Adult</defName>
     <label>troll</label>
     <combatPower>60</combatPower>
@@ -73,7 +80,7 @@
     <xenotypeSet Inherit="False"> <xenotypeChances> <BS_TrollAdult>1</BS_TrollAdult> </xenotypeChances> </xenotypeSet>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="TrollBase">
+  <PawnKindDef ParentName="BS_TrollAdultBaseKind">
     <defName>BS_Troll_Ranged_Adult</defName>
     <label>troll archer</label>
     <combatPower>60</combatPower>
@@ -93,7 +100,7 @@
     <xenotypeSet Inherit="False"> <xenotypeChances> <BS_TrollAdult>1</BS_TrollAdult> </xenotypeChances> </xenotypeSet>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="TrollBase">
+  <PawnKindDef ParentName="BS_TrollAdultBaseKind">
     <defName>BS_Troll_Ranged_Adult2</defName>
     <label>troll archer</label>
     <combatPower>60</combatPower>
@@ -113,7 +120,7 @@
     <xenotypeSet Inherit="False"> <xenotypeChances> <BS_TrollAdult>1</BS_TrollAdult> </xenotypeChances> </xenotypeSet>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="TrollBase">
+  <PawnKindDef ParentName="BS_TrollAdultBaseKind">
     <defName>BS_Troll_Raider_Adult</defName>
     <label>troll raider</label>
     <combatPower>80</combatPower>
@@ -125,7 +132,7 @@
     <weaponMoney>385~1100</weaponMoney>
     <apparelTags Inherit='False'>
       <li>Neolithic</li>
-      <li>BS_MedievalRaider</li>
+      <li>Barbarian</li>
     </apparelTags>
     <weaponTags Inherit="False">
       <li>MedievalMeleeGiant</li>
@@ -135,7 +142,7 @@
     <xenotypeSet Inherit="False"> <xenotypeChances> <BS_TrollAdult>1</BS_TrollAdult> </xenotypeChances> </xenotypeSet>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="TrollBase">
+  <PawnKindDef ParentName="BS_TrollAdultBaseKind">
     <defName>BS_Troll_Raider_Adult2</defName>
     <label>troll raider</label>
     <combatPower>80</combatPower>
@@ -147,7 +154,7 @@
     <weaponMoney>385~1100</weaponMoney>
     <apparelTags Inherit='False'>
       <li>Neolithic</li>
-      <li>BS_MedievalRaider</li>
+      <li>Barbarian</li>
     </apparelTags>
     <weaponTags Inherit="False">
       <li>MedievalMeleeGiant</li>
@@ -157,7 +164,7 @@
     <xenotypeSet Inherit="False"> <xenotypeChances> <BS_TrollAdult>1</BS_TrollAdult> </xenotypeChances> </xenotypeSet>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="TrollBase" Name="BS_Troll_Simple_Old">
+  <PawnKindDef ParentName="BS_TrollAdultBaseKind" Name="BS_Troll_Simple_Old">
     <defName>BS_Troll_Simple_Old</defName>
     <label>old troll</label>
     <combatPower>110</combatPower>

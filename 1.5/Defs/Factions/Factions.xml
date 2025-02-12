@@ -3,8 +3,8 @@
     <defName>BS_OgreFaction</defName>
     <label>ogre tribe</label>
     <fixedName>Ogre Tribes</fixedName>
-    <leaderTitle>boss</leaderTitle>
-    <description>These ogres do little more than roam around their settlements in search of fights and food.</description>
+    <leaderTitle>chef</leaderTitle>
+    <description>These ogres do little more than roam around their settlements in search of fights and food.\n\nThe ogres care so much about food and culinary skill they use the word chef and chief interchangeably. Other civilizations failing to send their best chef to represent them has long since spoiled attempts at friendly relations, the ogres view all their neighbors as hopelessly uncivilized.</description>
     <techLevel>Neolithic</techLevel>
     <canStageAttacks>true</canStageAttacks> 
     <factionIconPath>Icons/BS_Ogre_Faction_Icon</factionIconPath>
@@ -18,13 +18,27 @@
       <li>(0.65, 0.28, 0)</li>
       <li>(0.61, 0.45, 0.32)</li>
     </colorSpectrum>
-    <permanentEnemy>true</permanentEnemy>
+    <naturalEnemy>true</naturalEnemy>
+    <permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
     <disallowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
     </disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator_Preferred</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">NeuralSupercharge_Preferred</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AgeReversal_Demanded</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>31</configurationListOrderPriority>
+    <visitorTraderKinds Inherit="False">
+      <li>BS_Caravan_Ogre</li>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+      <li>BS_Base_Ogre</li>
+    </baseTraderKinds>
     <xenotypeSet>
       <xenotypeChances>
         <BS_Ogre>0.91</BS_Ogre>
@@ -93,9 +107,7 @@
         <options>
           <BS_Ogre_Warrior>20</BS_Ogre_Warrior>
           <BS_Ogre_Berserker>5</BS_Ogre_Berserker>
-          <Tribal_Child>10</Tribal_Child>
           <BS_Ogre_Cook>1</BS_Ogre_Cook>
-          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
           <BS_Ogre_Chieftain>3</BS_Ogre_Chieftain>
           <BS_Ogre_Hunter>10</BS_Ogre_Hunter>
         </options>
@@ -103,13 +115,11 @@
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <Tribal_Trader>1</Tribal_Trader>
+          <BS_Ogre_Chieftain>1</BS_Ogre_Chieftain>
         </traders>
         <carriers>
-          <Muffalo>6</Muffalo>
-          <Dromedary>5</Dromedary>
-          <Alpaca>2.5</Alpaca>
-          <Elephant>2</Elephant>
+          <Elephant>6</Elephant>
+          <Megasloth>6</Megasloth>
         </carriers>
         <guards>
           <BS_Ogre_Warrior>10</BS_Ogre_Warrior>
@@ -124,7 +134,7 @@
           <BS_Ogre_Warrior>8</BS_Ogre_Warrior>
           <BS_Ogre_Berserker>4</BS_Ogre_Berserker>
           <BS_Ogre_Cook>1</BS_Ogre_Cook>
-          <BS_Ogre_Chieftain>3</BS_Ogre_Chieftain>
+          <BS_Ogre_Chieftain>99</BS_Ogre_Chieftain>
           <BS_Ogre_Hunter>2</BS_Ogre_Hunter>
         </options>
       </li>
@@ -150,6 +160,10 @@
     <replacesFaction>OutlanderRough</replacesFaction>
     <factionIconPath>Icons/BS_Little_Faction_Icon</factionIconPath>
     <techLevel>Industrial</techLevel>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
     <!-- <maxPawnCostPerTotalPointsCurve Inherit="False">
       <points>
         <li>(500, 150)</li> 
@@ -202,7 +216,7 @@
           <Town_Councilman>10</Town_Councilman>
           <BS_Jotun_MuspelKnight_Limited>5</BS_Jotun_MuspelKnight_Limited>
           <BS_Jotun_Lord_Limited>5</BS_Jotun_Lord_Limited>
-          <BS_Jotun_Modernised_Limited>1</BS_Jotun_Modernised_Limited>
+          <BS_Jotun_Modernized_Limited>1</BS_Jotun_Modernized_Limited>
         </options>
       </li>
       <li>
@@ -269,7 +283,7 @@
           <BS_Jotun_Lord_Limited>4</BS_Jotun_Lord_Limited>
           <BS_Jotun_RaiderLord_Limited>4</BS_Jotun_RaiderLord_Limited>
           <BS_Jotun_NiflKnight_Limited>4</BS_Jotun_NiflKnight_Limited>
-          <BS_Jotun_Modernised_Limited>4</BS_Jotun_Modernised_Limited>
+          <BS_Jotun_Modernized_Limited>4</BS_Jotun_Modernized_Limited>
 
           <Mercenary_Elite>10</Mercenary_Elite>
           <Town_Councilman>10</Town_Councilman>
@@ -331,7 +345,7 @@
           <BS_Jotun_MuspelKnight_Limited>1</BS_Jotun_MuspelKnight_Limited>
           <BS_Jotun_RaiderLord_Limited>1</BS_Jotun_RaiderLord_Limited>
           <BS_Jotun_NiflKnight_Limited>1</BS_Jotun_NiflKnight_Limited>
-          <BS_Jotun_Modernised_Limited>1</BS_Jotun_Modernised_Limited>
+          <BS_Jotun_Modernized_Limited>1</BS_Jotun_Modernized_Limited>
         </guards>
       </li>
       <li>
@@ -348,7 +362,7 @@
           <BS_Jotun_Lord_Limited>4</BS_Jotun_Lord_Limited>
           <BS_Jotun_RaiderLord_Limited>4</BS_Jotun_RaiderLord_Limited>
           <BS_Jotun_NiflKnight_Limited>4</BS_Jotun_NiflKnight_Limited>
-          <BS_Jotun_Modernised_Limited>4</BS_Jotun_Modernised_Limited>
+          <BS_Jotun_Modernized_Limited>4</BS_Jotun_Modernized_Limited>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">

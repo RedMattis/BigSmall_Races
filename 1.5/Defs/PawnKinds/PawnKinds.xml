@@ -2,7 +2,7 @@
 
   <PawnKindDef ParentName="BS_Ogre_Warrior">
     <defName>BS_Ogre_Chieftain</defName>
-    <label>Ogre Tribe Chieftain</label>
+    <label>ogre chef</label>
     <combatPower>120</combatPower>
     <initialWillRange>0~10</initialWillRange>
     <initialResistanceRange>10~20</initialResistanceRange>
@@ -34,6 +34,7 @@
     <itemQuality>Normal</itemQuality>
     <factionLeader>true</factionLeader>
     <useFactionXenotypes>false</useFactionXenotypes>
+    <maxPerGroup>1</maxPerGroup>
     <xenotypeSet Inherit="False">
 			<xenotypeChances>
 				<BS_GreatOgre>999</BS_GreatOgre>

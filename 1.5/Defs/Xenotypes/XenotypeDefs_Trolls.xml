@@ -38,7 +38,7 @@
   <XenotypeDef ParentName="BS_TrollBase">
     <defName>BS_Troll</defName>
     <label>young troll</label>
-    <description>There are stories of old trolls that have grown to the size of mountains. While that is an abusrd claim old trolls are known for being incredibly large. Some say they also grow uglier and uglier with time.</description>
+    <description>There are stories of old trolls that have grown to the size of mountains. While that is an absurd claim old trolls are known for being incredibly large. Some say they also grow uglier and uglier with time.\n\nTroll are also well known for their incredible ability to heal at such a rate that it is visible to the naked eye.</description>
     <combatPowerFactor>2.5</combatPowerFactor>
     <factionlessGenerationWeight>0</factionlessGenerationWeight>
     <genes>
@@ -62,7 +62,7 @@
   <XenotypeDef ParentName="BS_TrollBase">
     <defName>BS_TrollAdult</defName>
     <label>troll</label>
-    <description>There are stories of old trolls that have grown to the size of mountains. While that is an abusrd claim old trolls are known for being incredibly large. Some say they also grow uglier and uglier with time.</description>
+    <description>There are stories of old trolls that have grown to the size of mountains. While that is an absurd claim old trolls are known for being incredibly large. Some say they also grow uglier and uglier with time.\n\nTroll are also well known for their incredible ability to heal at such a rate that it is visible to the naked eye.</description>
     <combatPowerFactor>2.5</combatPowerFactor>
     <factionlessGenerationWeight>0</factionlessGenerationWeight>
     <genes>
@@ -76,8 +76,6 @@
       <li>BS_TrollHair</li>
       <li>Hair_LongOnly</li>
       <li>BS_TrollEars</li>
-      
-      <li>BS_TrollHorns</li>
 
       <li>WoundHealing_UltraFast</li>
       <li>Immunity_SuperStrong</li>
@@ -93,7 +91,7 @@
 			<li>BS_Smallhead</li>
 
       <li>MinTemp_LargeDecrease</li>
-      <li>MaxTemp_LargeIncrease</li>
+      <li>MaxTemp_SmallIncrease</li>
 
       <li>BS_GeneStabilizing_Moderate</li>
     </genes>
@@ -106,7 +104,7 @@
   <XenotypeDef ParentName="BS_TrollBase">
     <defName>BS_TrollOld</defName>
     <label>old troll</label>
-    <description>There are stories of old trolls that have grown to the size of mountains. While that is an abusrd claim old trolls are known for being incredibly large. Some say they also grow uglier and uglier with time.</description>
+    <description>There are stories of old trolls that have grown to the size of mountains. While that is an absurd claim old trolls are known for being incredibly large.\n\nThis one in particular does almost seem to be petrifying into wood.</description>
     <combatPowerFactor>2.5</combatPowerFactor>
     <genes>
       <li>BS_Retromorph_TimeUnderElder</li>
