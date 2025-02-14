@@ -65,6 +65,67 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
+      <renderNodeProperties>
+        <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+          <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+          <workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+          <parentTagDef>ApparelBody</parentTagDef>
+          <shader>Cutout</shader>
+          <baseLayer>36</baseLayer>
+          <autoBodyTypePaths>true</autoBodyTypePaths>
+          <!-- <autoBodyTypeMasks>true</autoBodyTypeMasks> -->
+          <conditionalGraphics>
+            <texturePaths><li>BS_Apparel/BarbarianArmor/Barbarian</li></texturePaths>
+            <colorA>
+              <apparelStuff>true</apparelStuff>
+            </colorA>
+            <colorB/>
+          </conditionalGraphics>
+          <drawData>
+            <dataNorth> <layer>36</layer> </dataNorth>
+          </drawData>
+        </li>
+        <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+          <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+          <workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+          <parentTagDef>ApparelBody</parentTagDef>
+          <shader>Cutout</shader>
+          <baseLayer>80</baseLayer>
+          <!-- <autoBodyTypePaths>true</autoBodyTypePaths> -->
+          <overrideMeshSize>(1.65, 1.55)</overrideMeshSize>
+          <!-- <autoBodyTypeMasks>true</autoBodyTypeMasks> -->
+          <conditionalGraphics>
+            <texturePaths><li>BS_Apparel/BarbarianArmor/Upper/Barbarian_Female</li></texturePaths>
+            <colorA>
+              <apparelStuff>true</apparelStuff>
+            </colorA>
+            <colorB/>
+          </conditionalGraphics>
+          <visibleFacing>
+            <li>East</li>
+            <li>West</li>
+          </visibleFacing>
+          <drawData>
+            <bodyTypeScales>
+              <Fat>1.35</Fat>
+              <Female>1</Female>
+              <Hulk>1.4</Hulk>
+              <Male>1.1</Male>
+              <Thin>1.05</Thin>
+            </bodyTypeScales>
+            <defaultData>
+            </defaultData>
+            <dataEast>
+              <offset>(-0.01, 0, -0.02)</offset>
+              <rotationOffset>-15</rotationOffset>
+            </dataEast>
+            <dataWest>
+              <offset>(0.01, 0, -0.02)</offset>
+              <rotationOffset>15</rotationOffset>
+            </dataWest>
+          </drawData>
+        </li>
+      </renderNodeProperties>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
