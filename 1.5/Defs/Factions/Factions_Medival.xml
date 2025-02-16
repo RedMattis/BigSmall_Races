@@ -136,8 +136,7 @@
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <BS_Nisse_Mage MayRequire="Sierra.RF.MedievalOverhaul">1</BS_Nisse_Mage>
-          <BS_Dvergr_Artificer>1</BS_Dvergr_Artificer>
+          <Town_Trader>1</Town_Trader>
         </traders>
         <carriers>
           <Muffalo>6</Muffalo>
@@ -158,8 +157,7 @@
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <BS_Nisse_Mage MayRequire="Sierra.RF.MedievalOverhaul">1</BS_Nisse_Mage>
-          <BS_Dvergr_Artificer>1</BS_Dvergr_Artificer>
+          <Town_Trader>1</Town_Trader>
         </traders>
         <carriers>
           <Muffalo>6</Muffalo>
@@ -178,8 +176,7 @@
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <BS_Nisse_Mage MayRequire="Sierra.RF.MedievalOverhaul">1</BS_Nisse_Mage>
-          <BS_Dvergr_Artificer>1</BS_Dvergr_Artificer>
+          <Town_Trader>1</Town_Trader>
         </traders>
         <carriers>
           <Muffalo>6</Muffalo>
@@ -319,7 +316,7 @@
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <BS_Jotun_Lord>1</BS_Jotun_Lord>
+          <Town_Trader>1</Town_Trader>
         </traders>
         <carriers>
           <Muffalo>8</Muffalo>
@@ -464,7 +461,7 @@
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <BS_Jotun_RaiderLord>1</BS_Jotun_RaiderLord>
+          <Town_Trader>1</Town_Trader>
         </traders>
         <carriers>
           <Muffalo>8</Muffalo>

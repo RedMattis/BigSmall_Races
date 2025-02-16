@@ -115,7 +115,7 @@
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <BS_Ogre_Chieftain>1</BS_Ogre_Chieftain>
+          <Town_Trader>1</Town_Trader>
         </traders>
         <carriers>
           <Elephant>6</Elephant>
