@@ -458,6 +458,37 @@
     </xenotypeSet>
 
     <pawnGroupMakers Inherit="False">
+    <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Town_Trader>1</Town_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>8</Muffalo>
+          <Yak>4</Yak>
+          <Alpaca>2.5</Alpaca>
+        </carriers>
+        <guards>
+          <BS_Jotun_Raider>15</BS_Jotun_Raider>
+          <BS_Jotun_Hunter>10</BS_Jotun_Hunter>
+          <BS_Jotun_Berserker>5</BS_Jotun_Berserker>
+          <BS_Jotun_NiflKnight>10</BS_Jotun_NiflKnight>
+          <BS_Jotun_NiflJavelin>10</BS_Jotun_NiflJavelin>
+          <BS_Jotun_RaiderLord>1</BS_Jotun_RaiderLord>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <BS_Jotun_Raider>15</BS_Jotun_Raider>
+          <BS_Jotun_Hunter>10</BS_Jotun_Hunter>
+          <BS_Jotun_Berserker>5</BS_Jotun_Berserker>
+          <BS_Jotun_NiflKnight>10</BS_Jotun_NiflKnight>
+          <BS_Jotun_NiflJavelin>10</BS_Jotun_NiflJavelin>
+          <BS_Jotun_RaiderLord>1</BS_Jotun_RaiderLord>
+          <BS_VillagerMedieval>25</BS_VillagerMedieval>
+        </options>
+      </li>
       <li>
         <kindDef>Trader</kindDef>
         <traders>
@@ -508,6 +539,15 @@
         </options>
       </li>
       <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <BS_Jotun_NiflKnight>10</BS_Jotun_NiflKnight>
+          <BS_Jotun_NiflJavelin>10</BS_Jotun_NiflJavelin>
+          <BS_Jotun_RaiderLord>20</BS_Jotun_RaiderLord>
+          <BS_VillagerMedieval>15</BS_VillagerMedieval>
+        </options>
+      </li>
+      <li>
         <!-- Normal fight, soldiers -->
         <kindDef>Combat</kindDef>
         <commonality>80</commonality>
@@ -541,7 +581,42 @@
       <li>
         <!-- Normal fights, raiders -->
         <kindDef>Combat</kindDef>
-        <commonality>100</commonality>
+        <commonality>70</commonality>
+        <options>
+          <BS_Jotun_Raider>15</BS_Jotun_Raider>
+          <BS_Jotun_Berserker>5</BS_Jotun_Berserker>
+          <BS_Jotun_Hunter>10</BS_Jotun_Hunter>
+          <BS_Jotun_RaiderLord>5</BS_Jotun_RaiderLord>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, hunting party -->
+        <kindDef>Combat</kindDef>
+        <commonality>70</commonality>
+        <options>
+          <BS_Jotun_Raider>15</BS_Jotun_Raider>
+          <BS_Jotun_Berserker>5</BS_Jotun_Berserker>
+          <BS_Jotun_Hunter>50</BS_Jotun_Hunter>
+          <BS_Jotun_RaiderLord>5</BS_Jotun_RaiderLord>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, mix only -->
+        <kindDef>Combat</kindDef>
+        <commonality>20</commonality>
+        <options>
+          <BS_Jotun_Raider>15</BS_Jotun_Raider>
+          <BS_Jotun_Hunter>10</BS_Jotun_Hunter>
+          <BS_Jotun_Berserker>5</BS_Jotun_Berserker>
+          <BS_Jotun_NiflKnight>10</BS_Jotun_NiflKnight>
+          <BS_Jotun_NiflJavelin>10</BS_Jotun_NiflJavelin>
+          <BS_Jotun_RaiderLord>1</BS_Jotun_RaiderLord>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, raiders -->
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
         <options>
           <BS_Jotun_Raider>15</BS_Jotun_Raider>
           <BS_Jotun_Berserker>5</BS_Jotun_Berserker>
@@ -554,7 +629,7 @@
       <li>
         <!-- Normal fights, hunting party -->
         <kindDef>Combat</kindDef>
-        <commonality>100</commonality>
+        <commonality>25</commonality>
         <options>
           <BS_Jotun_Raider>15</BS_Jotun_Raider>
           <BS_Jotun_Berserker>5</BS_Jotun_Berserker>
@@ -568,7 +643,7 @@
       <li>
         <!-- Normal fights, mix only -->
         <kindDef>Combat</kindDef>
-        <commonality>40</commonality>
+        <commonality>20</commonality>
         <options>
           <BS_Jotun_Raider>15</BS_Jotun_Raider>
           <BS_Jotun_Hunter>10</BS_Jotun_Hunter>
