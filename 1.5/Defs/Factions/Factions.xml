@@ -164,13 +164,6 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
     </disallowedPrecepts>
-    <!-- <maxPawnCostPerTotalPointsCurve Inherit="False">
-      <points>
-        <li>(500, 150)</li> 
-        <li>(2000, 300)</li>
-        <li>(2001, 10000)</li>
-      </points>
-    </maxPawnCostPerTotalPointsCurve> -->
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <BS_Dwarf>0.65</BS_Dwarf>
@@ -178,8 +171,9 @@
         <BS_Redcap>0.03</BS_Redcap>
         <BS_Svartalf>0.02</BS_Svartalf>
         <BS_BananaSplitSlime MayRequire="RedMattis.BSSlimes">0.011</BS_BananaSplitSlime>
-        <BS_Jotun>0.00</BS_Jotun>
 
+        <!-- "BS_Jotun_Modernized_Limited" covers this -->
+        <BS_Jotun>0.00</BS_Jotun>
         <BS_FireJotun>0.0</BS_FireJotun>
         <BS_Surtr>0.0</BS_Surtr>
         <BS_BrokenTitan>0.0</BS_BrokenTitan>
@@ -241,12 +235,10 @@
         </options>
       </li>
       <li>
-        <!-- Big & Small Linup -->
+        <!-- Big & Small Muspelheim -->
         <kindDef>Combat</kindDef>
         <commonality>25</commonality>
         <options>
-          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
-          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
           <PirateBoss>1</PirateBoss>
           <Town_Guard>10</Town_Guard>
           <Grenadier_Destructive>1.5</Grenadier_Destructive>
@@ -258,13 +250,14 @@
           
           <BS_Jotun_MuspelKnight_Limited>4</BS_Jotun_MuspelKnight_Limited>
           <BS_Jotun_Lord_Limited>4</BS_Jotun_Lord_Limited>
+          <DMS_Dragoon_Outlander MayRequire="Aoba.DeadManSwitch.MobileDragoon">5</DMS_Dragoon_Outlander>
           <Mercenary_Elite>10</Mercenary_Elite>
           <Town_Councilman>10</Town_Councilman>
         </options>
       </li>
       
       <li>
-        <!-- Big & Small Linup -->
+        <!-- Big & Small Linup 2-->
         <kindDef>Combat</kindDef>
         <commonality>25</commonality>
         <options>

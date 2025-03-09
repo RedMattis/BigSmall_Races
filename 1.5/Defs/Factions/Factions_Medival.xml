@@ -283,7 +283,15 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
     </requiredMemes>
-
+    
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+    </disallowedPrecepts>
 
     <xenotypeSet>
       <xenotypeChances Inherit="False">
@@ -430,6 +438,15 @@
       <li>BS_Jotun_RaiderLord</li>
     </fixedLeaderKinds>
     <leaderTitle>Lord</leaderTitle>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+    </disallowedPrecepts>
+
     <!-- Can always use relatively strong pawns, because giants doesn't really have weak ones -->
     <maxPawnCostPerTotalPointsCurve Inherit="False">
       <points>
