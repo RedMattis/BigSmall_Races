@@ -15,7 +15,7 @@
       <li MayRequire="OskarPotocki.VFE.Medieval2">VFEM2_Apparel_Tabard</li>
       <li>Apparel_Pants</li>
     </apparelRequired>
-    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
     <weaponTags Inherit="False">
       <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneBattleAxe</li>
       <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcanHalberd</li>
@@ -47,6 +47,7 @@
     </weaponTags>
     <apparelDisallowTags>
       <li>MedievalLevy</li>
+      <li>BS_MedievalBasicWeather</li>
     </apparelDisallowTags>
     <apparelColor>(130,0,10)</apparelColor>
     <apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
@@ -82,8 +83,41 @@
 
 
   <!-- Niflheim-->
+  <PawnKindDef Name="Niflheim_PrimitiveBase"  ParentName="BS_MedievalPrimitiveBase" Abstract="True">
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution>true</apparelIgnorePollution>
+    <apparelDisallowTags>
+      <li>BS_MedievalBasicWeather</li>
+    </apparelDisallowTags>
+    <specificApparelRequirements Inherit="False">
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li> <only>(120, 140, 160)</only> </li>
+            <li> <only>(80, 100, 120)</only> </li>
+            <li> <only>(70, 110, 130)</only> </li>
+            <li> <only>(60, 80, 95)</only> </li>
+            <li> <only>(90, 140, 180)</only> </li>
+            <li> <only>(80, 130, 190)</only> </li>
+            <li> <only>(70, 120, 180)</only> </li>
+            <li> <only>(180, 180, 235)</only> </li>
+            <li> <only>(160, 200, 235)</only> </li>
+            <li> <only>(230, 230, 240)</only> </li>
+            <li> <only>(110,140,250)</only> </li>
+            <li> <only>(120,150,255)</only> </li>
+            <li> <only>(130,160,255)</only> </li>
+            <li> <only>(170,200,255)</only> </li>
+            <li> <only>(170,240,255)</only> </li>
+            <li> <only>(200,240,255)</only> </li>
+            <li> <only>(220,230,240)</only> </li>
 
-  <PawnKindDef Name="BS_Jotun_Raider" ParentName="BS_MedievalPrimitiveBase">
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+  <PawnKindDef Name="BS_Jotun_Raider" ParentName="Niflheim_PrimitiveBase">
     <defName>BS_Jotun_Raider</defName>
     <label>giant raider</label>
     <combatPower>130</combatPower>
@@ -105,7 +139,8 @@
       <li>MedievalLevy</li>
       <li>MedievalWorker</li>
     </apparelDisallowTags>
-    <apparelColor>(70, 70, 72)</apparelColor>
+    
+    <apparelColor IsNull="True"/>
     <apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
     <weaponTags Inherit="False">
       <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneBattleAxe</li>
@@ -120,7 +155,7 @@
     </weaponTags>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="BS_MedievalPrimitiveBase">
+  <PawnKindDef ParentName="Niflheim_PrimitiveBase">
     <defName>BS_Jotun_Hunter</defName>
     <label>giant hunter</label>
     <combatPower>130</combatPower>
@@ -154,7 +189,31 @@
     <combatPower>130</combatPower>
     <apparelMoney>800~1800</apparelMoney>
     <weaponMoney>385~1100</weaponMoney>
-    <apparelColor>(100,130,245)</apparelColor>
+    <apparelColor IsNull="True"></apparelColor>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <specificApparelRequirements Inherit="False">
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li> <only>(100,130,245)</only> </li>
+            <li> <only>(100,120,200)</only> </li>
+            <li> <only>(110,130,210)</only> </li>
+            <li> <only>(90,110,190)</only> </li>
+            <li> <only>(120,140,220)</only> </li>
+            <li> <only>(80,100,180)</only> </li>
+            <li> <only>(130,150,230)</only> </li>
+            <li> <only>(70,90,200)</only> </li>
+            <li> <only>(230, 230, 240)</only> </li>
+            <li> <only>(110,140,250)</only> </li>
+            <li> <only>(120,150,255)</only> </li>
+            <li> <only>(130,160,255)</only> </li>
+            <li> <only>(170,240,255)</only> </li>
+            <li> <only>(200,240,255)</only> </li>
+            <li> <only>(220,230,240)</only> </li>
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
     <disallowedTraits>
 			<li>Wimp</li>
       <li>Delicate</li>
@@ -260,7 +319,6 @@
     <weaponMoney>1500~10000</weaponMoney>
     <initialWillRange>3~5</initialWillRange>
     <initialResistanceRange>20~30</initialResistanceRange>
-    <apparelColor>(74, 74, 80)</apparelColor>
     <skills>
 			<li>
 				<skill>Melee</skill>

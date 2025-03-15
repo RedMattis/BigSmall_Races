@@ -1,5 +1,12 @@
 <Defs>
-  <FactionDef ParentName="BS_MedievalFactionBase">
+
+  <FactionDef ParentName="BS_MedievalFactionBase" Name="BS_NorseFactionBase" Abstract="True">
+    <structureMemeWeights>
+      <VFEM2_Structure_Norse MayRequire="OskarPotocki.VFE.Medieval2">999</VFEM2_Structure_Norse>
+    </structureMemeWeights>
+  </FactionDef>
+
+  <FactionDef ParentName="BS_NorseFactionBase">
     <defName>BS_Dvergr_Medieval_Union</defName>
     <label>Dvergr Trade Union</label>
     <description>Most Dvergr don't even like the companies of their own families, but this trade union has somehow managed to prosper remarkably. This particular Union have been known to sell their crafts to hire mercenaries from various independent groups.</description>
@@ -262,7 +269,7 @@
     </modExtensions>
   </FactionDef>
 
-  <FactionDef ParentName="BS_MedievalFactionBase">
+  <FactionDef ParentName="BS_NorseFactionBase">
     <defName>BS_Muspelheim</defName>
     <label>Kingdom of Muspelheim</label>
     <fixedName>Muspelheim</fixedName>
@@ -420,7 +427,7 @@
     
   </FactionDef>
 
-  <FactionDef ParentName="BS_MedievalFactionBase">
+  <FactionDef ParentName="BS_NorseFactionBase">
     <defName>BS_Niflheim</defName>
     <label>Tribes of Niflheim</label>
     <fixedName>Niflheim</fixedName>

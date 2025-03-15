@@ -76,21 +76,8 @@
           <autoBodyTypePaths>true</autoBodyTypePaths>
           <conditionalGraphics>
             <texturePaths><li>BS_Apparel/BarbarianArmor/Barbarian</li></texturePaths>
-            <colorA>
-              <apparelColorA>true</apparelColorA>
-            </colorA>
-            <colorB>
-              <colourRange>
-                <li>189,165,149</li>
-                <li>210,180,140</li>
-                <li>160,82,45</li>
-                <li>139,69,19</li>
-                <li>120,100,90</li>
-                <li>100,80,70</li>
-                <li>90,70,60</li>
-                <li>80,60,50</li>
-              </colourRange>
-            </colorB>
+            <colorA> <replacementDef>BS_ApparelClr_Default</replacementDef> </colorA>
+            <colorB> <replacementDef>BS_ApparelClr_ColorableRNGFur</replacementDef> </colorB>
           </conditionalGraphics>
           <drawData>
             <dataNorth> <layer>36</layer> </dataNorth>
@@ -103,24 +90,11 @@
           <shader>CutoutComplex</shader>
           <baseLayer>80</baseLayer>
           <!-- <autoBodyTypePaths>true</autoBodyTypePaths> -->
-          <overrideMeshSize>(1.65, 1.55)</overrideMeshSize>
+          <overrideMeshSize>(1.25, 1.20)</overrideMeshSize>
           <conditionalGraphics>
             <texturePaths><li>BS_Apparel/BarbarianArmor/Upper/Barbarian_Female</li></texturePaths>
-            <colorA>
-              <apparelColorA>true</apparelColorA>
-            </colorA>
-            <colorB>
-              <colourRange>
-                <li>189,165,149</li>
-                <li>210,180,140</li>
-                <li>160,82,45</li>
-                <li>139,69,19</li>
-                <li>120,100,90</li>
-                <li>100,80,70</li>
-                <li>90,70,60</li>
-                <li>80,60,50</li>
-              </colourRange>
-            </colorB>
+            <colorA> <replacementDef>BS_ApparelClr_Default</replacementDef> </colorA>
+            <colorB> <replacementDef>BS_ApparelClr_ColorableRNGFur</replacementDef> </colorB>
           </conditionalGraphics>
           <visibleFacing>
             <li>East</li>
@@ -132,16 +106,16 @@
               <Female>1</Female>
               <Hulk>1.4</Hulk>
               <Male>1.1</Male>
-              <Thin>1.05</Thin>
+              <Thin>0.95</Thin>
             </bodyTypeScales>
             <defaultData>
             </defaultData>
             <dataEast>
-              <offset>(-0.01, 0, -0.02)</offset>
+              <offset>(-0.07, 0, -0.02)</offset>
               <rotationOffset>-15</rotationOffset>
             </dataEast>
             <dataWest>
-              <offset>(0.01, 0, -0.02)</offset>
+              <offset>(0.07, 0, -0.02)</offset>
               <rotationOffset>15</rotationOffset>
             </dataWest>
           </drawData>
