@@ -454,7 +454,7 @@
       <li>BS_Incorporate</li>
       <li>BS_CannotWearClothing</li>
       <li>VU_NosferatuSkin</li>
-      <li>BS_FacialAnimDisabled</li>
+      <li MayRequire="nals.facialanimation">BS_FacialAnimDisabled</li>
       <!-- <li>BS_BrokenTitanBody</li> -->
       <!-- <li>BS_BrokenTitanHead</li> -->
     </genes>
