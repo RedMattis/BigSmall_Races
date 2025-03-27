@@ -118,8 +118,10 @@
           <Town_Trader>1</Town_Trader>
         </traders>
         <carriers>
-          <Elephant>6</Elephant>
-          <Megasloth>6</Megasloth>
+          <Muffalo>1</Muffalo>
+          <Dromedary>1</Dromedary>
+          <Alpaca>1</Alpaca>
+          <Elephant>10</Elephant>
         </carriers>
         <guards>
           <BS_Ogre_Warrior>10</BS_Ogre_Warrior>
