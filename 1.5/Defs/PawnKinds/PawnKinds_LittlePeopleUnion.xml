@@ -1,87 +1,100 @@
 <Defs>
-
-  <PawnKindDef ParentName="BS_Ogre_Warrior">
-    <defName>BS_Ogre_Chieftain</defName>
-    <label>ogre chef</label>
-    <combatPower>120</combatPower>
-    <initialWillRange>0~10</initialWillRange>
-    <initialResistanceRange>10~20</initialResistanceRange>
-    <!-- <maxPerGroup>1</maxPerGroup> -->
-    <fixedGender>Female</fixedGender>
-    <apparelRequired>
-      <li>Apparel_TribalHeaddress</li>
-      <li>Apparel_PlateArmor</li>
-    </apparelRequired>
-    <weaponMoney>900~5000</weaponMoney>
-    <weaponTags Inherit="False">
-      <li>MedievalMeleeGiant</li>
-      <li>HerculeanWeapon</li>
-      <li>WarcasketMelee</li>
-    </weaponTags>
-    <skills>
-      <li>
-        <skill>Melee</skill>
-        <range>12~20</range>
-      </li>
-      <li>
-        <skill>Cooking</skill>
-        <range>6~16</range>
-      </li>
-    </skills>
-    <forcedTraits>
-      <SpeedOffset>2</SpeedOffset>
-    </forcedTraits>
-    <itemQuality>Normal</itemQuality>
-    <factionLeader>true</factionLeader>
-    <useFactionXenotypes>false</useFactionXenotypes>
-    <maxPerGroup>1</maxPerGroup>
-    <xenotypeSet Inherit="False">
-			<xenotypeChances>
-				<BS_GreatOgre>999</BS_GreatOgre>
-			</xenotypeChances>
-		</xenotypeSet>
-  </PawnKindDef>
-  
   <PawnKindDef ParentName="MercenaryGunnerBase">
     <defName>BS_NisseGunner</defName>
+    <label>little gunner</label>
     <initialResistanceRange>6~10</initialResistanceRange>
+    <apparelRequired Inherit="False"><li>BS_Nisse_Cap</li></apparelRequired>
     <specificApparelRequirements>
       <li>
         <bodyPartGroup>UpperHead</bodyPartGroup>
-        <requiredTag>BS_Nisse</requiredTag>
+        <apparelDef>BS_Nisse_Cap</apparelDef>
       </li>
     </specificApparelRequirements>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<BS_Gnome>999</BS_Gnome>
+			</xenotypeChances>
+		</xenotypeSet>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenarySlasherBase">
     <defName>BS_RedcapSlasher</defName>
+    <label>ankle slasher</label>
     <initialResistanceRange>6~10</initialResistanceRange>
+    <apparelRequired Inherit="False"><li>BS_Nisse_Cap</li></apparelRequired>
     <specificApparelRequirements>
       <li>
         <bodyPartGroup>UpperHead</bodyPartGroup>
-        <requiredTag>BS_Nisse</requiredTag>
-        <color>(200, 0, 0)</color>
+        <apparelDef>BS_Nisse_Cap</apparelDef>
+        <color>(140, 40, 10)</color>
         <stuff>DevilstrandCloth</stuff>
       </li>
     </specificApparelRequirements>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+			<xenotypeChances>
+        <BS_Redcap>999</BS_Redcap>
+			</xenotypeChances>
+		</xenotypeSet>
   </PawnKindDef>
   <PawnKindDef ParentName="MercenarySlasherBase">
     <defName>BS_RedcapSlasherMk2</defName>
-    <initialResistanceRange>6~10</initialResistanceRange>
+    <label>infamous slasher</label>
+    <initialResistanceRange>6~21</initialResistanceRange>
+    <apparelRequired Inherit="False"><li>BS_Nisse_Cap</li></apparelRequired>
     <specificApparelRequirements>
       <li>
         <bodyPartGroup>UpperHead</bodyPartGroup>
-        <requiredTag>BS_Nisse</requiredTag>
-        <color>(200, 0, 0)</color>
+        <apparelDef>BS_Nisse_Cap</apparelDef>
+        <color>(230, 0, 10)</color>
         <stuff>DevilstrandCloth</stuff>
       </li>
     </specificApparelRequirements>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+			<xenotypeChances>
+        <BS_Redcap>999</BS_Redcap>
+			</xenotypeChances>
+		</xenotypeSet>
     <forcedTraits>
       <Tough/>
     </forcedTraits>
   </PawnKindDef>
 
-  
+  <PawnKindDef MayRequire="RedMattis.BSSlimes" ParentName="MercenaryGunnerBase" Name="BS_BananaSplitPrankster">
+    <defName>BS_BananaSplitPrankster</defName>
+    <label></label>
+    <initialResistanceRange>6~10</initialResistanceRange>
+    <weaponMoney>10000~10000</weaponMoney>
+    <weaponTags Inherit="False">
+			<li>MadScience</li>
+		</weaponTags>
+    <apparelColor>(1, 0.8, 0.8)</apparelColor>
+    <apparelRequired Inherit="False"><li>Apparel_PlateArmor</li></apparelRequired>
+    <specificApparelRequirements>
+      <li>
+        <apparelDef>Apparel_PlateArmor</apparelDef>
+        <color>(1, 0.8, 0.5)</color>
+        <stuff>Plasteel</stuff>
+      </li>
+    </specificApparelRequirements>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<BS_BananaSplitSlime>999</BS_BananaSplitSlime>
+			</xenotypeChances>
+		</xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_BananaSplitPrankster">
+    <defName>BS_BananaSplitPranksterOne</defName>
+    <maxPerGroup>1</maxPerGroup>
+  </PawnKindDef>
+  <PawnKindDef ParentName="BS_BananaSplitPrankster">
+    <defName>BS_BananaSplitPranksterTwo</defName>
+    <maxPerGroup>2</maxPerGroup>
+  </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryEliteTierBase">
     <label>Dvergr Mecha</label>
@@ -157,5 +170,7 @@
 			</li>
 		</modExtensions>
   </PawnKindDef>
+
+
   
 </Defs>

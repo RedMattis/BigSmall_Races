@@ -40,7 +40,6 @@
       <li>AptitudeTerrible_Intellectual</li>
       <li>AptitudeStrong_Cooking</li>
 
-      <!-- <li>Ears_Pig</li> -->
       <li>BS_FomorialHead_Savage</li>
       <li>BS_OgreHead</li>
       <li>BS_OgreBody</li>
@@ -120,8 +119,8 @@
     <combatPowerFactor>2.5</combatPowerFactor>
     <inheritable>true</inheritable>
     <doubleXenotypeChances>
-      <VU_Returned MayRequire="RedMattis.Undead">0.05</VU_Returned>
-      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.05</VU_Returned_Intact>
+      <VU_Returned MayRequire="RedMattis.Undead">0.02</VU_Returned>
+      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.08</VU_Returned_Intact>
     </doubleXenotypeChances>
     <genes>
       <li>JotunFrame</li>
@@ -300,8 +299,8 @@
     <inheritable>true</inheritable>
     <factionlessGenerationWeight>0.50</factionlessGenerationWeight>
     <doubleXenotypeChances>
-      <VU_Returned MayRequire="RedMattis.Undead">0.05</VU_Returned>
-      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.15</VU_Returned_Intact>
+      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.14</VU_Returned_Intact>
+      <VU_ReturnedSkeletal MayRequire="RedMattis.Undead">0.06</VU_ReturnedSkeletal>
     </doubleXenotypeChances>
     <genes>
       <li>BS_JotunArchiteMetabolism</li>
@@ -534,8 +533,8 @@
     <inheritable>true</inheritable>
     <factionlessGenerationWeight>1.5</factionlessGenerationWeight>
     <doubleXenotypeChances>
-      <VU_Returned MayRequire="RedMattis.Undead">0.10</VU_Returned>
-      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.10</VU_Returned_Intact>
+      <VU_Returned MayRequire="RedMattis.Undead">0.02</VU_Returned>
+      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.04</VU_Returned_Intact>
     </doubleXenotypeChances>
     <genes>
       <li>Body_Fat</li>
@@ -571,8 +570,9 @@
     <inheritable>true</inheritable>
     <factionlessGenerationWeight>1</factionlessGenerationWeight>
     <doubleXenotypeChances>
-      <VU_Returned MayRequire="RedMattis.Undead">0.10</VU_Returned>
-      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.40</VU_Returned_Intact>
+      <VU_Returned MayRequire="RedMattis.Undead">0.025</VU_Returned>
+      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.20</VU_Returned_Intact>
+      <VU_ReturnedSkeletal MayRequire="RedMattis.Undead">0.05</VU_ReturnedSkeletal>
     </doubleXenotypeChances>
     <genes>
 			<li>Ageless</li>
@@ -626,7 +626,9 @@
     <inheritable>true</inheritable>
     <factionlessGenerationWeight>1.0</factionlessGenerationWeight>
     <doubleXenotypeChances>
-      <VU_Returned MayRequire="RedMattis.Undead">0.10</VU_Returned>
+      <VU_Returned MayRequire="RedMattis.Undead">0.01</VU_Returned>
+      <VU_Returned_Intact MayRequire="RedMattis.Undead">0.02</VU_Returned_Intact>
+      <VU_ReturnedSkeletal MayRequire="RedMattis.Undead">0.02</VU_ReturnedSkeletal>
     </doubleXenotypeChances>
     <genes>
       <li>Large</li>
@@ -654,7 +656,7 @@
 			<li>AptitudePoor_Crafting</li>
 			<li>AptitudeRemarkable_Artistic</li>
 			<li>AptitudeTerrible_Social</li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">BS_ToughSkin</li>
+      <li>BS_ToughSkin</li>
       <li>BS_ShortPregnancy</li>
       <li>BS_FastAging</li>
     </genes>

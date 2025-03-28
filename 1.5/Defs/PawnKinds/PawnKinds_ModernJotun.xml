@@ -1,6 +1,7 @@
 <Defs>
-  <PawnKindDef ParentName="BS_Jotun_NiflKnight">
-    <defName>BS_Jotun_Modernized_Limited</defName>
+  <PawnKindDef ParentName="BS_Jotun_Knight" Name="BS_Jotun_Modernized">
+    <defName>BS_Jotun_Modernized</defName>
+    <label>giant soldier</label>
     <maxPerGroup>3</maxPerGroup>
     <combatPower>200</combatPower>
     <chemicalAddictionChance>0.12</chemicalAddictionChance>
@@ -25,6 +26,18 @@
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
     <useFactionXenotypes>false</useFactionXenotypes>
+    <specificApparelRequirements Inherit="False">
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li> <only>(120, 30, 30)</only> </li>
+            <li> <only>(80, 40, 40)</only> </li>
+            <li> <only>(40, 40, 40)</only> </li>
+            <li> <only>(130,0,10)</only> </li>
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <BS_Jotun>30</BS_Jotun>
@@ -33,5 +46,54 @@
         <BS_BrokenTitan>5</BS_BrokenTitan>
       </xenotypeChances>
     </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Jotun_Modernized">
+    <defName>BS_Jotun_Modernized_Limited</defName>
+    <maxPerGroup>3</maxPerGroup>
+  </PawnKindDef>
+
+    <PawnKindDef MayRequire="RedMattis.BigSmall.SimpleAndroids" ParentName="BS_GiantRobotRanged">
+    <defName>BS_MechaJotunRanged</defName>
+    <label>mecha-jotun</label>
+    <maxPerGroup>2</maxPerGroup>
+    <techHediffsRequired>
+      <li MayRequire="Ludeon.Rimworld.Royalty">NuclearStomach</li>
+      <li MayRequire="Ludeon.Rimworld.Royalty">StoneskinGland</li>
+    </techHediffsRequired>
+    <modExtensions>
+			<li Class="BigAndSmall.PilotExtension">
+        <pilotableGene>BS_PilotAssistible</pilotableGene>
+        <xenotypeChances>
+          <BS_Gnome>0.5</BS_Gnome>
+          <BS_Redcap>0.5</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>Mercenary_Elite</li>
+        </pilotPawnkind>
+			</li>
+		</modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef MayRequire="RedMattis.BigSmall.SimpleAndroids" ParentName="BS_GiantRobotMelee">
+    <defName>BS_MechaJotunMelee</defName>
+    <label>mecha-jotun</label>
+    <maxPerGroup>1</maxPerGroup>
+    <techHediffsRequired>
+      <li MayRequire="Ludeon.Rimworld.Royalty">NuclearStomach</li>
+      <li MayRequire="Ludeon.Rimworld.Royalty">StoneskinGland</li>
+    </techHediffsRequired>
+    <modExtensions>
+			<li Class="BigAndSmall.PilotExtension">
+        <pilotableGene>BS_PilotAssistible</pilotableGene>
+        <xenotypeChances>
+          <BS_Gnome>0.8</BS_Gnome>
+          <BS_Redcap>0.2</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>Mercenary_Elite</li>
+        </pilotPawnkind>
+			</li>
+		</modExtensions>
   </PawnKindDef>
 </Defs>

@@ -29,6 +29,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <wornGraphicPath>Apparel/nisse_cap</wornGraphicPath>
       <layers>
         <li>Overhead</li>

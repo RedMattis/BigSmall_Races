@@ -64,8 +64,8 @@
     <weaponTags>
       <li>UltratechMeleeGiant_Fire</li>
     </weaponTags>
-    <apparelMoney>1600~4000</apparelMoney>
-    <weaponMoney>1500~10000</weaponMoney>
+    <apparelMoney>2600~7000</apparelMoney>
+    <weaponMoney>1500~19000</weaponMoney>
     <initialWillRange>3~5</initialWillRange>
     <initialResistanceRange>20~30</initialResistanceRange>
     <skills>
@@ -80,7 +80,6 @@
 		</disallowedTraits>
     <apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
   </PawnKindDef>
-
 
   <!-- Niflheim-->
   <PawnKindDef Name="Niflheim_PrimitiveBase"  ParentName="BS_MedievalPrimitiveBase" Abstract="True">
@@ -191,7 +190,7 @@
     <defName>BS_Jotun_NiflKnight</defName>
     <label>frost knight</label>
     <combatPower>130</combatPower>
-    <apparelMoney>800~1800</apparelMoney>
+    <apparelMoney>800~3800</apparelMoney>
     <weaponMoney>385~1100</weaponMoney>
     <apparelColor IsNull="True"></apparelColor>
     <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
@@ -342,7 +341,7 @@
     <maxPerGroup>3</maxPerGroup>
     <useFactionXenotypes>false</useFactionXenotypes>
     <xenotypeSet Inherit="False">
-      <xenotypeChances>
+      <xenotypeChances Inherit="False">
         <BS_Jotun>10</BS_Jotun>
         <BS_FrostJotun>10</BS_FrostJotun>
         <BS_Ymir>5</BS_Ymir>
@@ -357,7 +356,7 @@
     <maxPerGroup>2</maxPerGroup>
     <useFactionXenotypes>false</useFactionXenotypes>
     <xenotypeSet Inherit="False">
-      <xenotypeChances>
+      <xenotypeChances Inherit="False">
         <BS_FrostJotun>99</BS_FrostJotun>
         <BS_Ymir>5</BS_Ymir>
         <BS_BananaSplitSlimeGiant MayRequire="RedMattis.BSSlimes">10</BS_BananaSplitSlimeGiant>
@@ -366,12 +365,48 @@
     </xenotypeSet>
   </PawnKindDef>
 
+  <PawnKindDef MayRequire="RedMattis.BSSlimes" ParentName="BS_Jotun_NiflKnight" Name="BS_Jotun_BananaSplit">
+    <defName>BS_Jotun_BananaSplit</defName>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_BananaSplitSlimeGiant MayRequire="RedMattis.BSSlimes">999</BS_BananaSplitSlimeGiant>
+      </xenotypeChances>
+    </xenotypeSet>
+    <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+    <apparelRequired Inherit="False">
+      <li>BS_BarbarianArmor</li>
+    </apparelRequired>
+    <specificApparelRequirements Inherit="False">
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li> <only>(1.0, 0.8, 0.8)</only> </li>
+            <li> <only>(1.0, 0.9, 0.7)</only> </li>
+            <li> <only>(0.9, 0.9, 0.7)</only> </li>
+            <li> <only>(1.0, 0.85, 0.85)</only> </li>
+            <li> <only>(1.0, 0.95, 0.75)</only> </li>
+            <li> <only>(1.0, 0.9, 0.9)</only> </li>
+            <li> <only>(1.0, 1.0, 0.8)</only> </li>
+            <li> <only>(1.0, 1.0, 1.0)</only> </li>
+            <li> <only>(0.8, 1.0, 1.0)</only> </li>
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
+  </PawnKindDef>
+
+  <PawnKindDef MayRequire="RedMattis.BSSlimes" ParentName="BS_Jotun_BananaSplit">
+    <defName>BS_Jotun_BananaSplit_Limited</defName>
+    <maxPerGroup>2</maxPerGroup>
+  </PawnKindDef>
+
   <PawnKindDef ParentName="BS_Jotun_RaiderLord">
     <defName>BS_Jotun_RaiderLord_Limited</defName>
     <maxPerGroup>2</maxPerGroup>
     <useFactionXenotypes>false</useFactionXenotypes>
     <xenotypeSet Inherit="False">
-      <xenotypeChances>
+      <xenotypeChances Inherit="False">
         <BS_FrostJotun>99</BS_FrostJotun>
         <BS_Ymir>5</BS_Ymir>
         <BS_BananaSplitSlimeGiant MayRequire="RedMattis.BSSlimes">10</BS_BananaSplitSlimeGiant>
@@ -385,7 +420,7 @@
     <maxPerGroup>2</maxPerGroup>
     <useFactionXenotypes>false</useFactionXenotypes>
     <xenotypeSet Inherit="False">
-      <xenotypeChances>
+      <xenotypeChances Inherit="False">
         <BS_FireJotun>99</BS_FireJotun>
         <BS_Surtr>6</BS_Surtr>
         <BS_LavaSlimeGiant MayRequire="RedMattis.BSSlimes">5</BS_LavaSlimeGiant>
@@ -398,7 +433,7 @@
     <maxPerGroup>2</maxPerGroup>
     <useFactionXenotypes>false</useFactionXenotypes>
     <xenotypeSet Inherit="False">
-      <xenotypeChances>
+      <xenotypeChances Inherit="False">
         <BS_FireJotun>99</BS_FireJotun>
         <BS_Surtr>5</BS_Surtr>
         <BS_LavaSlimeGiant MayRequire="RedMattis.BSSlimes">10</BS_LavaSlimeGiant>

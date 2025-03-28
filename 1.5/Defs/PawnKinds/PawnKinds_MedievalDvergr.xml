@@ -124,7 +124,8 @@
       <li>DankPyon_FootmanHelmet</li>
     </apparelTags>
     <weaponMoney>300~10000</weaponMoney>
-    <weaponTags>
+    <weaponTags Inherit="False">
+      <li>LongSword</li>
       <li>DankPyon_TwoHandedHammer</li>
       <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneWeapon</li>
     </weaponTags>
@@ -135,6 +136,12 @@
         <BS_Svartalf>5</BS_Svartalf>
       </xenotypeChances>
     </xenotypeSet>
+    <skills>
+			<li>
+				<skill>Crafting</skill>
+				<range>6~14</range>
+			</li>
+		</skills>
   </PawnKindDef>
   
   <PawnKindDef ParentName="BS_Dvergr_Knight">
