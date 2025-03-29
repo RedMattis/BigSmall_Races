@@ -17,6 +17,7 @@
       <li>HerculeanWeapon</li>
       <li>WarcasketMelee</li>
     </weaponTags>
+    <nakedChance>0</nakedChance>
     <skills>
       <li>
         <skill>Melee</skill>

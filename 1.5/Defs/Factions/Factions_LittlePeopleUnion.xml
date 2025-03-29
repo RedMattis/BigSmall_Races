@@ -112,6 +112,25 @@
         </options>
       </li>
       <li>
+        <!-- Wtf Raid-->
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+          <BS_DvergrSniper>1</BS_DvergrSniper>
+
+          <BS_DvergrMecha>0.5</BS_DvergrMecha>
+          <BS_NisseMecha>0.5</BS_NisseMecha>
+
+          <BS_BananaSplitPrankster MayRequire="RedMattis.BSSlimes">999</BS_BananaSplitPrankster>
+          <BS_Jotun_BananaSplit MayRequire="RedMattis.BSSlimes">999</BS_Jotun_BananaSplit>
+
+          <BS_MechaJotunMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">999</BS_MechaJotunMelee>
+          <BS_MechaJotunRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">999</BS_MechaJotunRanged>
+
+          <DMS_Dragoon_Outlander MayRequire="Aoba.DeadManSwitch.MobileDragoon">999</DMS_Dragoon_Outlander>
+        </options>
+      </li>
+      <li>
         <!-- Big & Small Muspelheim -->
         <kindDef>Combat</kindDef>
         <commonality>25</commonality>
@@ -125,6 +144,10 @@
           
           <BS_Jotun_MuspelKnight_Limited>4</BS_Jotun_MuspelKnight_Limited>
           <BS_Jotun_Lord_Limited>4</BS_Jotun_Lord_Limited>
+
+          <BS_MechaJotunMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">1</BS_MechaJotunMelee>
+          <BS_MechaJotunRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">1</BS_MechaJotunRanged>
+
           <DMS_Dragoon_Outlander MayRequire="Aoba.DeadManSwitch.MobileDragoon">5</DMS_Dragoon_Outlander>
           
         </options>
@@ -137,8 +160,6 @@
           <BS_DvergrMecha>1</BS_DvergrMecha>
           <BS_NisseMecha>1</BS_NisseMecha>
           <BS_Jotun_Modernized>1</BS_Jotun_Modernized>
-          <BS_GiantRobotRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">1</BS_GiantRobotRanged>
-          <BS_GiantRobotMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">1</BS_GiantRobotMelee>
           <BS_MechaJotunMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">1</BS_MechaJotunMelee>
           <BS_MechaJotunRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">1</BS_MechaJotunRanged>
           <DMS_Dragoon_Outlander MayRequire="Aoba.DeadManSwitch.MobileDragoon">5</DMS_Dragoon_Outlander>
@@ -164,6 +185,8 @@
           <BS_Jotun_NiflKnight_Limited>4</BS_Jotun_NiflKnight_Limited>
           <BS_Jotun_Modernized_Limited>4</BS_Jotun_Modernized_Limited>
 
+          <BS_MechaJotunMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">2</BS_MechaJotunMelee>
+          <BS_MechaJotunRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">2</BS_MechaJotunRanged>
           <Mercenary_Elite>10</Mercenary_Elite>
         </options>
       </li>
@@ -183,7 +206,8 @@
           <BS_RedcapSlasherMk2>0.5</BS_RedcapSlasherMk2>
           <BS_DvergrMecha>0.5</BS_DvergrMecha>
           <BS_NisseMecha>0.5</BS_NisseMecha>
-          <BS_MechaJotunMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">1</BS_MechaJotunMelee>
+          <BS_MechaJotunMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">2</BS_MechaJotunMelee>
+          <BS_MechaJotunRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">2</BS_MechaJotunRanged>
         </options>
       </li>
       <li>

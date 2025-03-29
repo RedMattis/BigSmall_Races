@@ -45,4 +45,26 @@
       <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneStaff</li>
     </weaponTags>
   </PawnKindDef>  
+
+    <PawnKindDef ParentName="BS_DvergrTraditionalist">
+    <defName>BS_DvergrGunner</defName>
+    <label>dvergr miner</label>
+    <initialResistanceRange>6~10</initialResistanceRange>
+     <apparelMoney>1000~2000</apparelMoney>	
+    <weaponTags Inherit="False">
+      <li>Gun</li>
+    </weaponTags>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <stuff>Steel</stuff>
+      </li>
+    </specificApparelRequirements>
+    <xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<BS_Dwarf>100</BS_Dwarf>
+        <BS_Svartalf>20</BS_Svartalf>
+			</xenotypeChances>
+		</xenotypeSet>
+  </PawnKindDef>
 </Defs>
