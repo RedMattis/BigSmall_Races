@@ -1,0 +1,45 @@
+<Defs>
+  <PawnKindDef ParentName="BS_GiantRobotRanged">
+    <defName>BS_MechaJotunRanged</defName>
+    <label>mecha-jotun</label>
+    <maxPerGroup>2</maxPerGroup>
+    <techHediffsRequired>
+      <li MayRequire="Ludeon.Rimworld.Royalty">NuclearStomach</li>
+      <li MayRequire="Ludeon.Rimworld.Royalty">StoneskinGland</li>
+    </techHediffsRequired>
+    <modExtensions>
+      <li Class="BigAndSmall.PilotExtension">
+        <pilotableGene>BS_PilotAssistible</pilotableGene>
+        <xenotypeChances>
+          <BS_Gnome>0.5</BS_Gnome>
+          <BS_Redcap>0.5</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>Mercenary_Elite</li>
+        </pilotPawnkind>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_GiantRobotMelee">
+    <defName>BS_MechaJotunMelee</defName>
+    <label>mecha-jotun</label>
+    <maxPerGroup>1</maxPerGroup>
+    <techHediffsRequired>
+      <li MayRequire="Ludeon.Rimworld.Royalty">NuclearStomach</li>
+      <li MayRequire="Ludeon.Rimworld.Royalty">StoneskinGland</li>
+    </techHediffsRequired>
+    <modExtensions>
+      <li Class="BigAndSmall.PilotExtension">
+        <pilotableGene>BS_PilotAssistible</pilotableGene>
+        <xenotypeChances>
+          <BS_Gnome>0.8</BS_Gnome>
+          <BS_Redcap>0.2</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>Mercenary_Elite</li>
+        </pilotPawnkind>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+</Defs>
