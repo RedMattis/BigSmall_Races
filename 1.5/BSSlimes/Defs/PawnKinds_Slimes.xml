@@ -1,0 +1,36 @@
+<Defs>
+  
+  <PawnKindDef MayRequire="RedMattis.BSSlimes" ParentName="MercenaryGunnerBase" Name="BS_BananaSplitPrankster">
+    <defName>BS_BananaSplitPrankster</defName>
+    <label></label>
+    <initialResistanceRange>6~10</initialResistanceRange>
+    <weaponMoney>10000~10000</weaponMoney>
+    <weaponTags Inherit="False">
+			<li>MadScience</li>
+		</weaponTags>
+    <apparelColor>(1, 0.8, 0.8)</apparelColor>
+    <apparelRequired Inherit="False"><li>Apparel_PlateArmor</li></apparelRequired>
+    <specificApparelRequirements>
+      <li>
+        <apparelDef>Apparel_PlateArmor</apparelDef>
+        <color>(1, 0.8, 0.5)</color>
+        <stuff>Plasteel</stuff>
+      </li>
+    </specificApparelRequirements>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<BS_BananaSplitSlime>999</BS_BananaSplitSlime>
+			</xenotypeChances>
+		</xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_BananaSplitPrankster">
+    <defName>BS_BananaSplitPranksterOne</defName>
+    <maxPerGroup>1</maxPerGroup>
+  </PawnKindDef>
+  <PawnKindDef ParentName="BS_BananaSplitPrankster">
+    <defName>BS_BananaSplitPranksterTwo</defName>
+    <maxPerGroup>2</maxPerGroup>
+  </PawnKindDef>
+</Defs>
