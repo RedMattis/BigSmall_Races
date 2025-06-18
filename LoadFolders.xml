@@ -17,4 +17,13 @@
     <li IfModActive="RedMattis.BSSlimes">1.5/BSSlimes</li>
   </v1.5>
 
+  <v1.6>
+    <li>/</li>
+    <li>1.6</li>
+    <li IfModActive="Ludeon.Rimworld.Royalty">1.6/Royalty</li>
+    <li IfModActive="Sierra.RF.MedievalOverhaul">1.6/MedievalOverhaul</li>
+    <li IfModActive="RedMattis.BigSmall.SimpleAndroids">1.6/SimplyRobots</li>
+    <li IfModActive="RedMattis.BSSlimes">1.6/BSSlimes</li>
+  </v1.6>
+
 </loadFolders>

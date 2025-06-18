@@ -1,0 +1,143 @@
+<Defs>
+  <ThingDef ParentName="ArmorSmithableBase">
+    <defName>BS_BarbarianArmor</defName>
+    <label>barbarian armor</label>
+    <description>Protective furs and plate armor covering most of the body. It is a bit less effective than plate armour, but is much easier to maintain and move around in.</description>
+    <possessionCount>1</possessionCount>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PlateArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>250</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>BS_Apparel/BarbarianArmor/Barbarian_Female_south</texPath>
+      <drawSize>(1.85,1.85)</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>170</costStuffCount>
+    <statBases>
+      <WorkToMake>34000</WorkToMake>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Mass>13</Mass>
+      <StuffEffectMultiplierArmor>0.69</StuffEffectMultiplierArmor>
+      <Insulation_Cold>14</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.4</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>BS_Apparel/BarbarianArmor/Barbarian</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers Inherit="False">
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <!-- <li>MedievalMilitary</li> -->
+        <li>Barbarian</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <renderNodeProperties>
+        <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+          <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+          <workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+          <parentTagDef>ApparelBody</parentTagDef>
+          <shader>CutoutComplex</shader>
+          <baseLayer>36</baseLayer>
+          <autoBodyTypePaths>true</autoBodyTypePaths>
+          <conditionalGraphics>
+            <texturePaths><li>BS_Apparel/BarbarianArmor/Barbarian</li></texturePaths>
+            <colorA> <replacementDef>BS_ApparelClr_Default</replacementDef> </colorA>
+            <colorB> <replacementDef>BS_ApparelClr_ColorableRNGFur</replacementDef> </colorB>
+          </conditionalGraphics>
+          <drawData>
+            <dataNorth> <layer>36</layer> </dataNorth>
+          </drawData>
+        </li>
+        <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+          <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+          <workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+          <parentTagDef>ApparelBody</parentTagDef>
+          <shader>CutoutComplex</shader>
+          <baseLayer>80</baseLayer>
+          <!-- <autoBodyTypePaths>true</autoBodyTypePaths> -->
+          <overrideMeshSize>(1.25, 1.20)</overrideMeshSize>
+          <conditionalGraphics>
+            <texturePaths><li>BS_Apparel/BarbarianArmor/Upper/Barbarian_Female</li></texturePaths>
+            <colorA> <replacementDef>BS_ApparelClr_Default</replacementDef> </colorA>
+            <colorB> <replacementDef>BS_ApparelClr_ColorableRNGFur</replacementDef> </colorB>
+          </conditionalGraphics>
+          <visibleFacing>
+            <li>East</li>
+            <li>West</li>
+          </visibleFacing>
+          <drawData>
+            <bodyTypeScales>
+              <Fat>1.35</Fat>
+              <Female>1</Female>
+              <Hulk>1.4</Hulk>
+              <Male>1.1</Male>
+              <Thin>0.95</Thin>
+            </bodyTypeScales>
+            <defaultData>
+            </defaultData>
+            <dataEast>
+              <offset>(-0.07, 0, -0.02)</offset>
+              <rotationOffset>-15</rotationOffset>
+            </dataEast>
+            <dataWest>
+              <offset>(0.07, 0, -0.02)</offset>
+              <rotationOffset>15</rotationOffset>
+            </dataWest>
+          </drawData>
+        </li>
+      </renderNodeProperties>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+</Defs>

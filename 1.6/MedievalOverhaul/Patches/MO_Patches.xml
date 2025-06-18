@@ -1,0 +1,13 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/PawnKindDef[defName="BS_Dvergr_Knight" or defName="BS_Dvergr_Lord"]/apparelRequired</xpath>
+    <value>
+      <apparelRequired>
+        <li>DankPyon_Apparel_FullPlate</li>
+        <li>DankPyon_Footwear_BootsPlate</li>
+        <li>DankPyon_Handwear_GlovesPlate</li>
+      </apparelRequired>
+    </value>
+  </Operation>
+</Patch>

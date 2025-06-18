@@ -4,7 +4,7 @@
     <label>Hearthguard</label>
     <description>A slow lumbering brutish thing usually created in Dvergr workshops to act as a small warmech. They are usually kept in cryptocaskets to be brought out in case of an attack. They are able to operate on organic food-stuff, and will attempt to process food items to provide for the pilot as well.\n\nMiniature mecha Evangelion?</description>
     <descriptionShort>pilotable semi-organic robot.</descriptionShort>
-    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+    <iconPath>Xenotypes/BS_Hearthguardian</iconPath>
     <inheritable>true</inheritable>
 
     <nameMaker>BS_NamerRobot</nameMaker>
@@ -12,6 +12,7 @@
     <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
     <genes>
 			<li>Ageless</li>
+			<li>BS_TrulyAgeless</li>
 			<li>DiseaseFree</li>
 			<li>PerfectImmunity</li>
 			<li>TotalHealing</li>
@@ -60,6 +61,24 @@
       <li>RangedLight</li>
     </forbiddenWeaponClasses>
     <factionlessGenerationWeight>0.0</factionlessGenerationWeight>
+		<modExtensions>
+      <li Class="BigAndSmall.XenotypeExtension">
+        <setRace>BS_UrbMech</setRace>
+        <forceRace>true</forceRace>
+      </li>
+			<li Class="BigAndSmall.PilotExtension">
+        <xenotypeChances>
+          <BS_Dwarf>0.75</BS_Dwarf>
+          <BS_Svartalf>0.25</BS_Svartalf>
+          <BS_Gnome>0.75</BS_Gnome>
+          <BS_Redcap>0.25</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>Mercenary_Gunner</li>
+          <li>Mercenary_Elite</li>
+        </pilotPawnkind>
+			</li>
+    </modExtensions>
   </XenotypeDef>
 
   <XenotypeDef>
@@ -67,7 +86,7 @@
     <label>hearthdoll</label>
     <description>A slow somewhat clumsy creation usuable made in Dvergr workshops to compensate for the small size of some of their members. They are usually kept in cryptocaskets to be brought out on demand. They are able to operate on organic food-stuff, and will attempt to process food items to provide for the pilot as well.</description>
     <descriptionShort>pilotable semi-organic robot.</descriptionShort>
-    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+    <iconPath>Xenotypes/BS_Hearthdoll</iconPath>
     <inheritable>true</inheritable>
 
     <nameMaker>BS_NamerRobot</nameMaker>
@@ -75,6 +94,7 @@
     <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
     <genes>
 			<li>Ageless</li>
+			<li>BS_TrulyAgeless</li>
       <li>BS_NaturalArmor</li>
 			<li>DiseaseFree</li>
 			<li>PerfectImmunity</li>
@@ -118,14 +138,32 @@
       <li>RangedLight</li>
     </forbiddenWeaponClasses>
     <factionlessGenerationWeight>0.0</factionlessGenerationWeight>
+		<modExtensions>
+      <li Class="BigAndSmall.XenotypeExtension">
+        <setRace>BS_UrbMech</setRace>
+        <forceRace>true</forceRace>
+      </li>
+			<li Class="BigAndSmall.PilotExtension">
+        <xenotypeChances>
+          <BS_Dwarf>0.75</BS_Dwarf>
+          <BS_Svartalf>0.25</BS_Svartalf>
+          <BS_Gnome>0.75</BS_Gnome>
+          <BS_Redcap>0.25</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>Mercenary_Gunner</li>
+          <li>Mercenary_Elite</li>
+        </pilotPawnkind>
+			</li>
+    </modExtensions>
   </XenotypeDef>
 
   <XenotypeDef>
     <defName>BS_PilotableFleshGolem</defName>
     <label>flesh golem</label>
-    <description>A partially hollowed-out and somewhat clumsy golem made to impersonate the apperance and abilities human-sized being that is claimed to be created by "magical" means. Only very small xenotypes are able to pilot it.</description>
+    <description>A partially hollowed-out and somewhat clumsy golem made to impersonate the appearance and abilities human-sized being that is claimed to be created by "magical" means. Only very small xenotypes are able to pilot it.</description>
     <descriptionShort>pilotable semi-organic robot.</descriptionShort>
-    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+    <iconPath>Xenotypes/BS_FleshGolemServant</iconPath>
     <inheritable>true</inheritable>
 
     <nameMaker>BS_NamerBiological</nameMaker>
@@ -172,6 +210,20 @@
       <li>LongShots</li>
     </forbiddenWeaponClasses>
     <factionlessGenerationWeight>0.0</factionlessGenerationWeight>
+		<modExtensions>
+			<li Class="BigAndSmall.PilotExtension">
+        <xenotypeChances>
+          <BS_Dwarf>0.75</BS_Dwarf>
+          <BS_Svartalf>0.25</BS_Svartalf>
+          <BS_Gnome>0.75</BS_Gnome>
+          <BS_Redcap>0.25</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>Mercenary_Gunner</li>
+          <li>Mercenary_Elite</li>
+        </pilotPawnkind>
+			</li>
+    </modExtensions>
   </XenotypeDef>
 
   <XenotypeDef>
@@ -179,7 +231,7 @@
     <label>flesh golem servant</label>
     <description>A flesh golem servant created by unknown means.</description>
     <descriptionShort>pilotable semi-organic robot.</descriptionShort>
-    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+    <iconPath>Xenotypes/BS_Fleshgolem</iconPath>
     <inheritable>true</inheritable>
 
     <nameMaker>BS_NamerBiological</nameMaker>
@@ -230,5 +282,19 @@
       <li>LongShots</li>
     </forbiddenWeaponClasses>
     <factionlessGenerationWeight>0.25</factionlessGenerationWeight>
+		<modExtensions>
+			<li Class="BigAndSmall.PilotExtension">
+        <xenotypeChances>
+          <BS_Dwarf>0.75</BS_Dwarf>
+          <BS_Svartalf>0.25</BS_Svartalf>
+          <BS_Gnome>0.75</BS_Gnome>
+          <BS_Redcap>0.25</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>Mercenary_Gunner</li>
+          <li>Mercenary_Elite</li>
+        </pilotPawnkind>
+			</li>
+    </modExtensions>
   </XenotypeDef>
 </Defs>

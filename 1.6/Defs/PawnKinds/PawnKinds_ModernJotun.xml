@@ -1,0 +1,57 @@
+<Defs>
+  <PawnKindDef ParentName="BS_Jotun_Knight" Name="BS_Jotun_Modernized">
+    <defName>BS_Jotun_Modernized</defName>
+    <label>giant soldier</label>
+    <maxPerGroup>3</maxPerGroup>
+    <combatPower>200</combatPower>
+    <chemicalAddictionChance>0.12</chemicalAddictionChance>
+    <weaponTags Inherit="False">
+      <li>RangedHeavyGiant</li>
+    </weaponTags>
+    <weaponMoney>1500~6000</weaponMoney>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+      <li>SpacerMilitary</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <techHediffsMoney>1000~3800</techHediffsMoney>
+    <techHediffsTags> <li>Advanced</li> <li>AdvancedWeapon</li> </techHediffsTags>
+    <techHediffsChance>0.40</techHediffsChance>
+    <combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+    <apparelColor>(74, 80, 76)</apparelColor>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <specificApparelRequirements Inherit="False">
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li> <only>(120, 30, 30)</only> </li>
+            <li> <only>(80, 40, 40)</only> </li>
+            <li> <only>(40, 40, 40)</only> </li>
+            <li> <only>(130,0,10)</only> </li>
+          </options>
+        </colorGenerator>
+      </li>
+    </specificApparelRequirements>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_Jotun>30</BS_Jotun>
+        <BS_FireJotun>50</BS_FireJotun>
+        <BS_BananaSplitSlimeGiant MayRequire="RedMattis.BSSlimes">10</BS_BananaSplitSlimeGiant>
+        <BS_BrokenTitan>5</BS_BrokenTitan>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Jotun_Modernized">
+    <defName>BS_Jotun_Modernized_Limited</defName>
+    <maxPerGroup>3</maxPerGroup>
+  </PawnKindDef>
+
+ 
+</Defs>

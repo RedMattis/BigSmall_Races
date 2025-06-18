@@ -1,0 +1,327 @@
+<Defs>
+  <FactionDef ParentName="OutlanderRoughBase">
+    <defName>BS_LittlePeople</defName>
+    <label>A little people union</label>
+    <description>A loose union mostly made up of small folk. They are highly distrustful of strangers.</description>
+    <factionNameMaker>NamerFactionTribalNeanderthal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <fixedLeaderKinds><li>PirateBoss</li></fixedLeaderKinds>
+    <pawnSingular>smallfolk</pawnSingular>
+    <pawnsPlural>smallfolk</pawnsPlural>
+    <replacesFaction>OutlanderRough</replacesFaction>
+    <factionIconPath>Icons/BS_Little_Faction_Icon</factionIconPath>
+    <techLevel>Industrial</techLevel>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_Dwarf>0.65</BS_Dwarf>
+        <BS_Gnome>0.30</BS_Gnome>
+        <BS_Redcap>0.03</BS_Redcap>
+        <BS_Svartalf>0.02</BS_Svartalf>
+        <BS_BananaSplitSlime MayRequire="RedMattis.BSSlimes">0.0001</BS_BananaSplitSlime>
+
+        <!-- "BS_Jotun_Modernized_Limited" covers this -->
+        <BS_Jotun>0.00</BS_Jotun>
+        <BS_FireJotun>0.0</BS_FireJotun>
+        <BS_Surtr>0.0</BS_Surtr>
+        <BS_BrokenTitan>0.0</BS_BrokenTitan>
+        <BS_FrostSlimeGiant MayRequire="RedMattis.BSSlimes">0.00</BS_FrostSlimeGiant>
+        <BS_LavaSlimeGiant MayRequire="RedMattis.BSSlimes">0.00</BS_LavaSlimeGiant>
+        <BS_BananaSplitSlimeGiant MayRequire="RedMattis.BSSlimes">0.00</BS_BananaSplitSlimeGiant>
+      </xenotypeChances>
+    </xenotypeSet>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(300,  1)</li>
+        <li>(1400, 1)</li>
+        <li>(2800, 1.5)</li>
+        <li>(4000, 1.5)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <!-- Mixed -->
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+        <options>
+          <PirateBoss>1</PirateBoss>
+          <Town_Guard>10</Town_Guard>
+          <Grenadier_Destructive>1.5</Grenadier_Destructive>
+          <Mercenary_Slasher>7</Mercenary_Slasher>
+          <Mercenary_Gunner>10</Mercenary_Gunner>
+          <BS_DvergrTraditionalist>5</BS_DvergrTraditionalist>
+          <BS_DvergrSniper>1</BS_DvergrSniper>
+          <BS_NisseGunner>5</BS_NisseGunner>
+          <BS_RedcapSlasher>1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.5</BS_RedcapSlasherMk2>
+          
+          <Mercenary_Elite>10</Mercenary_Elite>
+          <Town_Councilman>10</Town_Councilman>
+          <BS_Jotun_MuspelKnight_Limited>5</BS_Jotun_MuspelKnight_Limited>
+          <BS_Jotun_Lord_Limited>5</BS_Jotun_Lord_Limited>
+          <BS_Jotun_Modernized_Limited>1</BS_Jotun_Modernized_Limited>
+          <BS_MechaJotunMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">3</BS_MechaJotunMelee>
+          <BS_MechaJotunRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">3</BS_MechaJotunRanged>
+        </options>
+      </li>
+      <li>
+        <!-- Meme -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <BS_NisseGunner>5</BS_NisseGunner>
+          <BS_RedcapSlasher>1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.5</BS_RedcapSlasherMk2>
+          <BS_WomanInBlue>99</BS_WomanInBlue>
+        </options>
+      </li>
+      <li>
+        <!-- Redcap Meme Raid -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <BS_RedcapSlasher>10</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>2</BS_RedcapSlasherMk2>
+          <BS_Jotun_Berserker_Limited>1</BS_Jotun_Berserker_Limited>
+        </options>
+      </li>
+      <li>
+        <!-- Redcap and sniper meme-raid -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <BS_RedcapSlasher>10</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>2</BS_RedcapSlasherMk2>
+          <BS_DvergrSniper>20</BS_DvergrSniper>
+          <BS_BananaSplitPranksterOne MayRequire="RedMattis.BSSlimes">10</BS_BananaSplitPranksterOne>
+        </options>
+      </li>
+      <li>
+        <!-- Redcap and sniper meme-raid +?-->
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+          <BS_RedcapSlasher>10</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>2</BS_RedcapSlasherMk2>
+          <BS_DvergrSniper>20</BS_DvergrSniper>
+          <BS_BananaSplitPrankster MayRequire="RedMattis.BSSlimes">999</BS_BananaSplitPrankster>
+          <BS_Jotun_BananaSplit MayRequire="RedMattis.BSSlimes">999</BS_Jotun_BananaSplit>
+        </options>
+      </li>
+      <li>
+        <!-- Wtf Raid-->
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+          <BS_DvergrSniper>1</BS_DvergrSniper>
+
+          <BS_DvergrMecha>0.5</BS_DvergrMecha>
+          <BS_NisseMecha>0.5</BS_NisseMecha>
+
+          <BS_BananaSplitPrankster MayRequire="RedMattis.BSSlimes">999</BS_BananaSplitPrankster>
+          <BS_Jotun_BananaSplit MayRequire="RedMattis.BSSlimes">999</BS_Jotun_BananaSplit>
+
+          <BS_MechaJotunMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">999</BS_MechaJotunMelee>
+          <BS_MechaJotunRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">999</BS_MechaJotunRanged>
+
+          <DMS_Dragoon_Outlander MayRequire="Aoba.DeadManSwitch.MobileDragoon">999</DMS_Dragoon_Outlander>
+        </options>
+      </li>
+      <li>
+        <!-- Big & Small Muspelheim -->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+        <options>
+          <Grenadier_Destructive>1.5</Grenadier_Destructive>
+          <BS_DvergrTraditionalist>2</BS_DvergrTraditionalist>
+          <BS_DvergrSniper>3</BS_DvergrSniper>
+          <BS_NisseGunner>5</BS_NisseGunner>
+          <BS_RedcapSlasher>1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.5</BS_RedcapSlasherMk2>
+          
+          <BS_Jotun_MuspelKnight_Limited>4</BS_Jotun_MuspelKnight_Limited>
+          <BS_Jotun_Lord_Limited>4</BS_Jotun_Lord_Limited>
+
+          <BS_MechaJotunMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">1</BS_MechaJotunMelee>
+          <BS_MechaJotunRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">1</BS_MechaJotunRanged>
+
+          <DMS_Dragoon_Outlander MayRequire="Aoba.DeadManSwitch.MobileDragoon">5</DMS_Dragoon_Outlander>
+          
+        </options>
+      </li>
+      <li>
+        <!-- Ultra-modern Not-so-small -->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+        <options>
+          <BS_DvergrMecha>1</BS_DvergrMecha>
+          <BS_NisseMecha>1</BS_NisseMecha>
+          <BS_Jotun_Modernized>1</BS_Jotun_Modernized>
+          <BS_MechaJotunMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">1</BS_MechaJotunMelee>
+          <BS_MechaJotunRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">1</BS_MechaJotunRanged>
+          <DMS_Dragoon_Outlander MayRequire="Aoba.DeadManSwitch.MobileDragoon">5</DMS_Dragoon_Outlander>
+          <BS_Jotun_BananaSplit_Limited MayRequire="RedMattis.BSSlimes">0.25</BS_Jotun_BananaSplit_Limited>
+        </options>
+      </li>
+      <li>
+        <!-- Big & Small Linup 2-->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+        <options>
+          <PirateBoss>1</PirateBoss>
+          <Grenadier_Destructive>1.5</Grenadier_Destructive>
+          <BS_DvergrTraditionalist>5</BS_DvergrTraditionalist>
+          <BS_DvergrSniper>1</BS_DvergrSniper>
+          <BS_NisseGunner>5</BS_NisseGunner>
+          <BS_RedcapSlasher>1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.5</BS_RedcapSlasherMk2>
+          
+          <BS_Jotun_MuspelKnight_Limited>4</BS_Jotun_MuspelKnight_Limited>
+          <BS_Jotun_Lord_Limited>4</BS_Jotun_Lord_Limited>
+          <BS_Jotun_RaiderLord_Limited>4</BS_Jotun_RaiderLord_Limited>
+          <BS_Jotun_NiflKnight_Limited>4</BS_Jotun_NiflKnight_Limited>
+          <BS_Jotun_Modernized_Limited>4</BS_Jotun_Modernized_Limited>
+
+          <BS_MechaJotunMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">2</BS_MechaJotunMelee>
+          <BS_MechaJotunRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">2</BS_MechaJotunRanged>
+          <Mercenary_Elite>10</Mercenary_Elite>
+        </options>
+      </li>
+      
+      <!-- Mechs -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+        <options>
+          <PirateBoss>1</PirateBoss>
+          <Grenadier_Destructive>1.5</Grenadier_Destructive>
+          <Mercenary_Elite>10</Mercenary_Elite>
+          <BS_DvergrTraditionalist>5</BS_DvergrTraditionalist>
+          <BS_DvergrSniper>1</BS_DvergrSniper>
+          <BS_NisseGunner>5</BS_NisseGunner>
+          <BS_RedcapSlasher>1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.5</BS_RedcapSlasherMk2>
+          <BS_DvergrMecha>0.5</BS_DvergrMecha>
+          <BS_NisseMecha>0.5</BS_NisseMecha>
+          <BS_MechaJotunMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">2</BS_MechaJotunMelee>
+          <BS_MechaJotunRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">2</BS_MechaJotunRanged>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Villager>20</Villager>
+          <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+          <Town_Guard>10</Town_Guard>
+          <BS_NisseGunner>5</BS_NisseGunner>
+          <Town_Councilman>10</Town_Councilman>
+          <BS_DvergrMecha>0.5</BS_DvergrMecha>
+          <BS_DvergrTraditionalist>5</BS_DvergrTraditionalist>
+          <BS_DvergrSniper>1</BS_DvergrSniper>
+          <BS_RedcapSlasher>0.5</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.5</BS_RedcapSlasherMk2>
+          <BS_Jotun_RaiderLord_Limited>0.1</BS_Jotun_RaiderLord_Limited>
+          <BS_WomanInBlue>0.05</BS_WomanInBlue>
+          <BS_BananaSplitPranksterTwo MayRequire="RedMattis.BSSlimes">1</BS_BananaSplitPranksterTwo>
+          <BS_Jotun_BananaSplit_Limited MayRequire="RedMattis.BSSlimes">1</BS_Jotun_BananaSplit_Limited>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Town_Trader_Pig>1</Town_Trader_Pig>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <Villager>20</Villager>
+          <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+          <Town_Guard>10</Town_Guard>
+          <Town_Councilman>10</Town_Councilman>
+          <BS_DvergrTraditionalist>5</BS_DvergrTraditionalist>
+          <BS_DvergrSniper>1</BS_DvergrSniper>
+          <BS_Jotun_Lord_Limited>1</BS_Jotun_Lord_Limited>
+          <BS_Jotun_MuspelKnight_Limited>1</BS_Jotun_MuspelKnight_Limited>
+          <BS_Jotun_RaiderLord_Limited>1</BS_Jotun_RaiderLord_Limited>
+          <BS_Jotun_NiflKnight_Limited>1</BS_Jotun_NiflKnight_Limited>
+          <BS_Jotun_Modernized_Limited>1</BS_Jotun_Modernized_Limited>
+          <BS_BananaSplitPranksterTwo MayRequire="RedMattis.BSSlimes">1</BS_BananaSplitPranksterTwo>
+          <BS_Jotun_BananaSplit_Limited MayRequire="RedMattis.BSSlimes">1</BS_Jotun_BananaSplit_Limited>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Villager>20</Villager>
+          <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+          <Town_Guard>10</Town_Guard>
+          <Town_Councilman>10</Town_Councilman>
+          <BS_DvergrTraditionalist>5</BS_DvergrTraditionalist>
+          <BS_DvergrSniper>1</BS_DvergrSniper>
+          <BS_RedcapSlasher>0.1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.05</BS_RedcapSlasherMk2>
+
+          <BS_Jotun_MuspelKnight_Limited>4</BS_Jotun_MuspelKnight_Limited>
+          <BS_Jotun_Lord_Limited>4</BS_Jotun_Lord_Limited>
+          <BS_Jotun_RaiderLord_Limited>4</BS_Jotun_RaiderLord_Limited>
+          <BS_Jotun_NiflKnight_Limited>4</BS_Jotun_NiflKnight_Limited>
+          <BS_Jotun_Modernized_Limited>4</BS_Jotun_Modernized_Limited>
+          <BS_BananaSplitPranksterTwo MayRequire="RedMattis.BSSlimes">1</BS_BananaSplitPranksterTwo>
+          <BS_Jotun_BananaSplit_Limited MayRequire="RedMattis.BSSlimes">1</BS_Jotun_BananaSplit_Limited>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Miner>1</Miner>
+          <BS_DvergrTraditionalist>0.25</BS_DvergrTraditionalist>
+          <BS_DvergrSniper>1</BS_DvergrSniper>
+          <BS_NisseGunner>0.1</BS_NisseGunner>
+          <BS_RedcapSlasher>0.1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.05</BS_RedcapSlasherMk2>
+          <BS_Jotun_RaiderLord_Limited>0.1</BS_Jotun_RaiderLord_Limited>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Hunter>1</Hunter>
+          <BS_NisseGunner>0.1</BS_NisseGunner>
+          <BS_Jotun_RaiderLord_Limited>0.1</BS_Jotun_RaiderLord_Limited>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Logger>1</Logger>
+          <BS_NisseGunner>0.1</BS_NisseGunner>
+          <BS_RedcapSlasher>0.1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.05</BS_RedcapSlasherMk2>
+          <BS_Jotun_RaiderLord_Limited>0.1</BS_Jotun_RaiderLord_Limited>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Farmer>1</Farmer>
+          <BS_NisseGunner>0.1</BS_NisseGunner>
+          <BS_RedcapSlasher>0.1</BS_RedcapSlasher>
+          <BS_RedcapSlasherMk2>0.05</BS_RedcapSlasherMk2>
+          <BS_Jotun_RaiderLord_Limited>0.1</BS_Jotun_RaiderLord_Limited>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+</Defs>

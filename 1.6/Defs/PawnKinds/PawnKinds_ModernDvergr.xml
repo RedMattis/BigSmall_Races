@@ -1,0 +1,70 @@
+<Defs>
+
+  <PawnKindDef ParentName="BS_MedievalMilitaryBase" Name="BS_DvergrTraditionalist">
+    <defName>BS_DvergrTraditionalist</defName>
+    <label>traditionalist</label>
+    <combatPower>120</combatPower>
+    <gearHealthRange>0.8~1.8</gearHealthRange>
+    <apparelMoney>600~1200</apparelMoney>	
+    <apparelTags>
+      <li>MedievalMilitary</li>
+      <li>MedievalArmorDecent</li>
+      <li>DankPyon_Mercneary</li>
+      <li>DankPyon_Footman</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+    <weaponMoney>250~1400</weaponMoney>
+    <!-- <apparelColor>(1, 0.9, 0.5)</apparelColor> -->
+    <weaponTags Inherit="False">
+      <li>BS_CrossbowTag</li>
+      <li>DankPyon_Arbalest</li>
+      <li>VFEM2_Arbalest</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneRing</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneWand</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneStaff</li>
+    </weaponTags>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>14~22</initialResistanceRange>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_Dwarf>99</BS_Dwarf>
+        <BS_Svartalf>5</BS_Svartalf>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_DvergrTraditionalist">
+    <defName>BS_DvergrSniper</defName>
+    <weaponTags Inherit="False">
+      <li>BS_CrossbowTag</li>
+      <li>DankPyon_Arbalest</li>
+      <li>VFEM2_Arbalest</li>
+      <li>SniperRifle</li>
+      <li MayRequire="Sierra.RF.MedievalOverhaul">BS_ArcaneStaff</li>
+    </weaponTags>
+  </PawnKindDef>  
+
+    <PawnKindDef ParentName="BS_DvergrTraditionalist">
+    <defName>BS_DvergrGunner</defName>
+    <label>dvergr miner</label>
+    <initialResistanceRange>6~10</initialResistanceRange>
+     <apparelMoney>1000~2000</apparelMoney>	
+    <weaponTags Inherit="False">
+      <li>Gun</li>
+    </weaponTags>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <stuff>Steel</stuff>
+      </li>
+    </specificApparelRequirements>
+    <xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<BS_Dwarf>100</BS_Dwarf>
+        <BS_Svartalf>20</BS_Svartalf>
+			</xenotypeChances>
+		</xenotypeSet>
+  </PawnKindDef>
+</Defs>

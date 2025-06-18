@@ -1,0 +1,150 @@
+<Defs>
+  <TraderKindDef>
+    <defName>BS_Caravan_Ogre</defName>
+    <label>food trader</label>
+    <commonality>1</commonality>
+    <faction>BS_OgreFaction</faction>
+    <stockGenerators>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>-100~50</countRange>
+      </li>
+
+      <li Class="StockGenerator_Category">
+        <categoryDef>FoodRaw</categoryDef>
+        <thingDefCountRange>2~7</thingDefCountRange>
+        <totalPriceRange>400~1200</totalPriceRange>
+      </li>
+
+      <li Class="StockGenerator_Category">
+        <categoryDef>FoodMeals</categoryDef>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>2~50</countRange>
+      </li>
+
+      <!-- Exotic -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Jade</thingDef>
+        <countRange>-400~300</countRange>
+      </li>
+
+      <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_SingleDef">
+        <thingDef>AnimusStone</thingDef>
+        <countRange>-2~3</countRange>
+      </li>
+
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Artifact</tradeTag>
+        <thingDefCountRange>-1~4</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+
+      <!-- Shards -->
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Shard</thingDef>
+        <countRange>-3~3</countRange>
+      </li>
+
+      <li Class="StockGenerator_Animals">
+        <minWildness>0.1</minWildness>
+        <maxWildness>1.0</maxWildness>
+        <tradeTagsSell>
+          <li>AnimalExotic</li>
+          <li>AnimalFighter</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalCommon</li>
+          <li>AnimalExotic</li>
+          <li>AnimalUncommon</li>
+          <li>AnimalInsect</li>
+          <li>AnimalFighter</li>
+        </tradeTagsBuy>
+        <kindCountRange>1~3</kindCountRange>
+        <countRange>-1~6</countRange>
+      </li>
+
+      <!-- Buying -->
+      <li Class="BigAndSmall.StockGenerator_BuyFood"/>
+
+    </stockGenerators>
+  </TraderKindDef>
+
+  <TraderKindDef>
+    <defName>BS_Base_Ogre</defName>
+    <faction>BS_OgreFaction</faction>
+    <stockGenerators>
+      
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>-30~200</countRange>
+      </li>
+
+      <li Class="StockGenerator_Category">
+        <categoryDef>FoodRaw</categoryDef>
+        <thingDefCountRange>2~14</thingDefCountRange>
+        <totalPriceRange>800~1500</totalPriceRange>
+      </li>
+
+      <li Class="StockGenerator_Category">
+        <categoryDef>FoodMeals</categoryDef>
+        <thingDefCountRange>4~8</thingDefCountRange>
+        <countRange>5~180</countRange>
+      </li>
+
+      <!-- Exotic -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Jade</thingDef>
+        <countRange>-600~500</countRange>
+      </li>
+
+      <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_SingleDef">
+        <thingDef>AnimusStone</thingDef>
+        <countRange>-2~4</countRange>
+      </li>
+
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Artifact</tradeTag>
+        <thingDefCountRange>1~4</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+
+      <!-- Shards -->
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Shard</thingDef>
+        <countRange>-1~4</countRange> <!-- 50% chance for 1~2 -->
+      </li>
+
+      <li Class="StockGenerator_Category">
+        <categoryDef>NeurotrainersPsycast</categoryDef>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+
+      <li Class="StockGenerator_Animals">
+        <minWildness>0.1</minWildness>
+        <maxWildness>1.0</maxWildness>
+        <tradeTagsSell>
+          <li>AnimalExotic</li>
+          <li>AnimalFighter</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalCommon</li>
+          <li>AnimalExotic</li>
+          <li>AnimalUncommon</li>
+          <li>AnimalInsect</li>
+          <li>AnimalFighter</li>
+        </tradeTagsBuy>
+        <kindCountRange>2~2</kindCountRange>
+        <countRange>3~6</countRange>
+        <createMatingPair>
+          <li>AnimalUncommon</li>
+        </createMatingPair>
+      </li>
+
+      <!-- Buying -->
+      <li Class="BigAndSmall.StockGenerator_BuyFood"/>
+
+    </stockGenerators>
+  </TraderKindDef>
+</Defs>

@@ -1,0 +1,45 @@
+<Defs>
+  <PawnKindDef ParentName="BS_Dvergr_Knight">
+    <defName>BS_PilotedFleshGolemWarrior</defName>
+    <label>guided flesh golem</label>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>25</maxGenerationAge>
+    <factionLeader>false</factionLeader>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<BS_PilotableFleshGolem>999</BS_PilotableFleshGolem>
+			</xenotypeChances>
+		</xenotypeSet>
+    <maxPerGroup>3</maxPerGroup>
+    <modExtensions>
+			<li Class="BigAndSmall.PilotExtension">
+        <xenotypeChances>
+          <BS_Gnome>0.75</BS_Gnome>
+          <BS_Redcap>0.25</BS_Redcap>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>BS_VillagerMedieval</li>
+        </pilotPawnkind>
+			</li>
+		</modExtensions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_Dvergr_Knight">
+    <defName>BS_FleshGolemWarrior</defName>
+    <label>flesh golem</label>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>25</maxGenerationAge>
+    <factionLeader>false</factionLeader>
+    <weaponMoney>300~1300</weaponMoney>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <maxPerGroup>6</maxPerGroup>
+    <xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<BS_FleshGolemServant>999</BS_FleshGolemServant>
+			</xenotypeChances>
+		</xenotypeSet>
+  </PawnKindDef>
+
+  
+</Defs>

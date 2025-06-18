@@ -9,6 +9,18 @@
         <def>PlayerFaction</def>
         <factionDef>BS_JotunPlayerColony</factionDef>
       </playerFaction>
+      <surfaceLayer>
+        <def>SurfaceLayerFixed</def>
+        <tag>Surface</tag>
+        <layer>Surface</layer>
+        <settingsDef>Surface</settingsDef>
+        <hide>true</hide>
+        <connections>
+          <Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+            <zoomMode>ZoomOut</zoomMode>
+          </Orbit>
+        </connections>
+      </surfaceLayer>
       <parts>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
           <def>ConfigurePawnsXenotypes</def>
