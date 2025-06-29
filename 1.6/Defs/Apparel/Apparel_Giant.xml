@@ -14,9 +14,10 @@
     </recipeMaker>
     <graphicData>
       <texPath>BS_Apparel/BarbarianArmor/Barbarian_Female_south</texPath>
+      <maskPath>BS_Apparel/BarbarianArmor/Barbarian_Female_southm</maskPath>
       <drawSize>(1.85,1.85)</drawSize>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
+      <!-- <shaderType>CutoutComplex</shaderType> -->
     </graphicData>
     <stuffCategories>
       <li>Metallic</li>
@@ -53,6 +54,7 @@
         <li>Arms</li>
         <li>Legs</li>
       </bodyPartGroups>
+      <!-- <wornGraphicPath IsNull="True"/> -->
       <wornGraphicPath>BS_Apparel/BarbarianArmor/Barbarian</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <layers Inherit="False">
@@ -68,7 +70,7 @@
       </defaultOutfitTags>
       <renderNodeProperties>
         <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
-          <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+          <nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
           <workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <shader>CutoutComplex</shader>
@@ -79,12 +81,10 @@
             <colorA> <replacementDef>BS_ApparelClr_Default</replacementDef> </colorA>
             <colorB> <replacementDef>BS_ApparelClr_ColorableRNGFur</replacementDef> </colorB>
           </conditionalGraphics>
-          <drawData>
-            <dataNorth> <layer>36</layer> </dataNorth>
-          </drawData>
+          <drawData> <dataNorth> <layer>36</layer> </dataNorth> </drawData>
         </li>
         <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
-          <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+          <nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
           <workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <shader>CutoutComplex</shader>
@@ -96,20 +96,9 @@
             <colorA> <replacementDef>BS_ApparelClr_Default</replacementDef> </colorA>
             <colorB> <replacementDef>BS_ApparelClr_ColorableRNGFur</replacementDef> </colorB>
           </conditionalGraphics>
-          <visibleFacing>
-            <li>East</li>
-            <li>West</li>
-          </visibleFacing>
+          <visibleFacing> <li>East</li> <li>West</li> </visibleFacing>
           <drawData>
-            <bodyTypeScales>
-              <Fat>1.35</Fat>
-              <Female>1</Female>
-              <Hulk>1.4</Hulk>
-              <Male>1.1</Male>
-              <Thin>0.95</Thin>
-            </bodyTypeScales>
-            <defaultData>
-            </defaultData>
+            <bodyTypeScales> <Fat>1.35</Fat> <Female>1</Female> <Hulk>1.4</Hulk> <Male>1.1</Male> <Thin>0.95</Thin> </bodyTypeScales>
             <dataEast>
               <offset>(-0.07, 0, -0.02)</offset>
               <rotationOffset>-15</rotationOffset>
