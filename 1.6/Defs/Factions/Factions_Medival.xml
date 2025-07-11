@@ -245,7 +245,7 @@
     </pawnGroupMakers>
     <modExtensions>
       <!-- For testing. -->
-      <li MayRequire="OskarPotocki.VFE.Medieval2"  Class="VFECore.TaggedDefProperties">
+      <li MayRequire="OskarPotocki.VFE.Medieval2"  Class="VEF.Graphics.TaggedDefProperties">
         <taggedColors>
           <HeraldryColorA>(0.9, 0.8, 0.5)</HeraldryColorA>
           <HeraldryColorB>(1.0, 1.0, 1.0)</HeraldryColorB>
@@ -412,7 +412,7 @@
       </li>
     </pawnGroupMakers>
     <modExtensions>
-      <li MayRequire="OskarPotocki.VFE.Medieval2" Class="VFECore.TaggedDefProperties">
+      <li MayRequire="OskarPotocki.VFE.Medieval2" Class="VEF.Graphics.TaggedDefProperties">
         <taggedColors>
           <HeraldryColorA>(0.45, 0.15, 0.15)</HeraldryColorA>
           <HeraldryColorB>(0.2, 0.2, 0.2)</HeraldryColorB>
@@ -707,7 +707,7 @@
       </li>
     </pawnGroupMakers>
     <modExtensions>
-      <li MayRequire="OskarPotocki.VFE.Medieval2" Class="VFECore.TaggedDefProperties">
+      <li MayRequire="OskarPotocki.VFE.Medieval2" Class="VEF.Graphics.TaggedDefProperties">
         <taggedColors>
           <HeraldryColorA>(0.15, 0.28, 0.43)</HeraldryColorA>
           <HeraldryColorB>(0.73, 0.80, 0.9)</HeraldryColorB>
