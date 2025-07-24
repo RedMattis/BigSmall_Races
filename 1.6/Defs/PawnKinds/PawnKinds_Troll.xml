@@ -14,7 +14,7 @@
     <defName>BS_Troll_Simple_Young</defName>
     <label>young troll</label>
     <!-- Remember that all trolls have x2.5 combat value, even if young and not nearly that powerful... -->
-    <combatPower>28</combatPower>
+    <combatPower>40</combatPower>
 
     <minGenerationAge>8</minGenerationAge>
     <maxGenerationAge>17</maxGenerationAge>
@@ -36,7 +36,7 @@
     <PawnKindDef ParentName="BS_TrollBaseKind">
     <defName>BS_Troll_Archer_Young</defName>
     <label>troll archer</label>
-    <combatPower>28</combatPower>
+    <combatPower>40</combatPower>
 
     <minGenerationAge>8</minGenerationAge>
     <maxGenerationAge>17</maxGenerationAge>
@@ -64,7 +64,7 @@
   <PawnKindDef ParentName="BS_TrollAdultBaseKind">
     <defName>BS_Troll_Simple_Adult</defName>
     <label>troll</label>
-    <combatPower>60</combatPower>
+    <combatPower>120</combatPower>
     <minGenerationAge>19</minGenerationAge>
     <maxGenerationAge>74</maxGenerationAge>
     <invNutrition>12</invNutrition>
@@ -83,7 +83,7 @@
   <PawnKindDef ParentName="BS_TrollAdultBaseKind">
     <defName>BS_Troll_Ranged_Adult</defName>
     <label>troll archer</label>
-    <combatPower>60</combatPower>
+    <combatPower>120</combatPower>
     <minGenerationAge>35</minGenerationAge>
     <maxGenerationAge>74</maxGenerationAge>
     <invNutrition>12</invNutrition>
@@ -103,7 +103,7 @@
   <PawnKindDef ParentName="BS_TrollAdultBaseKind">
     <defName>BS_Troll_Ranged_Adult2</defName>
     <label>troll archer</label>
-    <combatPower>60</combatPower>
+    <combatPower>120</combatPower>
     <minGenerationAge>45</minGenerationAge>
     <maxGenerationAge>74</maxGenerationAge>
     <invNutrition>12</invNutrition>
@@ -123,7 +123,7 @@
   <PawnKindDef ParentName="BS_TrollAdultBaseKind">
     <defName>BS_Troll_Raider_Adult</defName>
     <label>troll raider</label>
-    <combatPower>80</combatPower>
+    <combatPower>140</combatPower>
     <minGenerationAge>35</minGenerationAge>
     <maxGenerationAge>74</maxGenerationAge>
     <invNutrition>12</invNutrition>
@@ -145,7 +145,7 @@
   <PawnKindDef ParentName="BS_TrollAdultBaseKind">
     <defName>BS_Troll_Raider_Adult2</defName>
     <label>troll raider</label>
-    <combatPower>80</combatPower>
+    <combatPower>140</combatPower>
     <minGenerationAge>55</minGenerationAge>
     <maxGenerationAge>74</maxGenerationAge>
     <invNutrition>12</invNutrition>
@@ -167,7 +167,7 @@
   <PawnKindDef ParentName="BS_TrollAdultBaseKind" Name="BS_Troll_Simple_Old">
     <defName>BS_Troll_Simple_Old</defName>
     <label>old troll</label>
-    <combatPower>110</combatPower>
+    <combatPower>160</combatPower>
     <minGenerationAge>76</minGenerationAge>
     <maxGenerationAge>200</maxGenerationAge>
     <invNutrition>20</invNutrition>
@@ -188,7 +188,7 @@
   <PawnKindDef ParentName="BS_Troll_Simple_Old">
     <defName>BS_Troll_Simple_Ancient</defName>
     <label>elder troll</label>
-    <combatPower>200</combatPower>
+    <combatPower>220</combatPower>
     <minGenerationAge>75</minGenerationAge>
     <invNutrition>30</invNutrition>
     <gearHealthRange>0.1~1.1</gearHealthRange>
