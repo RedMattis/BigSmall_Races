@@ -10,6 +10,7 @@
     <nameMaker>BS_NamerRobot</nameMaker>
     <combatPowerFactor>3</combatPowerFactor>
     <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
     <genes>
 			<li>Ageless</li>
 			<li>BS_TrulyAgeless</li>
@@ -88,7 +89,7 @@
     <descriptionShort>pilotable semi-organic robot.</descriptionShort>
     <iconPath>Xenotypes/BS_Hearthdoll</iconPath>
     <inheritable>true</inheritable>
-
+    
     <nameMaker>BS_NamerRobot</nameMaker>
     <combatPowerFactor>1.5</combatPowerFactor>
     <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
