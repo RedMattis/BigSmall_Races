@@ -21,7 +21,8 @@
       <li>AptitudeRemarkable_Mining</li>
       <li>ToxicEnvironmentResistance_Partial</li>
       <li>Aggression_HyperAggressive</li>
-      <li>Beauty_VeryUgly</li>
+      <li>Beauty_Ugly</li>
+      <li>BS_AlienApperanceStandards_Lesser</li>
       <li>MaxTemp_LargeIncrease</li>
       <li>MinTemp_LargeDecrease</li>
       <li>Pain_Reduced</li>
@@ -74,7 +75,8 @@
       <li>AptitudeRemarkable_Mining</li>
       <li>ToxicEnvironmentResistance_Partial</li>
       <li>Aggression_HyperAggressive</li>
-      <li>Beauty_VeryUgly</li>
+      <li>Beauty_Ugly</li>
+      <li>BS_AlienApperanceStandards_Lesser</li>
       <li>MaxTemp_LargeIncrease</li>
       <li>MinTemp_LargeDecrease</li>
       <li>Pain_Reduced</li>
