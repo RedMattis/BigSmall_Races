@@ -73,7 +73,7 @@
           <nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
           <workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
-          <shader>CutoutComplex</shader>
+          <shader>BS_CutoutThreeColor</shader>
           <baseLayer>36</baseLayer>
           <autoBodyTypePaths>true</autoBodyTypePaths>
           <conditionalGraphics>
@@ -87,7 +87,7 @@
           <nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
           <workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
-          <shader>CutoutComplex</shader>
+          <shader>BS_CutoutThreeColor</shader>
           <baseLayer>80</baseLayer>
           <!-- <autoBodyTypePaths>true</autoBodyTypePaths> -->
           <overrideMeshSize>(1.25, 1.20)</overrideMeshSize>
