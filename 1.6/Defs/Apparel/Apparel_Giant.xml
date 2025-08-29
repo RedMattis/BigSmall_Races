@@ -54,9 +54,9 @@
         <li>Arms</li>
         <li>Legs</li>
       </bodyPartGroups>
-      <!-- <wornGraphicPath IsNull="True"/> -->
-      <wornGraphicPath>BS_Apparel/BarbarianArmor/Barbarian</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
+      <wornGraphicPath IsNull="True"/>
+      <!-- <wornGraphicPath>BS_Apparel/BarbarianArmor/Barbarian</wornGraphicPath> -->
+      <!-- <useWornGraphicMask>true</useWornGraphicMask> -->
       <layers Inherit="False">
         <li>Middle</li>
         <li>Shell</li>
@@ -81,7 +81,7 @@
             <colorA> <replacementDef>BS_ApparelClr_Default</replacementDef> </colorA>
             <colorB> <replacementDef>BS_ApparelClr_ColorableRNGFur</replacementDef> </colorB>
           </conditionalGraphics>
-          <drawData> <dataNorth> <layer>36</layer> </dataNorth> </drawData>
+          <drawData> <dataNorth> <layer>34</layer> </dataNorth> </drawData>
         </li>
         <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
           <nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>

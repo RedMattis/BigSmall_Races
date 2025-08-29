@@ -88,6 +88,7 @@
     <apparelDisallowTags>
       <li>BS_MedievalBasicWeather</li>
     </apparelDisallowTags>
+    <defaultFactionDef>BS_Niflheim</defaultFactionDef>
     <specificApparelRequirements Inherit="False">
       <li>
         <colorGenerator Class="ColorGenerator_Options">
@@ -184,6 +185,29 @@
       <li>RangedMedievalGiant</li>
     </weaponTags>
     <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <!-- <modExtensions>
+      <li Class="BigAndSmall.PawnKindExtension">
+        <itemGraphics>
+          <li>
+            <graphic>
+              <colorA>(255,0,255)</colorA> -->
+              <!--Example. This is true by default already.-->
+              <!-- <colorAToApparelClr>true</colorAToApparelClr>
+            </graphic>
+          </li>
+          <li>
+            <graphic>
+              <colorA>(255,0,0)</colorA>
+              <colorB>(0,255,0)</colorB>
+            </graphic>
+            <thingCategories><li>ApparelArmor</li></thingCategories>
+            <apparelLayer>
+              <li>Shell</li>
+            </apparelLayer>
+          </li>
+        </itemGraphics>
+      </li>
+    </modExtensions> -->
   </PawnKindDef>
 
   <PawnKindDef ParentName="BS_Jotun_Knight" Name="BS_Jotun_NiflKnight">
