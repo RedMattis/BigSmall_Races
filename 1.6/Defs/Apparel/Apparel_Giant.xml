@@ -128,5 +128,12 @@
         </li>
       </options>
     </colorGenerator>
+    <modExtensions>
+      <li Class="BigAndSmall.HasCustomizableGraphics">
+        <!-- Tag is not needed for apparel. -->
+        <!-- <colorA>true</colorA> -->
+        <colorB>true</colorB>
+      </li>
+    </modExtensions>
   </ThingDef>
 </Defs>
