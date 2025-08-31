@@ -12,12 +12,13 @@
       </skillRequirements>
       <displayPriority>250</displayPriority>
     </recipeMaker>
+    
     <graphicData>
-      <texPath>BS_Apparel/BarbarianArmor/Barbarian_Female_south</texPath>
-      <maskPath>BS_Apparel/BarbarianArmor/Barbarian_Female_southm</maskPath>
-      <drawSize>(1.85,1.85)</drawSize>
+      <texPath>BS_Apparel/BarbarianArmor/BarbarianSingle</texPath>
+      <!-- <maskPath>BS_Apparel/BarbarianArmor/BarbarianSingle_m</maskPath> -->
+      <drawSize>(1.05, 1.05)</drawSize>
       <graphicClass>Graphic_Single</graphicClass>
-      <!-- <shaderType>CutoutComplex</shaderType> -->
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <stuffCategories>
       <li>Metallic</li>
@@ -47,6 +48,7 @@
       <li>Armor</li>
     </tradeTags>
     <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Neck</li>
