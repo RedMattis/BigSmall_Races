@@ -51,7 +51,6 @@
         <commonality>25</commonality>
         <options>
           <BS_CrossbowDvergr>50</BS_CrossbowDvergr>
-          <BS_VillagerMedieval>10</BS_VillagerMedieval>
           <BS_Dvergr_Knight>15</BS_Dvergr_Knight>
           <BS_Dvergr_Lord>10</BS_Dvergr_Lord>
           <BS_FleshGolemWarrior>2</BS_FleshGolemWarrior>
@@ -105,7 +104,6 @@
         <kindDef>Combat</kindDef>
         <commonality>15</commonality>
         <options>
-          <BS_VillagerMedieval>15</BS_VillagerMedieval>
           <BS_Dvergr_Knight>25</BS_Dvergr_Knight>
           <BS_Dvergr_Lord>10</BS_Dvergr_Lord>
           <BS_Dvergr_Artificer>5</BS_Dvergr_Artificer>

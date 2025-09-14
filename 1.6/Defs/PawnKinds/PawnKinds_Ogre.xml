@@ -25,6 +25,11 @@
       <li>NeolithicMeleeBasic</li>
       <li>NeolithicMeleeGiant</li>
     </weaponTags>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnKindExtension">
+        <blockAllNonNudityApparel>true</blockAllNonNudityApparel>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef Name="BS_Ogre_Berserker" ParentName="BS_Ogre_Warrior">
@@ -104,16 +109,6 @@
       <li>WarcasketMelee</li>
     </weaponTags>
     <nakedChance>0</nakedChance>
-    <skills>
-      <li>
-        <skill>Melee</skill>
-        <range>12~20</range>
-      </li>
-      <li>
-        <skill>Cooking</skill>
-        <range>6~16</range>
-      </li>
-    </skills>
     <forcedTraits>
       <SpeedOffset>2</SpeedOffset>
     </forcedTraits>
@@ -126,5 +121,25 @@
 				<BS_GreatOgre>999</BS_GreatOgre>
 			</xenotypeChances>
 		</xenotypeSet>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnKindExtension">
+        <skillRange>
+          <li>
+            <skill>Melee</skill>
+            <range>12~20</range>
+          </li>
+          <li>
+            <skill>Cooking</skill>
+            <range>9~16</range>
+          </li>
+        </skillRange>
+        <forcedPassions>
+          <li>
+            <skill>Cooking</skill>
+            <passion>Major</passion>
+          </li>
+        </forcedPassions>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 </Defs>

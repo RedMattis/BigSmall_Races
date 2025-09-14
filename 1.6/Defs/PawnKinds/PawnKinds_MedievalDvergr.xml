@@ -116,7 +116,7 @@
     <combatPower>120</combatPower>
     <initialResistanceRange>17~25</initialResistanceRange>
     <initialWillRange>2~4</initialWillRange>
-    <apparelMoney>300~1400</apparelMoney>
+    <apparelMoney>400~1400</apparelMoney>
     <isFighter>true</isFighter>
     <itemQuality>Good</itemQuality>
     <apparelTags>
@@ -136,12 +136,22 @@
         <BS_Svartalf>5</BS_Svartalf>
       </xenotypeChances>
     </xenotypeSet>
-    <skills>
-			<li>
-				<skill>Crafting</skill>
-				<range>6~14</range>
-			</li>
-		</skills>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnKindExtension">
+        <skillRange>
+          <li>
+            <skill>Crafting</skill>
+            <range>6~14</range>
+          </li>
+        </skillRange>
+        <forcedPassions>
+          <li>
+            <skill>Crafting</skill>
+            <incrementBy>2</incrementBy>
+          </li>
+        </forcedPassions>
+      </li>
+    </modExtensions>
   </PawnKindDef>
   
   <PawnKindDef ParentName="BS_Dvergr_Knight">
