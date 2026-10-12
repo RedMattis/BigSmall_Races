@@ -1,7 +1,7 @@
 <Defs>
   <XenotypeDef>
     <defName>BS_Hearthguard</defName>
-    <label>Hearthguard</label>
+    <label>hearthguard</label>
     <description>A slow lumbering brutish thing usually created in Dvergr workshops to act as a small warmech. They are usually kept in cryptocaskets to be brought out in case of an attack. They are able to operate on organic food-stuff, and will attempt to process food items to provide for the pilot as well.\n\nMiniature mecha Evangelion?</description>
     <descriptionShort>pilotable semi-organic robot.</descriptionShort>
     <iconPath>Xenotypes/BS_Hearthguardian</iconPath>
