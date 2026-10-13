@@ -2,7 +2,7 @@
 
   <FactionDef ParentName="BS_MedievalFactionBase" Name="BS_NorseFactionBase" Abstract="True">
     <structureMemeWeights>
-      <VFEM2_Structure_Norse MayRequire="OskarPotocki.VFE.Medieval2">999</VFEM2_Structure_Norse>
+      <VFEM2_Structure_Norse MayRequire="OskarPotocki.VFE.Medieval2,Ludeon.Rimworld.Ideology">999</VFEM2_Structure_Norse>
     </structureMemeWeights>
   </FactionDef>
 
